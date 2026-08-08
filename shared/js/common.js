@@ -1021,24 +1021,6 @@
     );
 
     const headings = getConfigValue("footer.headings", {});
-    const socials = getConfigValue("footer.socialLinks", []);
-
-    const socialMarkup = Array.isArray(socials)
-      ? socials
-          .map((social) => {
-            return `
-              <a
-                class="vpn-footer__social-link"
-                href="${escapeHtml(social.url)}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ${escapeHtml(social.label)}
-              </a>
-            `;
-          })
-          .join("")
-      : "";
 
     mount.innerHTML = `
       <footer class="vpn-footer">
@@ -1131,12 +1113,6 @@
               )}
             </p>
 
-            <div
-              class="vpn-footer__socials"
-              aria-label="Social links"
-            >
-              ${socialMarkup}
-            </div>
           </div>
         </div>
       </footer>

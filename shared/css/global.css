@@ -1982,45 +1982,6 @@ address {
   font-size: 11px;
 }
 
-.vpn-footer__socials {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-}
-
-.vpn-footer__social-link {
-  display: inline-flex;
-  min-height: 34px;
-  align-items: center;
-  justify-content: center;
-  padding: 7px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.11);
-  border-radius: var(--radius-pill);
-  color: rgba(255, 255, 255, 0.58);
-  font-family: var(--font-tech);
-  font-size: 9px;
-  font-weight: 650;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transition:
-    border-color var(--transition-fast),
-    background-color var(--transition-fast),
-    color var(--transition-fast),
-    transform var(--transition-fast);
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .vpn-footer__social-link:hover {
-    border-color: var(--color-green);
-    background: var(--color-green);
-    color: var(--color-graphite-deep);
-    transform: translateY(-2px);
-  }
-}
-
-
-
 .vpn-compact-cta {
   position: relative;
   overflow: hidden;
@@ -3004,9 +2965,6 @@ address {
     grid-column: auto;
   }
 
-  .vpn-footer__socials {
-    width: 100%;
-  }
 }
 
 
@@ -3067,8 +3025,7 @@ address {
   .vpn-surface-3d:hover,
   .vpn-button:hover,
   .vpn-round-control:hover,
-  .vpn-footer__link:hover,
-  .vpn-footer__social-link:hover {
+  .vpn-footer__link:hover {
     transform: none;
   }
 }
