@@ -2044,16 +2044,16 @@
 
         const options = {
           ...buildBaseSwiperOptions(),
-          slidesPerView: 1.18,
+          slidesPerView: 1,
           centeredSlides: false,
           spaceBetween: 15,
           breakpoints: {
             650: {
-              slidesPerView: 2.15,
+              slidesPerView: 2,
               spaceBetween: 17
             },
             1050: {
-              slidesPerView: 3.15,
+              slidesPerView: 3,
               spaceBetween: 19
             }
           }
