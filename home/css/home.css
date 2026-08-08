@@ -810,15 +810,19 @@ body.page-home {
 
 .vpn-home-security__column {
   display: grid;
-  gap: 15px;
+  gap: 12px;
 }
 
 .vpn-home-security-card {
   position: relative;
-  min-height: 138px;
-  padding: 21px;
+  display: grid;
+  min-height: auto;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  column-gap: 16px;
+  padding: 16px 17px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 22px;
+  border-radius: 18px;
   background: #292b2e;
   box-shadow:
     0 6px 0 #131416,
@@ -840,17 +844,20 @@ body.page-home {
 
 .vpn-home-security-card__top {
   display: flex;
+  grid-column: 2;
+  grid-row: 1 / span 2;
   align-items: center;
   justify-content: space-between;
+  justify-self: end;
   gap: 12px;
 }
 
 .vpn-home-security-card__icon {
   display: grid;
-  width: 43px;
-  height: 43px;
+  width: 38px;
+  height: 38px;
   place-items: center;
-  border-radius: 14px;
+  border-radius: 12px;
   background: var(--color-green);
   color: var(--color-graphite-deep);
 }
@@ -862,8 +869,8 @@ body.page-home {
 }
 
 .vpn-home-security-card__icon svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
 
 .vpn-home-security-card__number {
@@ -874,18 +881,20 @@ body.page-home {
 }
 
 .vpn-home-security-card__title {
-  margin-top: 18px;
+  min-width: 0;
   font-family: var(--font-heading);
   font-size: 17px;
   font-weight: 700;
+  line-height: 1.15;
   letter-spacing: -0.025em;
 }
 
 .vpn-home-security-card__text {
+  min-width: 0;
   margin-top: 6px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 11px;
-  line-height: 1.55;
+  line-height: 1.45;
 }
 
 .vpn-home-security__portrait {
@@ -899,7 +908,7 @@ body.page-home {
   inset: 0 22px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 190px 190px 34px 34px;
+  border-radius: 34px 34px 34px 34px;
   background: #303236;
   box-shadow:
     0 10px 0 #111214,
@@ -2263,7 +2272,7 @@ body.page-home {
   }
 
   .vpn-home-security-card {
-    padding: 18px;
+    padding: 15px;
   }
 
   .vpn-home-security-card:nth-child(2) {
@@ -2510,7 +2519,7 @@ body.page-home {
   .vpn-home-security-card:nth-child(2),
   .vpn-home-security__column--right
     .vpn-home-security-card:nth-child(2) {
-    min-height: 125px;
+    min-height: auto;
     margin: 0;
   }
 
@@ -2725,7 +2734,7 @@ body.page-home {
   }
 
   .vpn-home-security__portrait-frame {
-    border-radius: 150px 150px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
   }
 
   .vpn-home-security__portrait-badge {
@@ -2738,7 +2747,8 @@ body.page-home {
   }
 
   .vpn-home-security-card {
-    min-height: 118px;
+    min-height: auto;
+    padding: 15px 16px;
   }
 
   .vpn-home-tall-card {
