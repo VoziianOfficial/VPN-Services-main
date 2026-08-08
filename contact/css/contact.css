@@ -1155,3 +1155,13 @@ body.page-contact {
     position: static;
   }
 }
+
+
+
+.vpn-contact-work-card__index {
+  display: none;
+}
+
+.vpn-contact-work-card__title {
+  margin-top: 28px;
+}

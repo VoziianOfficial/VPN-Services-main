@@ -3028,3 +3028,12 @@ body.page-home {
     transform: none !important;
   }
 }
+
+
+
+.vpn-home-about-card__index,
+.vpn-home-service-card__number,
+.vpn-home-security-card__number,
+.vpn-home-bento-value__index {
+  display: none;
+}

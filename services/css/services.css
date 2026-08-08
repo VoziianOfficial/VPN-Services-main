@@ -4580,3 +4580,28 @@ body[data-service="downloads"]
     top: auto;
   }
 }
+
+
+
+.vpn-service-bento-card__index,
+.vpn-service-layer-card__number,
+.vpn-service-process-step__number,
+.vpn-service-trial-dark-card__index,
+.vpn-service-installation-step__number {
+  display: none;
+}
+
+.vpn-service-bento-card__title,
+.vpn-service-layer-card__title,
+.vpn-service-trial-dark-card__title,
+.vpn-service-installation-step__title {
+  margin-top: 0;
+}
+
+.vpn-service-process__steps::before {
+  display: none;
+}
+
+.vpn-service-process-step {
+  grid-template-columns: minmax(0, 1fr);
+}
