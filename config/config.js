@@ -284,7 +284,7 @@ window.SITE_CONFIG = {
       "title": "Start Private. Stay Flexible.",
       "text": "Experience the service before committing to a longer subscription and see how easily secure browsing fits your routine.",
       "primaryLabel": "Start Your Trial",
-      "primaryUrl": "#trial-form",
+      "primaryUrl": "contact.html?topic=trial#contact-form",
       "secondaryLabel": "See What's Included",
       "secondaryUrl": "#trial-included",
       "image": "assets/images/hero-home.jpg",

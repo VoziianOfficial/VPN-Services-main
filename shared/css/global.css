@@ -2296,6 +2296,13 @@ address {
   border: 0 !important;
 }
 
+.vpn-anchor-target {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  scroll-margin-top: calc(var(--header-total-height) + 24px);
+}
+
 :focus-visible {
   outline: 3px solid var(--color-green);
   outline-offset: 4px;
@@ -2708,7 +2715,7 @@ address {
   .vpn-heading-lg,
   .vpn-heading-md {
     margin-inline: auto;
-    text-align: center;
+
     text-wrap: balance;
   }
 
@@ -2792,14 +2799,7 @@ address {
   }
 
   .vpn-hero__meta {
-    gap: 8px;
-    margin-top: 26px;
-  }
-
-  .vpn-hero__meta-item {
-    min-height: 31px;
-    padding: 6px 10px;
-    font-size: 8px;
+    display: none;
   }
 
   .vpn-hero__visual,
