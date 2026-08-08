@@ -5135,10 +5135,13 @@ body[data-service="downloads"]
     height: 145px;
   }
 
-  .vpn-service-travel__badge,
   .vpn-service-collage__badge {
     width: 108px;
     min-height: 108px;
+  }
+
+  .vpn-service-travel__badge {
+    display: none;
   }
 
   .vpn-service-use-case {
