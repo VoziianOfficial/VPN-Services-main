@@ -29,7 +29,7 @@ window.SITE_CONFIG = {
       },
       {
         "label": "Network",
-        "url": "server-locations.html"
+        "url": "index.html#network"
       },
       {
         "label": "Plans",
@@ -60,7 +60,7 @@ window.SITE_CONFIG = {
       },
       {
         "label": "Server Locations",
-        "url": "server-locations.html",
+        "url": "index.html#network",
         "description": "Explore connection regions worldwide."
       },
       {
@@ -128,25 +128,25 @@ window.SITE_CONFIG = {
       {
         "title": "Server Locations",
         "keywords": "servers locations regions europe americas asia pacific global network",
-        "url": "server-locations.html",
+        "url": "index.html#network",
         "category": "Network"
       },
       {
         "title": "Europe Servers",
         "keywords": "europe european server region locations",
-        "url": "server-locations.html#region-explorer",
+        "url": "index.html#region-explorer",
         "category": "Network"
       },
       {
         "title": "Americas Servers",
         "keywords": "america americas usa canada latin server region locations",
-        "url": "server-locations.html#region-explorer",
+        "url": "index.html#region-explorer",
         "category": "Network"
       },
       {
         "title": "Asia-Pacific Servers",
         "keywords": "asia pacific apac server region locations",
-        "url": "server-locations.html#region-explorer",
+        "url": "index.html#region-explorer",
         "category": "Network"
       },
       {
@@ -445,7 +445,7 @@ window.SITE_CONFIG = {
       "title": "Instant Global Access",
       "text": "Switch between available regions when your browsing needs change.",
       "linkLabel": "Explore Locations",
-      "url": "server-locations.html"
+      "url": "index.html#network"
     },
     {
       "title": "Protected Everywhere",
@@ -464,7 +464,7 @@ window.SITE_CONFIG = {
     {
       "title": "Smart Routing",
       "text": "Choose connection locations based on where and how you browse.",
-      "url": "server-locations.html"
+      "url": "index.html#network"
     },
     {
       "title": "Multi-Device Protection",
@@ -498,7 +498,7 @@ window.SITE_CONFIG = {
       },
       {
         "title": "Smart Locations",
-        "url": "server-locations.html"
+        "url": "index.html#network"
       },
       {
         "title": "Streaming Access",
@@ -526,7 +526,7 @@ window.SITE_CONFIG = {
       "title": "Global Server Network",
       "text": "Choose from available regions and adapt your connection when your location changes.",
       "buttonLabel": "Explore Network",
-      "url": "server-locations.html",
+      "url": "index.html#network",
       "image": "assets/images/tall-network.png",
       "imageAlt": "Three-dimensional globe representing VPN server regions"
     },
@@ -589,7 +589,7 @@ window.SITE_CONFIG = {
     ],
 
     "ctaLabel": "Explore Server Locations",
-    "ctaUrl": "server-locations.html",
+    "ctaUrl": "index.html#network",
 
     "filters": [
       "All Regions",
@@ -844,7 +844,7 @@ window.SITE_CONFIG = {
     {
       "title": "Travel",
       "tag": "Global Connection",
-      "url": "server-locations.html"
+      "url": "index.html#network"
     },
     {
       "title": "Public Wi-Fi",
@@ -1276,7 +1276,7 @@ window.SITE_CONFIG = {
       "title": "Find a Connection Region That Fits",
       "text": "Explore the available network and choose a location for your current browsing needs.",
       "primaryLabel": "Explore Locations",
-      "primaryUrl": "server-locations.html",
+      "primaryUrl": "index.html#network",
       "secondaryLabel": "How It Works",
       "secondaryUrl": "features-how-it-works.html"
     },
@@ -1313,7 +1313,7 @@ window.SITE_CONFIG = {
       },
       {
         "label": "Server Network",
-        "url": "server-locations.html"
+        "url": "index.html#network"
       },
       {
         "label": "Reviews",

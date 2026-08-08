@@ -56,6 +56,11 @@
     href="home/css/home.css"
   >
 
+  <link
+    rel="stylesheet"
+    href="services/css/services.css"
+  >
+
   <script
     src="config/config.js"
     defer
@@ -88,6 +93,11 @@
 
   <script
     src="home/js/home.js"
+    defer
+  ></script>
+
+  <script
+    src="services/js/services.js"
     defer
   ></script>
 </head>
@@ -1020,7 +1030,7 @@
 
                   <a
                     class="vpn-home-flow-card__link"
-                    href="server-locations.html"
+                    href="index.html#network"
                     data-config-href="featureCircles.1.url"
                   >
                     <span data-config-text="featureCircles.1.linkLabel">
@@ -1316,7 +1326,7 @@
 
                 <a
                   class="vpn-home-service-card__arrow"
-                  href="server-locations.html"
+                  href="index.html#network"
                   data-config-href="serviceCards.1.url"
                   aria-label="Explore Smart Routing"
                 >
@@ -2048,7 +2058,7 @@
 
               <a
                 class="vpn-home-tall-card__action"
-                href="server-locations.html"
+                href="index.html#network"
                 data-config-href="tallCards.1.url"
               >
                 <span
@@ -2432,6 +2442,7 @@
 
       <section
         class="vpn-section vpn-home-network"
+        id="network"
         aria-labelledby="home-network-title"
       >
         <img
@@ -2511,7 +2522,7 @@
             <div class="vpn-home-network__action">
               <a
                 class="vpn-button vpn-button--light vpn-button--arrow"
-                href="server-locations.html"
+                href="index.html#network"
                 data-config-href="network.ctaUrl"
               >
                 <span data-config-text="network.ctaLabel">
@@ -2535,6 +2546,423 @@
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      
+
+      <section
+        class="vpn-section vpn-service-region-slider"
+        id="region-explorer"
+        aria-labelledby="region-slider-title"
+      >
+        <div
+          class="vpn-container"
+          data-vpn-swiper-shell
+        >
+
+          <div class="vpn-service-region-slider__top">
+
+            <div
+              class="vpn-service-head__copy"
+              data-aos="fade-up"
+            >
+              <p class="vpn-eyebrow">
+                FEATURED CONNECTION POINTS
+              </p>
+
+              <h2
+                class="vpn-heading-lg"
+                id="region-slider-title"
+              >
+                Move Across the Network
+              </h2>
+            </div>
+
+            <div class="vpn-service-region-slider__controls">
+
+              <button
+                class="vpn-round-control vpn-round-control--dark"
+                type="button"
+                aria-label="Previous server region"
+                data-vpn-region-prev
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M19 12H5M10 7L5 12L10 17"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+
+              <button
+                class="vpn-round-control vpn-round-control--dark"
+                type="button"
+                aria-label="Next server region"
+                data-vpn-region-next
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M5 12H19M14 7L19 12L14 17"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div
+            class="swiper vpn-service-region-swiper"
+            data-aos="fade-up"
+          >
+            <div
+              class="swiper-wrapper"
+              data-vpn-region-swiper-render
+            ></div>
+          </div>
+
+          <div
+            class="vpn-swiper-pagination vpn-service-reviews-dark__pagination"
+            data-vpn-region-pagination
+          ></div>
+
+        </div>
+      </section>
+
+      
+
+      <section
+        class="vpn-section vpn-service-travel"
+        aria-labelledby="travel-security-title"
+      >
+        <div class="vpn-container">
+
+          <div class="vpn-service-travel__layout">
+
+            <div
+              class="vpn-service-travel__collage"
+              data-aos="fade-right"
+            >
+
+              <div class="vpn-service-travel__main vpn-service-parallax-frame">
+                <img
+                  class="vpn-service-parallax-image"
+                  src="assets/svg/network-route.svg"
+                  alt="Abstract VPN route across network regions"
+                  width="950"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                  data-vpn-service-parallax
+                >
+              </div>
+
+              <div class="vpn-service-travel__small">
+                <img
+                  src="assets/svg/connected-path.svg"
+                  alt="Connected VPN path between devices and regions"
+                  width="420"
+                  height="380"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+
+              <div class="vpn-service-travel__badge">
+                <div>
+                  <strong>
+                    Global
+                  </strong>
+
+                  <span>
+                    Connection Flexibility
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+            <div
+              class="vpn-service-travel__content"
+              data-aos="fade-left"
+            >
+              <p class="vpn-eyebrow">
+                TRAVEL WITH MORE CONTROL
+              </p>
+
+              <h2
+                class="vpn-heading-lg"
+                id="travel-security-title"
+              >
+                Your Region Can Change With You
+              </h2>
+
+              <p class="vpn-copy-md vpn-service-travel__text">
+                Whether you are working from another city, using hotel Wi-Fi or moving between countries, the network explorer keeps your available connection options easy to find.
+              </p>
+
+              <div class="vpn-service-travel__checks">
+
+                <div class="vpn-service-travel__check">
+                  <span
+                    class="vpn-service-travel__check-icon"
+                    aria-hidden="true"
+                  >
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M6 12L10 16L18 8"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.4"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <div>
+                    <h3 class="vpn-service-travel__check-title">
+                      Choose Before You Connect
+                    </h3>
+
+                    <p class="vpn-service-travel__check-text">
+                      Browse available regions and select the route that matches your current situation.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="vpn-service-travel__check">
+                  <span
+                    class="vpn-service-travel__check-icon"
+                    aria-hidden="true"
+                  >
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M6 12L10 16L18 8"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.4"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <div>
+                    <h3 class="vpn-service-travel__check-title">
+                      Switch When Needed
+                    </h3>
+
+                    <p class="vpn-service-travel__check-text">
+                      Disconnect and choose another configured location when your browsing needs change.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="vpn-service-travel__check">
+                  <span
+                    class="vpn-service-travel__check-icon"
+                    aria-hidden="true"
+                  >
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M6 12L10 16L18 8"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.4"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <div>
+                    <h3 class="vpn-service-travel__check-title">
+                      Keep Your Devices Familiar
+                    </h3>
+
+                    <p class="vpn-service-travel__check-text">
+                      Use the same general connection workflow across supported device apps.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="vpn-service-travel__action">
+                <a
+                  class="vpn-button vpn-button--dark vpn-button--arrow"
+                  href="free-trial.html"
+                >
+                  <span>
+                    Start Free Trial
+                  </span>
+
+                  <span
+                    class="vpn-button__icon"
+                    aria-hidden="true"
+                  >
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M5 12H19M14 7L19 12L14 17"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      
+
+      <section
+        class="vpn-section vpn-service-private-compare"
+        aria-labelledby="location-choice-title"
+      >
+        <div class="vpn-container">
+
+          <div
+            class="vpn-service-head"
+            data-aos="fade-up"
+          >
+            <div class="vpn-service-head__copy">
+              <p class="vpn-eyebrow">
+                CHOOSE WITH PURPOSE
+              </p>
+
+              <h2
+                class="vpn-heading-lg"
+                id="location-choice-title"
+              >
+                Closer Route or Specific Region?
+              </h2>
+            </div>
+
+            <p class="vpn-copy-md vpn-service-head__text">
+              There is no single best location for every situation. Choose based on what you are trying to do.
+            </p>
+          </div>
+
+          <div class="vpn-service-private-compare__grid">
+
+            <article
+              class="vpn-service-private-compare-card"
+              data-aos="fade-right"
+            >
+              <span class="vpn-service-private-compare-card__label">
+                Nearby Connection
+              </span>
+
+              <h3 class="vpn-service-private-compare-card__title">
+                Stay Closer
+              </h3>
+
+              <ul class="vpn-service-private-compare-card__list">
+
+                <li class="vpn-service-private-compare-card__item">
+                  <span
+                    class="vpn-service-private-compare-card__dot"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span>
+                    Useful when you simply want a convenient connection region near your current location.
+                  </span>
+                </li>
+
+                <li class="vpn-service-private-compare-card__item">
+                  <span
+                    class="vpn-service-private-compare-card__dot"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span>
+                    A sensible default when you do not need a particular country or city.
+                  </span>
+                </li>
+
+                <li class="vpn-service-private-compare-card__item">
+                  <span
+                    class="vpn-service-private-compare-card__dot"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span>
+                    Easy to change later through the location selector.
+                  </span>
+                </li>
+
+              </ul>
+            </article>
+
+            <article
+              class="vpn-service-private-compare-card vpn-service-private-compare-card--with"
+              data-aos="fade-left"
+            >
+              <span class="vpn-service-private-compare-card__label">
+                Specific Connection
+              </span>
+
+              <h3 class="vpn-service-private-compare-card__title">
+                Choose a Region
+              </h3>
+
+              <ul class="vpn-service-private-compare-card__list">
+
+                <li class="vpn-service-private-compare-card__item">
+                  <span
+                    class="vpn-service-private-compare-card__dot"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span>
+                    Choose a configured country or city when your travel or browsing needs call for a specific route.
+                  </span>
+                </li>
+
+                <li class="vpn-service-private-compare-card__item">
+                  <span
+                    class="vpn-service-private-compare-card__dot"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span>
+                    Helpful when you want to keep your connection setup consistent while travelling.
+                  </span>
+                </li>
+
+                <li class="vpn-service-private-compare-card__item">
+                  <span
+                    class="vpn-service-private-compare-card__dot"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span>
+                    Search the network instead of scrolling through a long unfiltered list.
+                  </span>
+                </li>
+
+              </ul>
+            </article>
+
+          </div>
+
         </div>
       </section>
 

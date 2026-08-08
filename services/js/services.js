@@ -2371,9 +2371,24 @@
   
 
   function initialiseServicePage() {
+    const isServicePage = document.body.classList.contains("page-service");
+    const hasServiceWidgets = Boolean(
+      document.querySelector(
+        [
+          SELECTORS.regionSwiperRender,
+          SELECTORS.deviceSwiperRender,
+          SELECTORS.reviewsRender,
+          SELECTORS.faqRender,
+          SELECTORS.parallax,
+          SELECTORS.regionExplorer,
+          SELECTORS.pricingSection
+        ].join(",")
+      )
+    );
+
     if (
       STATE.initialised ||
-      !document.body.classList.contains("page-service")
+      (!isServicePage && !hasServiceWidgets)
     ) {
       return;
     }
@@ -2395,7 +2410,9 @@
       window.VPNCommon.applyConfigBindings(document);
     }
 
-    initServiceHero();
+    if (isServicePage) {
+      initServiceHero();
+    }
 
     initPlanMatcher();
     initProcess();
