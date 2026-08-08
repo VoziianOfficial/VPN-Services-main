@@ -72,6 +72,7 @@
     layerCard: "[data-vpn-layer-card]",
 
     parallax: "[data-vpn-service-parallax]",
+    showcaseAction: ".vpn-service-showcase__action",
     showcaseNumber: "[data-vpn-service-showcase-number]"
   };
 
@@ -165,6 +166,93 @@
 
   function prefersReducedMotion() {
     return window.matchMedia(REDUCED_MOTION_QUERY).matches;
+  }
+
+  function getHashTarget(hash) {
+    if (!hash || hash === "#") {
+      return null;
+    }
+
+    try {
+      return document.getElementById(
+        decodeURIComponent(hash.slice(1))
+      );
+    } catch (error) {
+      return document.getElementById(hash.slice(1));
+    }
+  }
+
+  function scrollToTarget(target) {
+    const rootStyles = window.getComputedStyle(
+      document.documentElement
+    );
+
+    const headerHeight = Number.parseFloat(
+      rootStyles.getPropertyValue("--header-total-height")
+    );
+
+    const offset = Number.isFinite(headerHeight)
+      ? headerHeight + 24
+      : 96;
+
+    const top =
+      target.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({
+      top: Math.max(0, top),
+      behavior: prefersReducedMotion() ? "auto" : "smooth"
+    });
+  }
+
+  function initShowcaseActions() {
+    document
+      .querySelectorAll(SELECTORS.showcaseAction)
+      .forEach((link) => {
+        if (link.dataset.vpnShowcaseActionBound === "true") {
+          return;
+        }
+
+        link.dataset.vpnShowcaseActionBound = "true";
+
+        link.addEventListener("click", (event) => {
+          const href = link.getAttribute("href");
+
+          if (!href) {
+            return;
+          }
+
+          let url;
+
+          try {
+            url = new URL(href, window.location.href);
+          } catch (error) {
+            return;
+          }
+
+          if (
+            url.origin !== window.location.origin ||
+            url.pathname !== window.location.pathname ||
+            !url.hash
+          ) {
+            return;
+          }
+
+          const target = getHashTarget(url.hash);
+
+          if (!target) {
+            return;
+          }
+
+          event.preventDefault();
+          scrollToTarget(target);
+
+          if (window.location.hash !== url.hash) {
+            window.history.pushState(null, "", url.hash);
+          }
+        });
+      });
   }
 
   function getGSAP() {
@@ -2631,6 +2719,7 @@
     initServiceTabAnimations();
     initStickyLayers();
     initServiceParallax();
+    initShowcaseActions();
     initServiceShowcaseNumbers();
     initSubtleTilt();
     initTrialFormPlanBinding();
