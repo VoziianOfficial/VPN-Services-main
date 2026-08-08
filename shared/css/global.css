@@ -2702,6 +2702,16 @@ address {
     padding-block: 58px;
   }
 
+  h1,
+  h2,
+  .vpn-heading-xl,
+  .vpn-heading-lg,
+  .vpn-heading-md {
+    margin-inline: auto;
+    text-align: center;
+    text-wrap: balance;
+  }
+
   .vpn-heading-lg {
     font-size: clamp(34px, 10vw, 46px);
   }

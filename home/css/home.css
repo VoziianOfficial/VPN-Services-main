@@ -3903,6 +3903,43 @@ body.page-home {
 
 
 
+.vpn-home-tall .vpn-home-tall-card {
+  display: flex;
+  min-height: 320px;
+  flex-direction: column;
+  padding: 28px;
+}
+
+.vpn-home-tall .vpn-home-tall-card__title,
+.vpn-home-tall .vpn-home-tall-card__text {
+  max-width: 100%;
+}
+
+.vpn-home-tall .vpn-home-tall-card__visual {
+  display: none;
+}
+
+.vpn-home-tall .vpn-home-tall-card__action {
+  position: static;
+  margin-top: auto;
+  padding-top: 28px;
+}
+
+@media (max-width: 900px) {
+  .vpn-home-tall .vpn-home-tall-card {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vpn-home-tall .vpn-home-tall-card {
+    min-height: 280px;
+    padding: 24px;
+  }
+}
+
+
+
 @media (prefers-reduced-motion: reduce) {
   .vpn-home-marquee__track {
     width: 100%;
