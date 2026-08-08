@@ -233,7 +233,7 @@ window.SITE_CONFIG = {
 
     "pricing": {
       "eyebrow": "FLEXIBLE PROTECTION",
-      "title": "Choose a Plan That Fits",
+      "title": "Plans & Pricing",
       "text": "Compare straightforward subscription options and choose the level of flexibility that works best for your devices and routine.",
       "primaryLabel": "Compare Plans",
       "primaryUrl": "#pricing",
