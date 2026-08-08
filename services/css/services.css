@@ -2807,10 +2807,10 @@ body.page-service {
 }
 
 .vpn-service-private-compare-card {
-  min-height: 380px;
-  padding: 31px;
+  min-height: auto;
+  padding: 24px 26px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 31px;
+  border-radius: 26px;
   background: #292b2e;
   box-shadow:
     0 7px 0 #131416,
@@ -2848,17 +2848,18 @@ body.page-service {
 }
 
 .vpn-service-private-compare-card__title {
-  margin-top: 30px;
+  margin-top: 20px;
   font-family: var(--font-heading);
-  font-size: 32px;
+  font-size: 29px;
   font-weight: 700;
+  line-height: 1.05;
   letter-spacing: -0.045em;
 }
 
 .vpn-service-private-compare-card__list {
   display: grid;
-  gap: 12px;
-  margin-top: 24px;
+  gap: 9px;
+  margin-top: 18px;
 }
 
 .vpn-service-private-compare-card__item {
@@ -2867,7 +2868,7 @@ body.page-service {
   gap: 10px;
   color: rgba(255, 255, 255, 0.58);
   font-size: 12px;
-  line-height: 1.58;
+  line-height: 1.45;
 }
 
 .vpn-service-private-compare-card--with
@@ -4408,7 +4409,7 @@ body[data-service="downloads"]
   }
 
   .vpn-service-private-compare-card {
-    min-height: 320px;
+    min-height: auto;
   }
 
   .vpn-service-trial-card {
