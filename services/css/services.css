@@ -1814,9 +1814,12 @@ body.page-service {
 
 .vpn-service-layer-card {
   position: sticky;
-  min-height: 270px;
+  display: flex;
+  min-height: 220px;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 22px;
-  padding: 33px;
+  padding: 27px 31px;
   border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 31px;
   background: #292b2e;
@@ -1871,19 +1874,19 @@ body.page-service {
 }
 
 .vpn-service-layer-card__title {
-  margin-top: 45px;
+  margin-top: 0;
   font-family: var(--font-heading);
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 700;
-  letter-spacing: -0.045em;
+  letter-spacing: 0;
 }
 
 .vpn-service-layer-card__text {
-  max-width: 580px;
-  margin-top: 10px;
+  max-width: 680px;
+  margin-top: 12px;
   color: rgba(255, 255, 255, 0.56);
-  font-size: 13px;
-  line-height: 1.65;
+  font-size: 14px;
+  line-height: 1.55;
 }
 
 .vpn-service-layer-card:nth-child(4)
@@ -4629,8 +4632,8 @@ body[data-service="downloads"]
   }
 
   .vpn-service-layer-card {
-    min-height: 230px;
-    padding: 27px;
+    min-height: 205px;
+    padding: 24px;
   }
 
   .vpn-service-process-step {
