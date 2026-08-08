@@ -263,7 +263,7 @@ window.SITE_CONFIG = {
       "primaryUrl": "#region-explorer",
       "secondaryLabel": "Download Apps",
       "secondaryUrl": "download-apps.html",
-      "image": "assets/images/hero-locations.jpg",
+      "image": "assets/images/hero-home.jpg",
       "imageAlt": "Traveller using a laptop while connecting through global VPN locations"
     },
 
@@ -518,7 +518,7 @@ window.SITE_CONFIG = {
       "text": "Take your VPN connection across the devices you use throughout the day.",
       "buttonLabel": "Explore Apps",
       "url": "download-apps.html",
-      "image": "assets/images/tall-apps.png",
+      "image": "assets/images/card-11.jpg",
       "imageAlt": "VPN application displayed on mobile devices"
     },
     {
@@ -527,7 +527,7 @@ window.SITE_CONFIG = {
       "text": "Choose from available regions and adapt your connection when your location changes.",
       "buttonLabel": "Explore Network",
       "url": "index.html#network",
-      "image": "assets/images/tall-network.png",
+      "image": "assets/images/card-12.jpg",
       "imageAlt": "Three-dimensional globe representing VPN server regions"
     },
     {
@@ -536,7 +536,7 @@ window.SITE_CONFIG = {
       "text": "Stay private while travelling and keep entertainment access flexible across compatible devices.",
       "buttonLabel": "Explore Streaming",
       "url": "streaming-unblocking.html",
-      "image": "assets/images/tall-streaming.png",
+      "image": "assets/images/card-13.jpg",
       "imageAlt": "Television and streaming devices"
     }
   ],
@@ -796,7 +796,7 @@ window.SITE_CONFIG = {
           "Location flexibility",
           "Multi-device availability"
         ],
-        "image": "assets/images/tab-privacy.jpg",
+        "image": "assets/images/card-11.jpg",
         "imageAlt": "Person browsing privately on a laptop"
       },
       {
@@ -810,7 +810,7 @@ window.SITE_CONFIG = {
           "Private connection",
           "Simple app controls"
         ],
-        "image": "assets/images/tab-streaming.jpg",
+        "image": "assets/images/card-12.jpg",
         "imageAlt": "Person watching streaming content on a television"
       },
       {
@@ -824,7 +824,7 @@ window.SITE_CONFIG = {
           "Quick connection controls",
           "Works across supported devices"
         ],
-        "image": "assets/images/tab-public-wifi.jpg",
+        "image": "assets/images/card-13.jpg",
         "imageAlt": "Traveller using public Wi-Fi on a laptop"
       }
     ]
@@ -869,7 +869,7 @@ window.SITE_CONFIG = {
       "name": "Windows",
       "tagline": "Desktop protection",
       "url": "download-apps.html#windows",
-      "image": "assets/images/device-windows.png",
+      "image": "assets/images/card-1.jpg",
       "imageAlt": "OrbitLock VPN application for Windows"
     },
     {
@@ -877,7 +877,7 @@ window.SITE_CONFIG = {
       "name": "macOS",
       "tagline": "Private Mac browsing",
       "url": "download-apps.html#macos",
-      "image": "assets/images/device-macos.png",
+      "image": "assets/images/card-2.jpg",
       "imageAlt": "OrbitLock VPN application for macOS"
     },
     {
@@ -885,7 +885,7 @@ window.SITE_CONFIG = {
       "name": "iOS",
       "tagline": "Protection on the go",
       "url": "download-apps.html#ios",
-      "image": "assets/images/device-ios.png",
+      "image": "assets/images/card-3.jpg",
       "imageAlt": "OrbitLock VPN application for iOS"
     },
     {
@@ -893,7 +893,7 @@ window.SITE_CONFIG = {
       "name": "Android",
       "tagline": "Mobile privacy",
       "url": "download-apps.html#android",
-      "image": "assets/images/device-android.png",
+      "image": "assets/images/card-4.jpg",
       "imageAlt": "OrbitLock VPN application for Android"
     },
     {
@@ -901,7 +901,7 @@ window.SITE_CONFIG = {
       "name": "Smart TV",
       "tagline": "Streaming flexibility",
       "url": "download-apps.html#smart-tv",
-      "image": "assets/images/device-smart-tv.png",
+      "image": "assets/images/card-5.jpg",
       "imageAlt": "VPN connection on a smart television"
     },
     {
@@ -909,7 +909,7 @@ window.SITE_CONFIG = {
       "name": "Router",
       "tagline": "Home network coverage",
       "url": "download-apps.html#router",
-      "image": "assets/images/device-router.png",
+      "image": "assets/images/card-6.jpg",
       "imageAlt": "VPN compatible home router"
     }
   ],
@@ -926,28 +926,28 @@ window.SITE_CONFIG = {
         "quote": "OrbitLock makes it easy to switch regions when I travel, and the interface never feels overloaded. I can connect quickly and get on with my work.",
         "name": "Marcus Tran",
         "role": "Remote Product Lead",
-        "avatar": "assets/images/reviewer-marcus.jpg",
+        "avatar": "assets/images/card-14.jpg",
         "avatarAlt": "Portrait of customer Marcus Tran"
       },
       {
         "quote": "I wanted something simple for public Wi-Fi and everyday browsing. The setup is clear, the apps feel polished, and changing locations takes seconds.",
         "name": "James Ellison",
         "role": "Product Designer",
-        "avatar": "assets/images/reviewer-james.jpg",
+        "avatar": "assets/images/card-15.jpg",
         "avatarAlt": "Portrait of customer James Ellison"
       },
       {
         "quote": "The multi-device experience is what won me over. I use it across my devices, and I do not have to relearn the interface every time.",
         "name": "Sofia Bennett",
         "role": "Creative Consultant",
-        "avatar": "assets/images/reviewer-sofia.jpg",
+        "avatar": "assets/images/reviews-main.jpg",
         "avatarAlt": "Portrait of customer Sofia Bennett"
       },
       {
         "quote": "The plan comparison was clear, the trial was easy to understand, and the overall service feels much more approachable than most privacy tools.",
         "name": "Daniel Meyer",
         "role": "Business Analyst",
-        "avatar": "assets/images/reviewer-daniel.jpg",
+        "avatar": "assets/images/faq-home.jpg",
         "avatarAlt": "Portrait of customer Daniel Meyer"
       }
     ]
