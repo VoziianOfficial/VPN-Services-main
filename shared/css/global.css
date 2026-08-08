@@ -726,12 +726,6 @@ address {
     box-shadow var(--transition-fast);
 }
 
-.vpn-header__search-field:focus-within {
-  border-color: rgba(34, 197, 94, 0.82);
-  background: #303236;
-  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.13);
-}
-
 .vpn-header__search-icon {
   width: 18px;
   height: 18px;
@@ -2317,6 +2311,10 @@ address {
 
 .vpn-header :focus-visible {
   outline-color: var(--color-green);
+}
+
+.vpn-header__search :focus-visible {
+  outline: none;
 }
 
 

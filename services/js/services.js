@@ -946,6 +946,11 @@
       (card) => card.getAttribute("data-selected") === "true"
     );
 
+    const plansConfig = getConfigValue("pricing.plans", []);
+    const plans = Array.isArray(plansConfig)
+      ? plansConfig
+      : [];
+
     const recommendedPlan = plans.find(
       (plan) => plan.recommended === true
     );
@@ -1845,12 +1850,19 @@
 
         const options = {
           ...buildBaseSwiperOptions(),
+          loop: true,
+          loopAdditionalSlides: 3,
           slidesPerView: 1,
+          slidesPerGroup: 1,
           spaceBetween: 16,
           breakpoints: {
-            720: {
+            768: {
               slidesPerView: 2,
               spaceBetween: 18
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20
             }
           }
         };
@@ -2614,6 +2626,8 @@
   window.addEventListener(
     "load",
     () => {
+      initPricingSwiper();
+      initServiceSwipers();
       refreshSystems();
     },
     {
