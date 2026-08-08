@@ -2774,6 +2774,12 @@ address {
     padding-block: 48px 38px;
   }
 
+  .vpn-hero__copy {
+    width: 100%;
+    margin-inline: auto;
+    padding-right: 0;
+  }
+
   .vpn-hero__code-bg {
     top: 49%;
     font-size: 16px;
@@ -2798,8 +2804,14 @@ address {
 
   .vpn-hero__title,
   .vpn-hero--compact .vpn-hero__title {
+    margin-inline: auto;
     font-size: clamp(42px, 13.5vw, 62px);
     line-height: 0.97;
+    text-align: center;
+  }
+
+  .vpn-hero__title-line {
+    text-align: center;
   }
 
   .vpn-hero__actions {
