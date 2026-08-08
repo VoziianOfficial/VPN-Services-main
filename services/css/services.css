@@ -4890,6 +4890,10 @@ body[data-service="downloads"]
 
 
 @media (max-width: 600px) {
+  .vpn-service-pricing {
+    display: none;
+  }
+
   .vpn-service-intro__visual {
     min-height: 360px;
   }

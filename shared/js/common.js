@@ -352,8 +352,7 @@
       .trim();
   }
 
-  function getCurrentPageName() {
-    const pathname = window.location.pathname || "";
+  function getPageNameFromPathname(pathname) {
     const segments = pathname.split("/").filter(Boolean);
     const fileName = segments[segments.length - 1] || "index.html";
 
@@ -362,6 +361,12 @@
     }
 
     return fileName;
+  }
+
+  function getCurrentPageName() {
+    return getPageNameFromPathname(
+      window.location.pathname || ""
+    );
   }
 
   function parseInternalUrl(url) {
@@ -1889,6 +1894,105 @@
       }
     }
 
+    function getHashTarget(hash) {
+      if (!hash || hash === "#") {
+        return null;
+      }
+
+      try {
+        return document.getElementById(
+          decodeURIComponent(hash.slice(1))
+        );
+      } catch (error) {
+        return document.getElementById(hash.slice(1));
+      }
+    }
+
+    function isSamePageHashLink(href, parsed) {
+      try {
+        const url = new URL(
+          href,
+          window.location.href
+        );
+
+        return (
+          url.origin === window.location.origin &&
+          getPageNameFromPathname(url.pathname) ===
+            getCurrentPageName()
+        );
+      } catch (error) {
+        return (
+          parsed.page === getCurrentPageName()
+        );
+      }
+    }
+
+    function scrollToHashTarget(target) {
+      const rootStyles = window.getComputedStyle(
+        document.documentElement
+      );
+
+      const headerHeight = Number.parseFloat(
+        rootStyles.getPropertyValue(
+          "--header-total-height"
+        )
+      );
+
+      const offset = Number.isFinite(headerHeight)
+        ? headerHeight + 24
+        : 96;
+
+      const top =
+        target.getBoundingClientRect().top +
+        window.pageYOffset -
+        offset;
+
+      window.scrollTo({
+        top: Math.max(0, top),
+        behavior: "smooth"
+      });
+    }
+
+    function handleMobileHashNavigation(link, event) {
+      const href = link.getAttribute("href");
+
+      if (!href) {
+        return false;
+      }
+
+      const parsed = parseInternalUrl(href);
+
+      if (
+        !parsed.hash ||
+        !isSamePageHashLink(href, parsed)
+      ) {
+        return false;
+      }
+
+      const target = getHashTarget(parsed.hash);
+
+      if (!target) {
+        return false;
+      }
+
+      event.preventDefault();
+      closeMenu(false);
+
+      window.requestAnimationFrame(() => {
+        scrollToHashTarget(target);
+
+        if (window.location.hash !== parsed.hash) {
+          window.history.pushState(
+            null,
+            "",
+            parsed.hash
+          );
+        }
+      });
+
+      return true;
+    }
+
     function openMobileSearch() {
       if (!mobileSearchToggle) {
         return;
@@ -2067,7 +2171,14 @@
           );
 
           if (link) {
-            closeMenu(false);
+            if (
+              !handleMobileHashNavigation(
+                link,
+                event
+              )
+            ) {
+              closeMenu(false);
+            }
           }
         }
       );
