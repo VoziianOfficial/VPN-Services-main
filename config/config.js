@@ -239,7 +239,7 @@ window.SITE_CONFIG = {
       "primaryUrl": "#pricing",
       "secondaryLabel": "Start Free Trial",
       "secondaryUrl": "free-trial.html",
-      "image": "assets/images/hero-pricing.jpg",
+      "image": "assets/images/hero-home.jpg",
       "imageAlt": "Person reviewing VPN subscription options on a laptop"
     },
 
@@ -251,7 +251,7 @@ window.SITE_CONFIG = {
       "primaryUrl": "#how-it-works",
       "secondaryLabel": "View Plans",
       "secondaryUrl": "plans-pricing.html",
-      "image": "assets/images/hero-features.jpg",
+      "image": "assets/images/hero-home.jpg",
       "imageAlt": "Professional working online with secure connectivity"
     },
 
@@ -275,7 +275,7 @@ window.SITE_CONFIG = {
       "primaryUrl": "#streaming-benefits",
       "secondaryLabel": "View Devices",
       "secondaryUrl": "download-apps.html",
-      "image": "assets/images/hero-streaming.jpg",
+      "image": "assets/images/hero-home.jpg",
       "imageAlt": "Person enjoying streaming content on a television"
     },
 
@@ -287,7 +287,7 @@ window.SITE_CONFIG = {
       "primaryUrl": "#trial-form",
       "secondaryLabel": "See What's Included",
       "secondaryUrl": "#trial-included",
-      "image": "assets/images/hero-trial.jpg",
+      "image": "assets/images/hero-home.jpg",
       "imageAlt": "Person starting a VPN free trial on a mobile device"
     },
 
@@ -299,7 +299,7 @@ window.SITE_CONFIG = {
       "primaryUrl": "#device-ecosystem",
       "secondaryLabel": "How It Works",
       "secondaryUrl": "features-how-it-works.html",
-      "image": "assets/images/hero-downloads.jpg",
+      "image": "assets/images/hero-home.jpg",
       "imageAlt": "Laptop and mobile device representing VPN apps across devices"
     },
 
@@ -311,7 +311,7 @@ window.SITE_CONFIG = {
       "primaryUrl": "#contact-form",
       "secondaryLabel": "Explore Plans",
       "secondaryUrl": "plans-pricing.html",
-      "image": "assets/images/hero-contact.jpg",
+      "image": "assets/images/hero-home.jpg",
       "imageAlt": "Professional communicating with a digital privacy service"
     },
 
@@ -323,7 +323,7 @@ window.SITE_CONFIG = {
       "primaryUrl": "#privacy-overview",
       "secondaryLabel": "Contact Us",
       "secondaryUrl": "contact.html",
-      "image": "assets/images/hero-legal.jpg",
+      "image": "assets/images/hero-home.jpg",
       "imageAlt": "Person reviewing privacy information on a laptop"
     },
 
@@ -335,7 +335,7 @@ window.SITE_CONFIG = {
       "primaryUrl": "#terms-overview",
       "secondaryLabel": "Contact Us",
       "secondaryUrl": "contact.html",
-      "image": "assets/images/hero-legal.jpg",
+      "image": "assets/images/hero-home.jpg",
       "imageAlt": "Person reviewing website terms on a laptop"
     },
 
@@ -347,7 +347,7 @@ window.SITE_CONFIG = {
       "primaryUrl": "#cookies-overview",
       "secondaryLabel": "Privacy Policy",
       "secondaryUrl": "privacy-policy.html",
-      "image": "assets/images/hero-legal.jpg",
+      "image": "assets/images/hero-home.jpg",
       "imageAlt": "Person reviewing browser privacy settings"
     }
   },
