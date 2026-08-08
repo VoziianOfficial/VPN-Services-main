@@ -18,6 +18,12 @@
     marqueeTrack: "[data-vpn-marquee-track]",
     marqueeGroup: "[data-vpn-marquee-group]",
 
+    storySliderSection: "[data-vpn-story-slider]",
+    storySliderSwiper: ".vpn-home-story-swiper",
+    storySliderPrev: "[data-vpn-story-prev]",
+    storySliderNext: "[data-vpn-story-next]",
+    storySliderPagination: "[data-vpn-story-pagination]",
+
     reviewsSection: "[data-vpn-reviews]",
     reviewsSwiper: ".vpn-home-reviews-swiper",
     reviewsPrev: "[data-vpn-reviews-prev]",
@@ -45,6 +51,7 @@
     heroFloatTweens: [],
     marqueeTween: null,
     marqueeResizeObserver: null,
+    storySliderSwiper: null,
     reviewsSwiper: null,
     pricingSwiper: null,
     pricingWrapper: null,
@@ -861,6 +868,93 @@
         }
       );
     }
+  }
+
+  
+
+  function initStorySliderSwiper() {
+    const Swiper = getSwiper();
+
+    const swiperElement =
+      document.querySelector(
+        SELECTORS.storySliderSwiper
+      );
+
+    if (
+      !Swiper ||
+      !swiperElement ||
+      STATE.storySliderSwiper
+    ) {
+      return;
+    }
+
+    const section =
+      swiperElement.closest(
+        SELECTORS.storySliderSection
+      ) ||
+      document;
+
+    const previousButton =
+      section.querySelector(
+        SELECTORS.storySliderPrev
+      );
+
+    const nextButton =
+      section.querySelector(
+        SELECTORS.storySliderNext
+      );
+
+    const pagination =
+      section.querySelector(
+        SELECTORS.storySliderPagination
+      );
+
+    const options = {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      speed: 700,
+      loop: true,
+      watchOverflow: true,
+      grabCursor: true,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true
+      },
+      a11y: {
+        enabled: true,
+        prevSlideMessage:
+          "Previous protection mode",
+        nextSlideMessage:
+          "Next protection mode",
+        firstSlideMessage:
+          "This is the first protection mode",
+        lastSlideMessage:
+          "This is the last protection mode"
+      }
+    };
+
+    if (
+      previousButton &&
+      nextButton
+    ) {
+      options.navigation = {
+        prevEl: previousButton,
+        nextEl: nextButton
+      };
+    }
+
+    if (pagination) {
+      options.pagination = {
+        el: pagination,
+        clickable: true
+      };
+    }
+
+    STATE.storySliderSwiper =
+      new Swiper(
+        swiperElement,
+        options
+      );
   }
 
   
@@ -2076,6 +2170,7 @@
 
     initHeroAnimation();
     initMarquee();
+    initStorySliderSwiper();
     initReviewsSwiper();
     initPricingSwiper();
     initCardScanner();
