@@ -1255,14 +1255,6 @@ address {
   will-change: transform;
 }
 
-.vpn-hero__text {
-  max-width: 660px;
-  margin-top: 24px;
-  color: rgba(255, 255, 255, 0.66);
-  font-size: clamp(16px, 1.4vw, 19px);
-  line-height: 1.72;
-}
-
 .vpn-hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -2778,11 +2770,6 @@ address {
   .vpn-hero--compact .vpn-hero__title {
     font-size: clamp(42px, 13.5vw, 62px);
     line-height: 0.97;
-  }
-
-  .vpn-hero__text {
-    margin-top: 19px;
-    font-size: 15px;
   }
 
   .vpn-hero__actions {

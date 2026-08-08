@@ -525,22 +525,7 @@ body.page-home {
 }
 
 .vpn-home-services__technical-grid {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  background-image: url("../../assets/svg/perspective-grid.svg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-.vpn-home-services__technical-grid::after {
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.56);
-  content: "";
+  display: none;
 }
 
 .vpn-home-services__inner {
