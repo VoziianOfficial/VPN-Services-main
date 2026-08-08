@@ -2775,7 +2775,13 @@ address {
 
   .vpn-hero__code-lines,
   .vpn-hero__code-line {
-    min-width: 215vw;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .vpn-hero__code-lines {
+    transform: none;
   }
 
   .vpn-hero__eyebrow {

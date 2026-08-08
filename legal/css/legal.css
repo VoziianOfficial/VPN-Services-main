@@ -380,12 +380,15 @@ body.page-legal {
 
 .vpn-legal-page__content {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 18px;
   margin-top: 22px;
 }
 
 .vpn-legal-section {
   position: relative;
+  min-width: 0;
+  max-width: 100%;
   padding: 34px 38px;
   scroll-margin-top: calc(var(--header-total-height) + 32px);
   border: 1px solid var(--color-border);
@@ -464,6 +467,7 @@ body.page-legal {
   color: var(--color-muted);
   font-size: 13px;
   line-height: 1.78;
+  overflow-wrap: break-word;
 }
 
 .vpn-legal-section__body > * + * {
