@@ -3721,14 +3721,17 @@ body.page-home {
   }
 
   .vpn-home-pricing__cards.vpn-home-pricing-swiper {
-    overflow: hidden;
+    overflow: visible;
+    padding-inline: 2px 42px;
   }
 
   .vpn-home-pricing-swiper .swiper-wrapper {
     align-items: stretch;
+    touch-action: pan-x;
   }
 
   .vpn-home-pricing-swiper .swiper-slide {
+    width: min(82vw, 350px) !important;
     height: auto;
   }
 
@@ -3934,6 +3937,57 @@ body.page-home {
   .vpn-home-tall .vpn-home-tall-card {
     min-height: 280px;
     padding: 24px;
+  }
+}
+
+
+
+.vpn-home-bento .vpn-home-bento__primary {
+  min-height: 260px;
+  padding: 30px;
+}
+
+.vpn-home-bento .vpn-home-bento__primary-copy {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vpn-home-bento .vpn-home-bento__primary-action {
+  margin-top: 24px;
+}
+
+.vpn-home-bento .vpn-home-bento__device {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .vpn-home-bento .vpn-home-bento__primary {
+    min-height: 245px;
+    padding: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vpn-home-bento .vpn-home-bento__primary {
+    min-height: 230px;
+    padding: 24px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .vpn-home-pricing {
+    display: none;
+  }
+
+  .vpn-home-about,
+  .vpn-home-flow,
+  .vpn-home-security,
+  .vpn-home-about__micro {
+    display: none;
   }
 }
 
