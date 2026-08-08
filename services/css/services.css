@@ -2723,6 +2723,7 @@ body.page-service {
 
 
 .vpn-service-device-slider {
+  overflow: hidden;
   background: var(--color-surface);
 }
 
@@ -2735,7 +2736,9 @@ body.page-service {
 }
 
 .vpn-service-device-swiper {
-  overflow: visible;
+  overflow: hidden;
+  padding-block: 8px 42px;
+  margin-block: -8px -42px;
 }
 
 .vpn-service-device-swiper .swiper-slide {
@@ -2744,7 +2747,9 @@ body.page-service {
 
 .vpn-service-device-card {
   position: relative;
+  width: calc(100% - 10px);
   min-height: 350px;
+  margin-inline: 5px;
   overflow: hidden;
   padding: 25px;
   border: 1px solid var(--color-border);
@@ -3455,7 +3460,9 @@ body.page-service {
 }
 
 .vpn-service-screenshots-swiper {
-  overflow: visible;
+  overflow: hidden;
+  padding-block: 8px 42px;
+  margin-block: -8px -42px;
 }
 
 .vpn-service-screenshots-swiper .swiper-slide {

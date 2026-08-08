@@ -105,6 +105,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@supports (overflow: clip) {
+  body {
+    overflow-x: clip;
+  }
+}
+
 body.vpn-scroll-locked {
   overflow: hidden;
 }
