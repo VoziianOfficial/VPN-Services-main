@@ -63,6 +63,11 @@
     screenshotsNext: "[data-vpn-screenshots-next]",
     screenshotsPagination: "[data-vpn-screenshots-pagination]",
 
+    storySwiper: ".vpn-service-story-swiper",
+    storyPrev: "[data-vpn-service-story-prev]",
+    storyNext: "[data-vpn-service-story-next]",
+    storyPagination: "[data-vpn-service-story-pagination]",
+
     layerSection: "[data-vpn-service-layers]",
     layerCard: "[data-vpn-layer-card]",
 
@@ -81,6 +86,7 @@
     regionSwipers: [],
     deviceSwipers: [],
     screenshotSwipers: [],
+    storySwipers: [],
 
     layerMatchMedia: null,
     parallaxMatchMedia: null
