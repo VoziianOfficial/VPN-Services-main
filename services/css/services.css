@@ -4935,6 +4935,43 @@ body[data-service="downloads"]
 
   .vpn-service-dark-benefits__cards {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .vpn-service-dark-benefit-card {
+    position: relative;
+    min-height: 0;
+    padding: 20px 76px 20px 20px;
+  }
+
+  .vpn-service-dark-benefit-card:nth-child(n + 3) {
+    display: none;
+  }
+
+  .vpn-service-dark-benefit-card__icon {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+  }
+
+  .vpn-service-dark-benefit-card__icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .vpn-service-dark-benefit-card__title {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.12;
+  }
+
+  .vpn-service-dark-benefit-card__text {
+    margin-top: 7px;
+    font-size: 11px;
+    line-height: 1.45;
   }
 
   .vpn-service-bento__grid {
@@ -4958,6 +4995,48 @@ body[data-service="downloads"]
   .vpn-service-bento__side,
   .vpn-service-bento-card {
     min-height: 190px;
+  }
+
+  .vpn-service-billing__grid {
+    gap: 12px;
+  }
+
+  .vpn-service-billing-card {
+    min-height: 0;
+    padding: 20px 78px 20px 20px;
+  }
+
+  .vpn-service-billing-card__icon {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .vpn-service-billing-card__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .vpn-service-billing-card__title {
+    margin-top: 0;
+    font-size: 21px;
+    line-height: 1.12;
+  }
+
+  .vpn-service-billing-card__text {
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 1.45;
+  }
+
+  .vpn-service-flow,
+  .vpn-service-security,
+  .vpn-service-trial-dark,
+  .vpn-service-installation {
+    display: none;
   }
 
   .vpn-service-flow__grid {
