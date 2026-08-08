@@ -2081,7 +2081,67 @@
       });
   }
 
+  function initStorySwipers() {
+    const Swiper = getSwiper();
+
+    if (!Swiper) {
+      return;
+    }
+
+    document
+      .querySelectorAll(SELECTORS.storySwiper)
+      .forEach((element) => {
+        if (element.dataset.vpnSwiperInitialised === "true") {
+          return;
+        }
+
+        const previous = findSwiperControl(
+          element,
+          SELECTORS.storyPrev
+        );
+
+        const next = findSwiperControl(
+          element,
+          SELECTORS.storyNext
+        );
+
+        const pagination = findSwiperControl(
+          element,
+          SELECTORS.storyPagination
+        );
+
+        const options = {
+          ...buildBaseSwiperOptions(),
+          slidesPerView: 1,
+          spaceBetween: 24,
+          loop: true,
+          loopAdditionalSlides: 1
+        };
+
+        if (previous && next) {
+          options.navigation = {
+            prevEl: previous,
+            nextEl: next
+          };
+        }
+
+        if (pagination) {
+          options.pagination = {
+            el: pagination,
+            clickable: true
+          };
+        }
+
+        element.dataset.vpnSwiperInitialised = "true";
+
+        STATE.storySwipers.push(
+          new Swiper(element, options)
+        );
+      });
+  }
+
   function initServiceSwipers() {
+    initStorySwipers();
     initReviewSwipers();
     initRegionSwipers();
     initDeviceSwipers();
@@ -2384,6 +2444,7 @@
           SELECTORS.regionSwiperRender,
           SELECTORS.deviceSwiperRender,
           SELECTORS.reviewsRender,
+          SELECTORS.storySwiper,
           SELECTORS.faqRender,
           SELECTORS.parallax,
           SELECTORS.regionExplorer,
