@@ -2067,7 +2067,7 @@ body.page-home {
   position: relative;
   z-index: 3;
   width: min(100%, 650px);
-  margin-bottom: -36px;
+  margin-bottom: 34px;
 }
 
 .vpn-home-faq__stage {
