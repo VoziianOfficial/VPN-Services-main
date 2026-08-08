@@ -740,7 +740,7 @@
 
     const options = {
       slidesPerView: 1,
-      spaceBetween: 18,
+      spaceBetween: 20,
       speed: 620,
       grabCursor: true,
       watchOverflow: true,

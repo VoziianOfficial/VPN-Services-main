@@ -4807,18 +4807,57 @@ body[data-service="downloads"]
 
   .vpn-service-plan-match__options {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .vpn-service-plan-match-card {
-    min-height: 210px;
+    min-height: 0;
+    padding: 20px 78px 20px 20px;
+  }
+
+  .vpn-service-plan-match-card__icon {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .vpn-service-plan-match-card__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .vpn-service-plan-match-card__title {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 1.12;
+  }
+
+  .vpn-service-plan-match-card__text {
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 1.45;
+  }
+
+  .vpn-service-plan-match-card__check {
+    right: 18px;
+    bottom: 18px;
+    width: 28px;
+    height: 28px;
   }
 
   .vpn-service-pricing__features {
-    grid-template-columns: 1fr;
+    display: none;
   }
 
   .vpn-service-pricing__cards-shell::before {
     display: none;
+  }
+
+  .vpn-service-pricing__cards-shell {
+    padding: 10px 0 18px;
   }
 
   .vpn-service-pricing__cards {
@@ -4826,6 +4865,7 @@ body[data-service="downloads"]
   }
 
   .vpn-service-pricing__cards.vpn-service-pricing-swiper {
+    padding-inline: 2px;
     overflow: hidden;
   }
 
@@ -4841,10 +4881,52 @@ body[data-service="downloads"]
   .vpn-service-price-card:nth-child(1),
   .vpn-service-price-card:nth-child(2),
   .vpn-service-price-card:nth-child(3) {
-    min-height: 470px;
-    height: 100%;
+    min-height: 0;
+    height: auto;
     margin: 0;
+    padding: 22px 20px;
+    border-radius: 24px;
     transform: none;
+  }
+
+  .vpn-service-pricing__cards:not(.vpn-service-pricing-swiper)
+    .vpn-service-price-card:nth-child(1),
+  .vpn-service-pricing__cards:not(.vpn-service-pricing-swiper)
+    .vpn-service-price-card:nth-child(2) {
+    margin-bottom: 18px;
+  }
+
+  .vpn-service-price-card__name {
+    margin-top: 18px;
+    font-size: 24px;
+  }
+
+  .vpn-service-price-card__price-row {
+    margin-top: 14px;
+  }
+
+  .vpn-service-price-card__price {
+    font-size: 44px;
+  }
+
+  .vpn-service-price-card__text {
+    margin-top: 12px;
+    line-height: 1.45;
+  }
+
+  .vpn-service-price-card__features {
+    gap: 7px;
+    margin-top: 14px;
+  }
+
+  .vpn-service-price-card__feature {
+    font-size: 9.5px;
+    line-height: 1.35;
+  }
+
+  .vpn-service-price-card__action {
+    position: static;
+    margin-top: 18px;
   }
 
   .vpn-service-comparison__table-wrap {
@@ -4859,10 +4941,13 @@ body[data-service="downloads"]
     grid-template-columns: 1fr;
     grid-template-areas:
       "wide"
-      "side"
-      "one"
-      "two"
-      "three";
+      "side";
+  }
+
+  .vpn-service-bento-card--one,
+  .vpn-service-bento-card--two,
+  .vpn-service-bento-card--three {
+    display: none;
   }
 
   .vpn-service-bento__wide {
