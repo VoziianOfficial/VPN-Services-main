@@ -137,6 +137,7 @@
 
   let commonInitialised = false;
   let aosInitialised = false;
+  let heroCodeBackgroundInitialised = false;
 
   function getConfigValue(path, fallback = "") {
     if (!path || typeof path !== "string") {
@@ -3179,6 +3180,159 @@
       });
   }
 
+  function createHeroCodeLines() {
+    return [
+      "const tunnel = await orbitLock.connect({ protocol: 'wireguard', region: 'auto', killSwitch: true, publicWifi: 'shielded' });",
+      "session.rotateKeys({ interval: '90s', entropy: crypto.getRandomValues(new Uint32Array(8)), dns: 'private-resolver' });",
+      "route.stream('4k').through(['nearest-node', 'low-latency-hop', 'encrypted-edge']).verifyNoLeaks();",
+      "policy.blockTrackers().maskLocation().sealMetadata().syncDevices(['macOS', 'iOS', 'Android', 'Windows']);",
+      "monitor.latency().on('spike', () => tunnel.rebalance({ preserveSession: true, target: 'fastest-secure-path' }));",
+      "firewall.whenNetworkChanges().pauseTraffic().handshake().resumeAfter(() => audit.ip === 'protected');",
+      "const privacy = new OrbitLockVault({ logs: false, splitTunnel: true, smartRules: ['banking', 'travel', 'streaming'] });",
+      "edge.nodes.filter(node => node.load < 0.62).sort(byLatency).slice(0, 3).map(node => tunnel.pin(node));"
+    ];
+  }
+
+  function initHeroCodeBackground() {
+    if (heroCodeBackgroundInitialised) {
+      return;
+    }
+
+    const heroes = Array.from(
+      document.querySelectorAll("[data-vpn-hero]")
+    );
+
+    if (!heroes.length) {
+      return;
+    }
+
+    heroCodeBackgroundInitialised = true;
+
+    const codeLines = createHeroCodeLines();
+    const reducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    heroes.forEach((hero) => {
+      if (hero.querySelector(".vpn-hero__code-bg")) {
+        return;
+      }
+
+      const background = document.createElement("div");
+      const linesRoot = document.createElement("div");
+      const overlay = document.createElement("div");
+      const lineElements = codeLines.map((line, index) => {
+        const lineElement = document.createElement("span");
+        const visibleRatio = index < 4 ? 0.9 : 0.58;
+        const startLength = Math.min(
+          line.length,
+          Math.floor(line.length * visibleRatio)
+        );
+
+        lineElement.className = "vpn-hero__code-line";
+        lineElement.textContent = line.slice(0, startLength);
+
+        return lineElement;
+      });
+
+      background.className = "vpn-hero__code-bg";
+      background.setAttribute("aria-hidden", "true");
+
+      linesRoot.className = "vpn-hero__code-lines";
+      overlay.className = "vpn-hero__code-overlay";
+      overlay.setAttribute("aria-hidden", "true");
+
+      lineElements.forEach((lineElement) => {
+        linesRoot.append(lineElement);
+      });
+
+      background.append(linesRoot);
+      hero.prepend(background);
+      hero.append(overlay);
+
+      if (reducedMotion) {
+        lineElements.forEach((lineElement, index) => {
+          lineElement.textContent = codeLines[index];
+        });
+
+        return;
+      }
+
+      const cursor = document.createElement("span");
+      let lineIndex = 4;
+      let charIndex = lineElements[lineIndex].textContent.length;
+      let lastTimestamp = 0;
+      let storedProgress = 0;
+      const charsPerSecond = 92;
+
+      cursor.className = "vpn-hero__code-cursor";
+      lineElements[lineIndex].append(cursor);
+
+      function moveCursor() {
+        cursor.remove();
+        lineElements[lineIndex].append(cursor);
+      }
+
+      function tick(timestamp) {
+        if (document.hidden) {
+          lastTimestamp = timestamp;
+          window.requestAnimationFrame(tick);
+          return;
+        }
+
+        if (!lastTimestamp) {
+          lastTimestamp = timestamp;
+        }
+
+        storedProgress += (
+          (timestamp - lastTimestamp) /
+          1000
+        ) * charsPerSecond;
+        lastTimestamp = timestamp;
+
+        let charactersToType = Math.floor(storedProgress);
+
+        if (charactersToType > 0) {
+          storedProgress -= charactersToType;
+        }
+
+        while (charactersToType > 0) {
+          const currentLine = codeLines[lineIndex];
+
+          if (charIndex >= currentLine.length) {
+            lineIndex = (lineIndex + 1) % codeLines.length;
+            charIndex = 0;
+            lineElements[lineIndex].textContent = "";
+            moveCursor();
+          }
+
+          const batchSize = Math.min(
+            charactersToType,
+            currentLine.length - charIndex,
+            5
+          );
+
+          lineElements[lineIndex].insertBefore(
+            document.createTextNode(
+              currentLine.slice(
+                charIndex,
+                charIndex + batchSize
+              )
+            ),
+            cursor
+          );
+
+          charIndex += batchSize;
+          charactersToType -= batchSize;
+        }
+
+        window.requestAnimationFrame(tick);
+      }
+
+      window.requestAnimationFrame(tick);
+    });
+  }
+
   function initAOS() {
     if (
       aosInitialised ||
@@ -3257,6 +3411,7 @@
     initTabs(document);
     bindQueryParameters(document);
     initExternalLinks();
+    initHeroCodeBackground();
     initAOS();
 
     dispatchCommonReady();
@@ -3270,6 +3425,7 @@
     initAccordions,
     initTabs,
     initAOS,
+    initHeroCodeBackground,
     refreshAOS,
     bindQueryParameters,
     icons: ICONS
