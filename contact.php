@@ -354,6 +354,16 @@ $companyName =
         160
     );
 
+$contactAddress =
+    vpn_clean_single_line(
+        vpn_config_value(
+            $config,
+            'contact.address',
+            ''
+        ),
+        240
+    );
+
 $successMessage =
     vpn_clean_single_line(
         vpn_config_value(
@@ -948,6 +958,14 @@ $body .=
         'Website',
         $siteName
     );
+
+if ($contactAddress !== '') {
+    $body .=
+        vpn_field_line(
+            'Configured address',
+            $contactAddress
+        );
+}
 
 $body .=
     vpn_field_line(

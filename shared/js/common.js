@@ -173,6 +173,176 @@
     });
   }
 
+  function escapeRegExp(value) {
+    return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  function replaceConfiguredPlaceholders(value, replacements) {
+    if (typeof value !== "string" || !value) {
+      return value;
+    }
+
+    return replacements.reduce((current, item) => {
+      if (!item.from || item.from === item.to) {
+        return current;
+      }
+
+      return current.replace(
+        new RegExp(escapeRegExp(item.from), "g"),
+        item.to
+      );
+    }, value);
+  }
+
+  function getBrandReplacements() {
+    const siteName = String(
+      getConfigValue(
+        "brand.siteName",
+        "OrbitLock VPN"
+      ) || ""
+    ).trim();
+
+    const companyName = String(
+      getConfigValue(
+        "brand.companyName",
+        "OrbitLock Digital Privacy"
+      ) || siteName
+    ).trim();
+
+    const email = String(
+      getConfigValue(
+        "contact.corporateEmail",
+        "hello@example.com"
+      ) || ""
+    ).trim();
+
+    const address = String(
+      getConfigValue(
+        "contact.address",
+        "Your company address"
+      ) || ""
+    ).trim();
+
+    const replacements = [
+      {
+        from: "OrbitLock Digital Privacy",
+        to: companyName || siteName
+      },
+      {
+        from: "OrbitLock VPN",
+        to: siteName
+      },
+      {
+        from: "hello@example.com",
+        to: email
+      },
+      {
+        from: "Your company address",
+        to: address
+      }
+    ];
+
+    if (
+      siteName &&
+      !siteName.includes("OrbitLock")
+    ) {
+      replacements.push({
+        from: "OrbitLock",
+        to: siteName
+      });
+    }
+
+    return replacements.filter((item) => item.to);
+  }
+
+  function applyBrandPlaceholders(root = document) {
+    const replacements = getBrandReplacements();
+
+    if (!replacements.length) {
+      return;
+    }
+
+    document.title = replaceConfiguredPlaceholders(
+      document.title,
+      replacements
+    );
+
+    root
+      .querySelectorAll(
+        "meta[content], img[alt], [aria-label], [title], [data-process-alt]"
+      )
+      .forEach((element) => {
+        [
+          "content",
+          "alt",
+          "aria-label",
+          "title",
+          "data-process-alt"
+        ].forEach((attribute) => {
+          if (!element.hasAttribute(attribute)) {
+            return;
+          }
+
+          element.setAttribute(
+            attribute,
+            replaceConfiguredPlaceholders(
+              element.getAttribute(attribute),
+              replacements
+            )
+          );
+        });
+      });
+
+    root
+      .querySelectorAll('a[href^="mailto:"]')
+      .forEach((element) => {
+        element.setAttribute(
+          "href",
+          replaceConfiguredPlaceholders(
+            element.getAttribute("href"),
+            replacements
+          )
+        );
+      });
+
+    const walker = document.createTreeWalker(
+      root.body || root,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode(node) {
+          const parent = node.parentElement;
+
+          if (
+            !parent ||
+            [
+              "SCRIPT",
+              "STYLE",
+              "TEMPLATE",
+              "NOSCRIPT"
+            ].includes(parent.tagName)
+          ) {
+            return NodeFilter.FILTER_REJECT;
+          }
+
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      }
+    );
+
+    const textNodes = [];
+
+    while (walker.nextNode()) {
+      textNodes.push(walker.currentNode);
+    }
+
+    textNodes.forEach((node) => {
+      node.nodeValue = replaceConfiguredPlaceholders(
+        node.nodeValue,
+        replacements
+      );
+    });
+  }
+
   function normaliseText(value) {
     return String(value ?? "")
       .toLowerCase()
@@ -3401,6 +3571,7 @@
     renderLegalNotice();
 
     applyConfigBindings(document);
+    applyBrandPlaceholders(document);
 
     initHeaderInteractions();
     initAllSearchInstances();
@@ -3421,6 +3592,7 @@
     config: CONFIG,
     getConfigValue,
     applyConfigBindings,
+    applyBrandPlaceholders,
     initForms,
     initAccordions,
     initTabs,
