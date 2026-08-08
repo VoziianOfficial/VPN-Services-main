@@ -1006,7 +1006,13 @@ body.page-home {
 }
 
 .vpn-home-tall__head {
-  max-width: 760px;
+  max-width: none;
+}
+
+.vpn-home-tall__head .vpn-heading-lg,
+.vpn-home-faq__heading .vpn-heading-lg {
+  font-size: clamp(32px, 4.1vw, 58px);
+  white-space: nowrap;
 }
 
 .vpn-home-tall__grid {
@@ -2066,7 +2072,7 @@ body.page-home {
 .vpn-home-faq__heading {
   position: relative;
   z-index: 3;
-  width: min(100%, 650px);
+  width: 100%;
   margin-bottom: 34px;
 }
 
@@ -2893,6 +2899,11 @@ body.page-home {
 
 
 @media (max-width: 430px) {
+  .vpn-home-tall__head .vpn-heading-lg,
+  .vpn-home-faq__heading .vpn-heading-lg {
+    font-size: clamp(17px, 5.1vw, 22px);
+  }
+
   .vpn-home-marquee__text {
     font-size: 32px;
   }
