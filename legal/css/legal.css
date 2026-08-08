@@ -1278,6 +1278,7 @@ body[data-legal="cookies"]
   }
 
   .vpn-legal-mobile-nav {
+    display: none;
     padding: 15px;
     border-radius: 19px;
   }
