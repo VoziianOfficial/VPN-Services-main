@@ -2046,6 +2046,8 @@
           ...buildBaseSwiperOptions(),
           slidesPerView: 1,
           centeredSlides: false,
+          loop: true,
+          loopAdditionalSlides: 1,
           spaceBetween: 15,
           breakpoints: {
             650: {
