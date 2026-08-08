@@ -1349,10 +1349,10 @@ body.page-home {
 
 .vpn-home-bento-value {
   position: relative;
-  min-height: 185px;
-  padding: 27px;
+  min-height: auto;
+  padding: 20px;
   border: 1px solid var(--color-border);
-  border-radius: 28px;
+  border-radius: 22px;
   background: var(--color-white);
   box-shadow:
     0 6px 0 #e0e3de,
@@ -1374,15 +1374,18 @@ body.page-home {
 .vpn-home-bento-value__top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .vpn-home-bento-value__icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
   display: grid;
-  width: 45px;
-  height: 45px;
+  width: 38px;
+  height: 38px;
   place-items: center;
-  border-radius: 14px;
+  border-radius: 12px;
   background: var(--color-orange-soft);
   color: var(--color-orange-dark);
 }
@@ -1394,8 +1397,8 @@ body.page-home {
 }
 
 .vpn-home-bento-value__icon svg {
-  width: 21px;
-  height: 21px;
+  width: 18px;
+  height: 18px;
 }
 
 .vpn-home-bento-value__index {
@@ -1406,19 +1409,20 @@ body.page-home {
 }
 
 .vpn-home-bento-value__title {
-  margin-top: 29px;
+  margin-top: 15px;
+  padding-right: 46px;
   font-family: var(--font-heading);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.04em;
 }
 
 .vpn-home-bento-value__text {
-  margin-top: 8px;
+  margin-top: 7px;
   color: var(--color-muted);
   font-size: 12px;
-  line-height: 1.58;
+  line-height: 1.46;
 }
 
 
@@ -2585,7 +2589,7 @@ body.page-home {
 
   .vpn-home-bento__assurance,
   .vpn-home-bento-value {
-    min-height: 220px;
+    min-height: auto;
   }
 
   .vpn-home-bento__assurance-title {
@@ -2829,7 +2833,7 @@ body.page-home {
 
   .vpn-home-bento__assurance,
   .vpn-home-bento-value {
-    min-height: 190px;
+    min-height: auto;
   }
 
   .vpn-home-network__inner {
