@@ -426,6 +426,81 @@
         </div>
       </section>
 
+            <section class="vpn-section vpn-home-services" id="services" aria-labelledby="home-services-title"
+              data-vpn-card-scanner>
+              <canvas class="vpn-home-services__particle-canvas" data-vpn-card-particles aria-hidden="true"></canvas>
+            
+              <canvas class="vpn-home-services__scanner-canvas" data-vpn-card-scanner-canvas aria-hidden="true"></canvas>
+            
+              <div class="vpn-home-services__code-field" data-vpn-card-words aria-hidden="true"></div>
+            
+              <div class="vpn-home-services__scan-line" aria-hidden="true"></div>
+            
+              <h2 class="vpn-sr-only" id="home-services-title">
+                Encrypted payment card scanner
+              </h2>
+            
+              <div class="vpn-home-services__stream" data-vpn-card-stream aria-label="Animated encrypted payment card stream">
+                <div class="vpn-home-services__card-line" data-vpn-card-line>
+                  <article class="vpn-scan-card" aria-label="Encrypted Stripe payment card">
+                    <div class="vpn-scan-card__face vpn-scan-card__face--normal">
+                      <div class="vpn-scan-card__brand-row">
+                        <span class="vpn-scan-card__brand">stripe</span>
+                        <span class="vpn-scan-card__holder">Esther Howard</span>
+                        <span class="vpn-scan-card__dots" aria-hidden="true"></span>
+                      </div>
+            
+                      <div class="vpn-scan-card__hologram"></div>
+            
+                      <div class="vpn-scan-card__number">1234&nbsp;&nbsp;5678&nbsp;&nbsp;9009&nbsp;&nbsp;0000</div>
+            
+                      <div class="vpn-scan-card__circles" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+            
+                    <div class="vpn-scan-card__face vpn-scan-card__face--ascii">
+                      <pre class="vpn-scan-card__ascii-code"></pre>
+                    </div>
+                  </article>
+            
+                  <article class="vpn-scan-card vpn-scan-card--light" aria-label="Encrypted white payment card">
+                    <div class="vpn-scan-card__face vpn-scan-card__face--normal">
+                      <div class="vpn-scan-card__top-glow"></div>
+                      <span class="vpn-scan-card__holder vpn-scan-card__holder--solo">Elon Musk</span>
+                      <div class="vpn-scan-card__band"></div>
+                      <div class="vpn-scan-card__number vpn-scan-card__number--dark">
+                        1234&nbsp;&nbsp;5678&nbsp;&nbsp;9000&nbsp;&nbsp;0000</div>
+                      <span class="vpn-scan-card__chip" aria-hidden="true"></span>
+                    </div>
+            
+                    <div class="vpn-scan-card__face vpn-scan-card__face--ascii">
+                      <pre class="vpn-scan-card__ascii-code"></pre>
+                    </div>
+                  </article>
+            
+                  <article class="vpn-scan-card vpn-scan-card--green" aria-label="Encrypted OrbitLock payment card">
+                    <div class="vpn-scan-card__face vpn-scan-card__face--normal">
+                      <div class="vpn-scan-card__brand-row">
+                        <span class="vpn-scan-card__brand">orbit</span>
+                        <span class="vpn-scan-card__holder">Maya Stone</span>
+                        <span class="vpn-scan-card__dots" aria-hidden="true"></span>
+                      </div>
+            
+                      <div class="vpn-scan-card__hologram"></div>
+                      <div class="vpn-scan-card__number">8890&nbsp;&nbsp;4311&nbsp;&nbsp;2267&nbsp;&nbsp;0148</div>
+                      <span class="vpn-scan-card__chip" aria-hidden="true"></span>
+                    </div>
+            
+                    <div class="vpn-scan-card__face vpn-scan-card__face--ascii">
+                      <pre class="vpn-scan-card__ascii-code"></pre>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+
           <section class="vpn-section vpn-home-tall" aria-labelledby="home-tall-title">
             <div class="vpn-container">
           
@@ -2844,111 +2919,6 @@
             </div>
           </div>
 
-        </div>
-      </section>
-
-      <section
-        class="vpn-section vpn-home-services"
-        id="services"
-        aria-labelledby="home-services-title"
-        data-vpn-card-scanner
-      >
-        <canvas
-          class="vpn-home-services__particle-canvas"
-          data-vpn-card-particles
-          aria-hidden="true"
-        ></canvas>
-
-        <canvas
-          class="vpn-home-services__scanner-canvas"
-          data-vpn-card-scanner-canvas
-          aria-hidden="true"
-        ></canvas>
-
-        <div
-          class="vpn-home-services__code-field"
-          aria-hidden="true"
-        >
-          <pre data-vpn-card-code></pre>
-          <pre data-vpn-card-code></pre>
-        </div>
-
-        <div
-          class="vpn-home-services__scan-line"
-          aria-hidden="true"
-        ></div>
-
-        <h2
-          class="vpn-sr-only"
-          id="home-services-title"
-        >
-          Encrypted payment card scanner
-        </h2>
-
-        <div
-          class="vpn-home-services__stream"
-          data-vpn-card-stream
-          aria-label="Animated encrypted payment card stream"
-        >
-          <div
-            class="vpn-home-services__card-line"
-            data-vpn-card-line
-          >
-            <article class="vpn-scan-card" aria-label="Encrypted Stripe payment card">
-              <div class="vpn-scan-card__face vpn-scan-card__face--normal">
-                <div class="vpn-scan-card__brand-row">
-                  <span class="vpn-scan-card__brand">stripe</span>
-                  <span class="vpn-scan-card__holder">Esther Howard</span>
-                  <span class="vpn-scan-card__dots" aria-hidden="true"></span>
-                </div>
-
-                <div class="vpn-scan-card__hologram"></div>
-
-                <div class="vpn-scan-card__number">1234&nbsp;&nbsp;5678&nbsp;&nbsp;9009&nbsp;&nbsp;0000</div>
-
-                <div class="vpn-scan-card__circles" aria-hidden="true">
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-
-              <div class="vpn-scan-card__face vpn-scan-card__face--ascii">
-                <pre class="vpn-scan-card__ascii-code"></pre>
-              </div>
-            </article>
-
-            <article class="vpn-scan-card vpn-scan-card--light" aria-label="Encrypted white payment card">
-              <div class="vpn-scan-card__face vpn-scan-card__face--normal">
-                <div class="vpn-scan-card__top-glow"></div>
-                <span class="vpn-scan-card__holder vpn-scan-card__holder--solo">Elon Musk</span>
-                <div class="vpn-scan-card__band"></div>
-                <div class="vpn-scan-card__number vpn-scan-card__number--dark">1234&nbsp;&nbsp;5678&nbsp;&nbsp;9000&nbsp;&nbsp;0000</div>
-                <span class="vpn-scan-card__chip" aria-hidden="true"></span>
-              </div>
-
-              <div class="vpn-scan-card__face vpn-scan-card__face--ascii">
-                <pre class="vpn-scan-card__ascii-code"></pre>
-              </div>
-            </article>
-
-            <article class="vpn-scan-card vpn-scan-card--green" aria-label="Encrypted OrbitLock payment card">
-              <div class="vpn-scan-card__face vpn-scan-card__face--normal">
-                <div class="vpn-scan-card__brand-row">
-                  <span class="vpn-scan-card__brand">orbit</span>
-                  <span class="vpn-scan-card__holder">Maya Stone</span>
-                  <span class="vpn-scan-card__dots" aria-hidden="true"></span>
-                </div>
-
-                <div class="vpn-scan-card__hologram"></div>
-                <div class="vpn-scan-card__number">8890&nbsp;&nbsp;4311&nbsp;&nbsp;2267&nbsp;&nbsp;0148</div>
-                <span class="vpn-scan-card__chip" aria-hidden="true"></span>
-              </div>
-
-              <div class="vpn-scan-card__face vpn-scan-card__face--ascii">
-                <pre class="vpn-scan-card__ascii-code"></pre>
-              </div>
-            </article>
-          </div>
         </div>
       </section>
 

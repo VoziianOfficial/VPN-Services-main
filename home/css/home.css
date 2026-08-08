@@ -577,29 +577,70 @@ body.page-home {
 .vpn-home-services__code-field {
   position: absolute;
   z-index: 1;
-  top: 50%;
-  left: 0;
-  display: grid;
-  width: 58%;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 64px;
-  padding-inline: clamp(22px, 5vw, 86px);
-  opacity: 0.52;
-  transform: translateY(-50%);
+  inset: 0;
+  overflow: hidden;
+  opacity: 0.72;
   pointer-events: none;
 }
 
-.vpn-home-services__code-field pre {
-  max-height: 345px;
-  overflow: hidden;
-  color: rgba(171, 180, 210, 0.34);
+.vpn-home-services__word {
+  position: absolute;
+  left: var(--word-x);
+  top: var(--word-y);
+  color: rgba(183, 198, 231, var(--word-alpha));
   font-family: var(--font-tech);
-  font-size: 14px;
+  font-size: var(--word-size);
   font-weight: 700;
-  line-height: 1.34;
-  letter-spacing: 0;
-  text-shadow: 0 0 18px rgba(73, 144, 255, 0.25);
-  white-space: pre-wrap;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-shadow:
+    0 0 12px rgba(73, 144, 255, 0.3),
+    0 0 28px rgba(139, 92, 246, 0.18);
+  text-transform: lowercase;
+  transform: translate3d(-50%, -50%, 0) rotate(var(--word-rotate));
+  animation:
+    vpnHomeWordScatter var(--word-duration) linear infinite,
+    vpnHomeWordFlicker 2.6s ease-in-out infinite alternate;
+  animation-delay: var(--word-delay), calc(var(--word-delay) * -0.4);
+  will-change: transform, opacity;
+}
+
+.vpn-home-services__word:nth-child(3n) {
+  color: rgba(196, 181, 253, var(--word-alpha));
+}
+
+.vpn-home-services__word:nth-child(4n) {
+  color: rgba(125, 211, 252, var(--word-alpha));
+}
+
+.vpn-home-services__word:nth-child(5n) {
+  color: rgba(134, 239, 172, var(--word-alpha));
+}
+
+@keyframes vpnHomeWordScatter {
+  from {
+    transform:
+      translate3d(-50%, -50%, 0)
+      translate3d(0, 0, 0)
+      rotate(var(--word-rotate));
+  }
+
+  to {
+    transform:
+      translate3d(-50%, -50%, 0)
+      translate3d(var(--word-dx), var(--word-dy), 0)
+      rotate(calc(var(--word-rotate) + var(--word-spin)));
+  }
+}
+
+@keyframes vpnHomeWordFlicker {
+  from {
+    opacity: 0.36;
+  }
+
+  to {
+    opacity: 0.9;
+  }
 }
 
 .vpn-home-services__scan-line {
@@ -907,9 +948,10 @@ body.page-home {
 .vpn-scan-card__ascii-code {
   position: absolute;
   inset: 0;
+  box-sizing: border-box;
   margin: 0;
   overflow: hidden;
-  padding: 0;
+  padding: clamp(18px, 2vw, 30px);
   color: rgba(221, 213, 255, 0.62);
   font-family: "Roboto Mono", var(--font-tech);
   font-size: 11px;

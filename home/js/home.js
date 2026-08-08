@@ -31,8 +31,8 @@
     cardScanner: "[data-vpn-card-scanner]",
     cardParticles: "[data-vpn-card-particles]",
     cardScannerCanvas: "[data-vpn-card-scanner-canvas]",
+    cardWords: "[data-vpn-card-words]",
     cardLine: "[data-vpn-card-line]",
-    cardCode: "[data-vpn-card-code]",
     cardAsciiCode: ".vpn-scan-card__ascii-code",
     scanCard: ".vpn-scan-card",
 
@@ -1449,6 +1449,112 @@
     return output;
   }
 
+  function populateScannerWords(layer) {
+    if (!layer || layer.dataset.vpnWordsReady === "true") {
+      return;
+    }
+
+    const words = [
+      "privacy",
+      "encrypted",
+      "secure",
+      "tunnel",
+      "shield",
+      "masked",
+      "orbit",
+      "routing",
+      "tokenized",
+      "private",
+      "cipher",
+      "network",
+      "protected",
+      "vault",
+      "session",
+      "access",
+      "signal",
+      "identity",
+      "zero-log",
+      "packet"
+    ];
+    const wordCount = 86;
+
+    layer.dataset.vpnWordsReady = "true";
+    layer.textContent = "";
+
+    for (let index = 0; index < wordCount; index += 1) {
+      const word = document.createElement("span");
+      const angle =
+        Math.random() * Math.PI * 2;
+      const distance =
+        80 + Math.random() * 260;
+      const originX =
+        50 + (Math.random() - 0.5) * 22;
+      const originY =
+        50 + (Math.random() - 0.5) * 36;
+      const driftX =
+        Math.cos(angle) * distance;
+      const driftY =
+        Math.sin(angle) * distance;
+      const size =
+        10 + Math.random() * 12;
+      const alpha =
+        0.18 + Math.random() * 0.34;
+      const duration =
+        11 + Math.random() * 17;
+      const delay =
+        -Math.random() * duration;
+      const rotate =
+        -10 + Math.random() * 20;
+      const spin =
+        -18 + Math.random() * 36;
+
+      word.className = "vpn-home-services__word";
+      word.textContent = words[index % words.length];
+      word.style.setProperty(
+        "--word-x",
+        `${originX.toFixed(1)}%`
+      );
+      word.style.setProperty(
+        "--word-y",
+        `${originY.toFixed(1)}%`
+      );
+      word.style.setProperty(
+        "--word-dx",
+        `${driftX.toFixed(1)}px`
+      );
+      word.style.setProperty(
+        "--word-dy",
+        `${driftY.toFixed(1)}px`
+      );
+      word.style.setProperty(
+        "--word-size",
+        `${size.toFixed(1)}px`
+      );
+      word.style.setProperty(
+        "--word-alpha",
+        alpha.toFixed(2)
+      );
+      word.style.setProperty(
+        "--word-duration",
+        `${duration.toFixed(1)}s`
+      );
+      word.style.setProperty(
+        "--word-delay",
+        `${delay.toFixed(1)}s`
+      );
+      word.style.setProperty(
+        "--word-rotate",
+        `${rotate.toFixed(1)}deg`
+      );
+      word.style.setProperty(
+        "--word-spin",
+        `${spin.toFixed(1)}deg`
+      );
+
+      layer.appendChild(word);
+    }
+  }
+
   function initCardScanner() {
     const section = document.querySelector(
       SELECTORS.cardScanner
@@ -1467,6 +1573,9 @@
     const scannerCanvas = section.querySelector(
       SELECTORS.cardScannerCanvas
     );
+    const wordLayer = section.querySelector(
+      SELECTORS.cardWords
+    );
 
     if (!track || !particleCanvas || !scannerCanvas) {
       return;
@@ -1481,13 +1590,7 @@
       track.appendChild(clone);
     });
 
-    Array.from(
-      section.querySelectorAll(
-        SELECTORS.cardCode
-      )
-    ).forEach((block) => {
-      block.textContent = buildScannerCode(46, 17);
-    });
+    populateScannerWords(wordLayer);
 
     Array.from(
       section.querySelectorAll(
