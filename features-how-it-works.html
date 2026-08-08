@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Learn how OrbitLock VPN works, including encrypted connections, no-logs privacy, kill switch protection, smart locations and multi-device support."
+  >
+
+  <meta
+    name="theme-color"
+    content="#202124"
+  >
+
+  <title>Features & How It Works — OrbitLock VPN</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="shared/css/global.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="services/css/services.css"
+  >
+
+  <script
+    src="config/config.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+    defer
+  ></script>
+
+  <script
+    src="shared/js/common.js"
+    defer
+  ></script>
+
+  <script
+    src="services/js/services.js"
+    defer
+  ></script>
+</head>
+
+<body
+  class="page-service"
+  data-service="features"
+>
+
+  <a
+    class="vpn-skip-link"
+    href="#main-content"
+  >
+    Skip to main content
+  </a>
+
+  <div class="vpn-site-shell">
+
+    <div data-vpn-header></div>
+
+    <main
+      class="vpn-main"
+      id="main-content"
+    >
+
+      <!-- =================================================
+           HERO
+           ================================================= -->
+
+      <section
+        class="vpn-hero vpn-hero--compact"
+        aria-labelledby="features-hero-title"
+        data-vpn-hero
+      >
+        <div class="vpn-container vpn-hero__inner">
+
+          <div class="vpn-hero__copy">
+
+            <p
+              class="vpn-hero__eyebrow"
+              data-vpn-hero-eyebrow
+              data-config-text="hero.features.eyebrow"
+            >
+              BUILT AROUND YOUR PRIVACY
+            </p>
+
+            <h1
+              class="vpn-hero__title"
+              id="features-hero-title"
+              data-vpn-hero-title
+              data-config-text="hero.features.title"
+            >
+              Protection Behind Every Click
+            </h1>
+
+            <p
+              class="vpn-hero__text"
+              data-vpn-hero-text
+              data-config-text="hero.features.text"
+            >
+              Understand how encrypted routing, privacy-focused technology and smart connection controls work together.
+            </p>
+
+            <div
+              class="vpn-hero__actions"
+              data-vpn-hero-actions
+            >
+
+              <a
+                class="vpn-button vpn-button--orange vpn-button--arrow"
+                href="#how-it-works"
+                data-config-href="hero.features.primaryUrl"
+              >
+                <span data-config-text="hero.features.primaryLabel">
+                  See How It Works
+                </span>
+
+                <span
+                  class="vpn-button__icon"
+                  aria-hidden="true"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12H19M14 7L19 12L14 17"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+
+              <a
+                class="vpn-button vpn-button--outline"
+                href="plans-pricing.html"
+                data-config-href="hero.features.secondaryUrl"
+              >
+                <span data-config-text="hero.features.secondaryLabel">
+                  View Plans
+                </span>
+              </a>
+
+            </div>
+
+            <div
+              class="vpn-hero__meta"
+              data-vpn-hero-meta
+            >
+              <span class="vpn-hero__meta-item">
+                <span
+                  class="vpn-hero__meta-dot"
+                  aria-hidden="true"
+                ></span>
+                Encrypted connection
+              </span>
+
+              <span class="vpn-hero__meta-item">
+                <span
+                  class="vpn-hero__meta-dot"
+                  aria-hidden="true"
+                ></span>
+                Privacy controls
+              </span>
+
+              <span class="vpn-hero__meta-item">
+                <span
+                  class="vpn-hero__meta-dot"
+                  aria-hidden="true"
+                ></span>
+                Smart routing
+              </span>
+            </div>
+
+          </div>
+
+          <div class="vpn-hero__visual">
+
+            <div
+              class="vpn-hero__globe-wrap"
+              data-vpn-hero-globe
+            >
+
+              <div class="vpn-hero__photo-shell">
+                <img
+                  class="vpn-hero__photo"
+                  src="assets/images/hero-features.jpg"
+                  data-config-src="hero.features.image"
+                  data-config-alt="hero.features.imageAlt"
+                  alt="Professional working online with secure connectivity"
+                  width="720"
+                  height="720"
+                  decoding="async"
+                >
+
+                <span
+                  class="vpn-hero__photo-overlay"
+                  aria-hidden="true"
+                ></span>
+              </div>
+
+              <svg
+                class="vpn-hero__globe-frame"
+                viewBox="0 0 470 530"
+                fill="none"
+                aria-hidden="true"
+              >
+                <circle
+                  cx="235"
+                  cy="190"
+                  r="169"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  opacity="0.92"
+                  data-vpn-globe-draw
+                ></circle>
+
+                <ellipse
+                  cx="235"
+                  cy="190"
+                  rx="190"
+                  ry="68"
+                  transform="rotate(-18 235 190)"
+                  stroke="#FFFFFF"
+                  stroke-width="1.5"
+                  opacity="0.62"
+                  data-vpn-globe-draw
+                ></ellipse>
+
+                <ellipse
+                  cx="235"
+                  cy="190"
+                  rx="158"
+                  ry="54"
+                  transform="rotate(20 235 190)"
+                  stroke="#FFFFFF"
+                  stroke-width="1.1"
+                  opacity="0.3"
+                  data-vpn-globe-draw
+                ></ellipse>
+
+                <ellipse
+                  cx="235"
+                  cy="190"
+                  rx="74"
+                  ry="169"
+                  transform="rotate(-6 235 190)"
+                  stroke="#FFFFFF"
+                  stroke-width="1.1"
+                  opacity="0.25"
+                  data-vpn-globe-draw
+                ></ellipse>
+
+                <path
+                  d="M235 359V424"
+                  stroke="#FFFFFF"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  data-vpn-globe-draw
+                ></path>
+
+                <path
+                  d="M189 455C200 435 215 424 235 424C255 424 270 435 281 455"
+                  stroke="#FFFFFF"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  data-vpn-globe-draw
+                ></path>
+
+                <path
+                  d="M165 458H305"
+                  stroke="#FFFFFF"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  data-vpn-globe-draw
+                ></path>
+
+                <circle
+                  cx="390"
+                  cy="125"
+                  r="6"
+                  fill="#22C55E"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                ></circle>
+
+                <circle
+                  cx="78"
+                  cy="244"
+                  r="6"
+                  fill="#FF5A1F"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                ></circle>
+              </svg>
+
+              <span
+                class="vpn-hero__globe-chip vpn-hero__globe-chip--top"
+                data-vpn-hero-globe-chip
+              >
+                Encrypted Route
+              </span>
+
+              <span
+                class="vpn-hero__globe-chip vpn-hero__globe-chip--bottom"
+                data-vpn-hero-globe-chip
+              >
+                Privacy Active
+              </span>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =================================================
+           CONNECTED THREE CIRCLES
+           ================================================= -->
+
+      <section
+        class="vpn-section vpn-service-flow"
+        aria-labelledby="features-flow-title"
+      >
+        <div class="vpn-container">
+
+          <div
+            class="vpn-service-head"
+            data-aos="fade-up"
+          >
+            <div class="vpn-service-head__copy">
+              <p class="vpn-eyebrow">
+                THREE CORE LAYERS
+              </p>
+
+              <h2
+                class="vpn-heading-lg"
+                id="features-flow-title"
+              >
+                Protection From Start to Finish
+              </h2>
+            </div>
+
+            <p class="vpn-copy-md vpn-service-head__text">
+              OrbitLock combines connection encryption, flexible routing and device protection into one straightforward flow.
+            </p>
+          </div>
+
+          <div class="vpn-service-flow__stage">
+
+            <img
+              class="vpn-service-flow__path"
+              src="assets/svg/connected-path.svg"
+              alt=""
+              width="1400"
+              height="260"
+              loading="lazy"
+              decoding="async"
+              aria-hidden="true"
+            >
+
+            <div class="vpn-service-flow__grid">
+
+              <article
+                class="vpn-service-flow-card"
+                id="encryption"
+                data-aos="fade-up"
+              >
+                <div class="vpn-service-flow-card__circle-wrap">
+                  <div class="vpn-service-flow-card__circle">
+
+                    <span
+                      class="vpn-service-flow-card__icon"
+                      aria-hidden="true"
+                    >
+                      <svg viewBox="0 0 24 24">
+                        <rect
+                          x="5"
+                          y="10"
+                          width="14"
+                          height="10"
+                          rx="3"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                        ></rect>
+
+                        <path
+                          d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                        ></path>
+
+                        <circle
+                          cx="12"
+                          cy="15"
+                          r="1.5"
+                          fill="currentColor"
+                        ></circle>
+                      </svg>
+                    </span>
+
+                  </div>
+                </div>
+
+                <h3
+                  class="vpn-service-flow-card__title"
+                  data-config-text="featureCircles.0.title"
+                >
+                  Encrypted Connection
+                </h3>
+
+                <p
+                  class="vpn-service-flow-card__text"
+                  data-config-text="featureCircles.0.text"
+                >
+                  Create a protected tunnel between your device and the VPN service.
+                </p>
+              </article>
+
+              <article
+                class="vpn-service-flow-card"
+                data-aos="fade-up"
+              >
+                <div class="vpn-service-flow-card__circle-wrap">
+                  <div class="vpn-service-flow-card__circle">
+
+                    <span
+                      class="vpn-service-flow-card__icon"
+                      aria-hidden="true"
+                    >
+                      <svg viewBox="0 0 24 24">
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="8"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                        ></circle>
+
+                        <path
+                          d="M4 12H20M12 4C14.7 6.9 15.5 9.5 15.5 12C15.5 14.5 14.7 17.1 12 20M12 4C9.3 6.9 8.5 9.5 8.5 12C8.5 14.5 9.3 17.1 12 20"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                        ></path>
+                      </svg>
+                    </span>
+
+                  </div>
+                </div>
+
+                <h3
+                  class="vpn-service-flow-card__title"
+                  data-config-text="featureCircles.1.title"
+                >
+                  Instant Global Access
+                </h3>
+
+                <p
+                  class="vpn-service-flow-card__text"
+                  data-config-text="featureCircles.1.text"
+                >
+                  Switch between available regions when your browsing needs change.
+                </p>
+              </article>
+
+              <article
+                class="vpn-service-flow-card"
+                id="multi-device"
+                data-aos="fade-up"
+              >
+                <div class="vpn-service-flow-card__circle-wrap">
+                  <div class="vpn-service-flow-card__circle">
+
+                    <span
+                      class="vpn-service-flow-card__icon"
+                      aria-hidden="true"
+                    >
+                      <svg viewBox="0 0 24 24">
+                        <rect
+                          x="3"
+                          y="4"
+                          width="12"
+                          height="9"
+                          rx="2"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                        ></rect>
+
+                        <rect
+                          x="15"
+                          y="8"
+                          width="6"
+                          height="11"
+                          rx="2"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                        ></rect>
+
+                        <path
+                          d="M7 17H12"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    </span>
+
+                  </div>
+                </div>
+
+                <h3
+                  class="vpn-service-flow-card__title"
+                  data-config-text="featureCircles.2.title"
+                >
+                  Protected Everywhere
+                </h3>
+
+                <p
+                  class="vpn-service-flow-card__text"
+                  data-config-text="featureCircles.2.text"
+                >
+                  Keep your connection private across everyday devices and networks.
+                </p>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =================================================
+           2x2 FEATURE BLOCKS
+           ================================================= -->
+
+      <section
+        class="vpn-section vpn-service-feature-grid"
+        aria-labelledby="feature-grid-title"
+      >
+        <div class="vpn-container">
+
+          <div
+            class="vpn-service-head"
+            data-aos="fade-up"
+          >
+            <div class="vpn-service-head__copy">
+              <p class="vpn-eyebrow">
+                BUILT FOR REAL LIFE
+              </p>
+
+              <h2
+                class="vpn-heading-lg"
+                id="feature-grid-title"
+              >
+                Privacy That Fits Your Routine
+              </h2>
+            </div>
+
+            <p class="vpn-copy-md vpn-service-head__text">
+              Different situations call for different connection priorities, from shared Wi-Fi to remote work and entertainment.
+            </p>
+          </div>
+
+          <div class="vpn-service-feature-grid__grid">
+
+            <article
+              class="vpn-service-feature-block"
+              id="privacy"
+              data-aos="fade-up"
+            >
+              <div class="vpn-service-feature-block__content">
+
+                <div>
+                  <span class="vpn-service-feature-block__eyebrow">
+                    01 / PRIVACY
+                  </span>
+
+                  <h3 class="vpn-service-feature-block__title">
+                    Private Browsing
+                  </h3>
+
+                  <p class="vpn-service-feature-block__text">
+                    Add an encrypted connection layer to everyday browsing without turning simple privacy into a complicated technical process.
+                  </p>
+                </div>
+
+                <a
+                  class="vpn-service-feature-block__link"
+                  href="#encryption"
+                >
+                  <span>
+                    Explore encryption
+                  </span>
+
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="15"
+                    height="15"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 12H19M14 7L19 12L14 17"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="vpn-service-feature-block__visual vpn-service-parallax-frame">
+                <img
+                  class="vpn-service-feature-block__image vpn-service-parallax-image"
+                  src="assets/images/feature-private-browsing.jpg"
+                  alt="Person browsing privately on a laptop"
+                  width="700"
+                  height="700"
+                  loading="lazy"
+                  decoding="async"
+                  data-vpn-service-parallax
+                >
+              </div>
+            </article>
+
+            <article
+              class="vpn-service-feature-block"
+              id="public-wifi"
+              data-aos="fade-up"
+            >
+              <div class="vpn-service-feature-block__content">
+
+                <div>
+                  <span class="vpn-service-feature-block__eyebrow">
+                    02 / SHARED NETWORKS
+                  </span>
+
+                  <h3 class="vpn-service-feature-block__title">
+                    Public Wi-Fi Protection
+                  </h3>
+
+                  <p class="vpn-service-feature-block__text">
+                    Add a protected VPN connection when you use shared networks in cafés, hotels, airports and similar public spaces.
+                  </p>
+                </div>
+
+                <a
+                  class="vpn-service-feature-block__link"
+                  href="free-trial.html"
+                >
+                  <span>
+                    Try it on the go
+                  </span>
+
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="15"
+                    height="15"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 12H19M14 7L19 12L14 17"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="vpn-service-feature-block__visual vpn-service-parallax-frame">
+                <img
+                  class="vpn-service-feature-block__image vpn-service-parallax-image"
+                  src="assets/images/feature-public-wifi.jpg"
+                  alt="Traveller using a laptop on public Wi-Fi"
+                  width="700"
+                  height="700"
+                  loading="lazy"
+                  decoding="async"
+                  data-vpn-service-parallax
+                >
+              </div>
+            </article>
+
+            <article
+              class="vpn-service-feature-block"
+              id="remote-work"
+              data-aos="fade-up"
+            >
+              <div class="vpn-service-feature-block__content">
+
+                <div>
+                  <span class="vpn-service-feature-block__eyebrow">
+                    03 / WORK
+                  </span>
+
+                  <h3 class="vpn-service-feature-block__title">
+                    Remote Work Protection
+                  </h3>
+
+                  <p class="vpn-service-feature-block__text">
+                    Keep connection privacy available when your workspace changes between home, shared offices and travel.
+                  </p>
+                </div>
+
+                <a
+                  class="vpn-service-feature-block__link"
+                  href="download-apps.html"
+                >
+                  <span>
+                    View supported devices
+                  </span>
+
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="15"
+                    height="15"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 12H19M14 7L19 12L14 17"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="vpn-service-feature-block__visual vpn-service-parallax-frame">
+                <img
+                  class="vpn-service-feature-block__image vpn-service-parallax-image"
+                  src="assets/images/feature-remote-work.jpg"
+                  alt="Remote worker using a laptop from a modern workspace"
+                  width="700"
+                  height="700"
+                  loading="lazy"
+                  decoding="async"
+                  data-vpn-service-parallax
+                >
+              </div>
+            </article>
+
+            <article
+              class="vpn-service-feature-block"
+              id="gaming"
+              data-aos="fade-up"
+            >
+              <div class="vpn-service-feature-block__content">
+
+                <div>
+                  <span class="vpn-service-feature-block__eyebrow">
+                    04 / FLEXIBILITY
+                  </span>
+
+                  <h3 class="vpn-service-feature-block__title">
+                    Connection Flexibility
+                  </h3>
+
+                  <p class="vpn-service-feature-block__text">
+                    Switch between available regions and compatible devices when your connection needs change.
+                  </p>
+                </div>
+
+                <a
+                  class="vpn-service-feature-block__link"
+                  href="server-locations.html"
+                >
+                  <span>
+                    Explore regions
+                  </span>
+
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="15"
+                    height="15"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 12H19M14 7L19 12L14 17"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="vpn-service-feature-block__visual vpn-service-parallax-frame">
+                <img
+                  class="vpn-service-feature-block__image vpn-service-parallax-image"
+                  src="assets/images/feature-flexible-connection.jpg"
+                  alt="Person using connected devices at home"
+                  width="700"
+                  height="700"
+                  loading="lazy"
+                  decoding="async"
+                  data-vpn-service-parallax
+                >
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+           DARK SIX-FEATURE COMPOSITION
+           ================================================= -->
+
+      <section
+        class="vpn-section vpn-service-security"
+        aria-labelledby="security-system-title"
+      >
+        <div class="vpn-container">
+
+          <div
+            class="vpn-service-head"
+            data-aos="fade-up"
+          >
+            <div class="vpn-service-head__copy">
+              <p class="vpn-eyebrow">
+                COMPLETE CONNECTION CONTROL
+              </p>
+
+              <h2
+                class="vpn-heading-lg"
+                id="security-system-title"
+              >
+                Six Tools. One Clear Experience.
+              </h2>
+            </div>
+
+            <p class="vpn-copy-md vpn-service-head__text">
+              Essential connection and privacy tools stay organised around one familiar VPN experience.
+            </p>
+          </div>
+
+          <div class="vpn-service-security__stage">
+
+            <div class="vpn-service-security__column">
+
+              <article
+                class="vpn-service-security-card"
+                id="no-logs"
+              >
+                <span
+                  class="vpn-service-security-card__icon"
+                  aria-hidden="true"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M4 12C6.5 8.5 9.1 7 12 7C14.9 7 17.5 8.5 20 12C17.5 15.5 14.9 17 12 17C9.1 17 6.5 15.5 4 12Z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    ></path>
+
+                    <path
+                      d="M7 19L17 5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </span>
+
+                <h3 class="vpn-service-security-card__title">
+                  No-Logs Privacy
+                </h3>
+
+                <p class="vpn-service-security-card__text">
+                  Privacy-focused service principles built around minimising browsing activity records.
+                </p>
+              </article>
+
+              <article
+                class="vpn-service-security-card"
+                id="kill-switch"
+              >
+                <span
+                  class="vpn-service-security-card__icon"
+                  aria-hidden="true"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="8"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    ></circle>
+
+                    <path
+                      d="M12 7V12M8.5 9.5C7.6 10.3 7 11.6 7 13C7 15.8 9.2 18 12 18C14.8 18 17 15.8 17 13C17 11.6 16.4 10.3 15.5 9.5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </span>
+
+                <h3 class="vpn-service-security-card__title">
+                  Kill Switch
+                </h3>
+
+                <p class="vpn-service-security-card__text">
+                  A connection safeguard designed for unexpected VPN interruptions.
+                </p>
+              </article>
+
+              <article class="vpn-service-security-card">
+                <span
+                  class="vpn-service-security-card__icon"
+                  aria-hidden="true"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 18C9 18 9 6 14 6H19"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-dasharray="2.5 3"
+                    ></path>
+
+                    <circle
+                      cx="5"
+                      cy="18"
+                      r="2"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    ></circle>
+
+                    <circle
+                      cx="19"
+                      cy="6"
+                      r="2"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    ></circle>
+                  </svg>
+                </span>
+
+                <h3 class="vpn-service-security-card__title">
+                  Smart Locations
+                </h3>
+
+                <p class="vpn-service-security-card__text">
+                  Switch between configured connection regions when needed.
+                </p>
+              </article>
+
+            </div>
+
+            <div class="vpn-service-security__portrait">
+
+              <div class="vpn-service-security__portrait-frame vpn-service-parallax-frame">
+                <img
+                  class="vpn-service-security__portrait-image vpn-service-parallax-image"
+                  src="assets/images/features-security-center.jpg"
+                  alt="Person working securely on a laptop"
+                  width="720"
+                  height="950"
+                  loading="lazy"
+                  decoding="async"
+                  data-vpn-service-parallax
+                >
+              </div>
+
+              <div class="vpn-service-security__badge">
+                <strong>
+                  6
+                </strong>
+
+                <span>
+                  Core Protection Layers
+                </span>
+              </div>
+
+            </div>
+
+            <div class="vpn-service-security__column">
+
+              <article class="vpn-service-security-card">
+                <span
+                  class="vpn-service-security-card__icon"
+                  aria-hidden="true"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <rect
+                      x="5"
+                      y="10"
+                      width="14"
+                      height="10"
+                      rx="3"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    ></rect>
+
+                    <path
+                      d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    ></path>
+                  </svg>
+                </span>
+
+                <h3 class="vpn-service-security-card__title">
+                  Encrypted Tunnel
+                </h3>
+
+                <p class="vpn-service-security-card__text">
+                  Supported traffic moves through an encrypted VPN connection.
+                </p>
+              </article>
+
+              <article class="vpn-service-security-card">
+                <span
+                  class="vpn-service-security-card__icon"
+                  aria-hidden="true"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <rect
+                      x="3"
+                      y="5"
+                      width="18"
+                      height="14"
+                      rx="3"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    ></rect>
+
+                    <path
+                      d="M10 9L15 12L10 15V9Z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    ></path>
+                  </svg>
+                </span>
+
+                <h3 class="vpn-service-security-card__title">
+                  Streaming Access
+                </h3>
+
+                <p class="vpn-service-security-card__text">
+                  Privacy-focused connection flexibility for legitimate streaming use.
+                </p>
+              </article>
+
+              <article class="vpn-service-security-card">
+                <span
+                  class="vpn-service-security-card__icon"
+                  aria-hidden="true"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <rect
+                      x="3"
+                      y="4"
+                      width="12"
+                      height="9"
+                      rx="2"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    ></rect>
+
+                    <rect
+                      x="15"
+                      y="8"
+                      width="6"
+                      height="11"
+                      rx="2"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                    ></rect>
+                  </svg>
+                </span>
+
+                <h3 class="vpn-service-security-card__title">
+                  Multi-Device
+                </h3>
+
+                <p class="vpn-service-security-card__text">
+                  Keep a familiar privacy experience across supported devices.
+                </p>
+              </article>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+           VPN TABS
+           ================================================= -->
+
+      <section
+        class="vpn-section vpn-service-tabs"
+        aria-labelledby="features-tabs-title"
+      >
+        <div class="vpn-container">
+
+          <div
+            class="vpn-service-head"
+            data-aos="fade-up"
+          >
+            <div class="vpn-service-head__copy">
+              <p class="vpn-eyebrow">
+                CHOOSE YOUR PRIORITY
+              </p>
+
+              <h2
+                class="vpn-heading-lg"
+                id="features-tabs-title"
+              >
+                One VPN, Different Situations
+              </h2>
+            </div>
+
+            <p class="vpn-copy-md vpn-service-head__text">
+              See how the same privacy-focused connection can support browsing, streaming and public Wi-Fi use.
+            </p>
+          </div>
+
+          <div data-vpn-tabs>
+
+            <div class="vpn-service-tabs__top">
+
+              <div
+                class="vpn-tabs__list"
+                data-vpn-tab-list
+              >
+
+                <button
+                  class="vpn-tabs__button"
+                  type="button"
+                  aria-selected="true"
+                  data-vpn-tab
+                  data-tab-id="privacy"
+                >
+                  Privacy
+                </button>
+
+                <button
+                  class="vpn-tabs__button"
+                  type="button"
+                  aria-selected="false"
+                  data-vpn-tab
+                  data-tab-id="streaming"
+                >
+                  Streaming
+                </button>
+
+                <button
+                  class="vpn-tabs__button"
+                  type="button"
+                  aria-selected="false"
+                  data-vpn-tab
+                  data-tab-id="public-wifi"
+                >
+                  Public Wi-Fi
+                </button>
+
+              </div>
+
+            </div>
+
+            <div
+              class="vpn-tabs__panel"
+              data-vpn-tab-panel
+              data-tab-panel-id="privacy"
+            >
+              <div class="vpn-service-tabs__panel">
+
+                <div class="vpn-service-tabs__content">
+                  <h3
+                    class="vpn-service-tabs__title"
+                    data-config-text="tabs.privacyStreamingWifi.0.title"
+                  >
+                    Keep Everyday Browsing More Private
+                  </h3>
+
+                  <p
+                    class="vpn-service-tabs__text"
+                    data-config-text="tabs.privacyStreamingWifi.0.text"
+                  >
+                    Use an encrypted connection to add a privacy layer between your device and the network you are using.
+                  </p>
+
+                  <ul class="vpn-service-tabs__bullets">
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.0.bullets.0"
+                    >
+                      Encrypted connection
+                    </li>
+
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.0.bullets.1"
+                    >
+                      Clear privacy controls
+                    </li>
+
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.0.bullets.2"
+                    >
+                      Location flexibility
+                    </li>
+
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.0.bullets.3"
+                    >
+                      Multi-device availability
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="vpn-service-tabs__image-frame vpn-service-parallax-frame">
+                  <img
+                    class="vpn-service-tabs__image vpn-service-parallax-image"
+                    src="assets/images/tab-privacy.jpg"
+                    data-config-src="tabs.privacyStreamingWifi.0.image"
+                    data-config-alt="tabs.privacyStreamingWifi.0.imageAlt"
+                    alt="Person browsing privately on a laptop"
+                    width="1000"
+                    height="700"
+                    loading="lazy"
+                    decoding="async"
+                    data-vpn-service-parallax
+                  >
+                </div>
+
+              </div>
+            </div>
+
+            <div
+              class="vpn-tabs__panel"
+              data-vpn-tab-panel
+              data-tab-panel-id="streaming"
+              hidden
+            >
+              <div class="vpn-service-tabs__panel">
+
+                <div class="vpn-service-tabs__content">
+                  <h3
+                    class="vpn-service-tabs__title"
+                    data-config-text="tabs.privacyStreamingWifi.1.title"
+                  >
+                    Stay Flexible While You Travel
+                  </h3>
+
+                  <p
+                    class="vpn-service-tabs__text"
+                    data-config-text="tabs.privacyStreamingWifi.1.text"
+                  >
+                    Use supported connection regions to keep your entertainment setup more adaptable when you are away from home.
+                  </p>
+
+                  <ul class="vpn-service-tabs__bullets">
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.1.bullets.0"
+                    >
+                      Compatible device support
+                    </li>
+
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.1.bullets.1"
+                    >
+                      Region selection
+                    </li>
+
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.1.bullets.2"
+                    >
+                      Private connection
+                    </li>
+
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.1.bullets.3"
+                    >
+                      Simple app controls
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="vpn-service-tabs__image-frame vpn-service-parallax-frame">
+                  <img
+                    class="vpn-service-tabs__image vpn-service-parallax-image"
+                    src="assets/images/tab-streaming.jpg"
+                    data-config-src="tabs.privacyStreamingWifi.1.image"
+                    data-config-alt="tabs.privacyStreamingWifi.1.imageAlt"
+                    alt="Person watching streaming content on a television"
+                    width="1000"
+                    height="700"
+                    loading="lazy"
+                    decoding="async"
+                    data-vpn-service-parallax
+                  >
+                </div>
+
+              </div>
+            </div>
+
+            <div
+              class="vpn-tabs__panel"
+              data-vpn-tab-panel
+              data-tab-panel-id="public-wifi"
+              hidden
+            >
+              <div class="vpn-service-tabs__panel">
+
+                <div class="vpn-service-tabs__content">
+                  <h3
+                    class="vpn-service-tabs__title"
+                    data-config-text="tabs.privacyStreamingWifi.2.title"
+                  >
+                    Add Protection on Shared Networks
+                  </h3>
+
+                  <p
+                    class="vpn-service-tabs__text"
+                    data-config-text="tabs.privacyStreamingWifi.2.text"
+                  >
+                    A VPN can add an encrypted connection layer when you use networks in cafés, hotels, airports and other public spaces.
+                  </p>
+
+                  <ul class="vpn-service-tabs__bullets">
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.2.bullets.0"
+                    >
+                      Encrypted traffic tunnel
+                    </li>
+
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.2.bullets.1"
+                    >
+                      Travel-friendly protection
+                    </li>
+
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.2.bullets.2"
+                    >
+                      Quick connection controls
+                    </li>
+
+                    <li
+                      class="vpn-service-tabs__bullet"
+                      data-config-text="tabs.privacyStreamingWifi.2.bullets.3"
+                    >
+                      Works across supported devices
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="vpn-service-tabs__image-frame vpn-service-parallax-frame">
+                  <img
+                    class="vpn-service-tabs__image vpn-service-parallax-image"
+                    src="assets/images/tab-public-wifi.jpg"
+                    data-config-src="tabs.privacyStreamingWifi.2.image"
+                    data-config-alt="tabs.privacyStreamingWifi.2.imageAlt"
+                    alt="Traveller using public Wi-Fi on a laptop"
+                    width="1000"
+                    height="700"
+                    loading="lazy"
+                    decoding="async"
+                    data-vpn-service-parallax
+                  >
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+           STICKY PROTECTION LAYERS
+           ================================================= -->
+
+      <section
+        class="vpn-section vpn-service-layers"
+        aria-labelledby="protection-layers-title"
+        data-vpn-service-layers
+      >
+        <div class="vpn-container">
+
+          <div class="vpn-service-layers__layout">
+
+            <div class="vpn-service-layers__intro">
+              <p class="vpn-eyebrow">
+                PROTECTION LAYERS
+              </p>
+
+              <h2
+                class="vpn-heading-lg"
+                id="protection-layers-title"
+              >
+                What Happens When You Connect
+              </h2>
+
+              <p class="vpn-copy-md vpn-service-layers__intro-text">
+                The connection process can be understood as four simple privacy layers working in sequence.
+              </p>
+            </div>
+
+            <div class="vpn-service-layers__stack">
+
+              <article
+                class="vpn-service-layer-card"
+                data-vpn-layer-card
+              >
+                <span class="vpn-service-layer-card__number">
+                  01 / ENCRYPT
+                </span>
+
+                <h3 class="vpn-service-layer-card__title">
+                  Encrypt
+                </h3>
+
+                <p class="vpn-service-layer-card__text">
+                  Supported traffic enters an encrypted VPN connection designed to add privacy between your device and the VPN service.
+                </p>
+              </article>
+
+              <article
+                class="vpn-service-layer-card"
+                data-vpn-layer-card
+              >
+                <span class="vpn-service-layer-card__number">
+                  02 / MASK
+                </span>
+
+                <h3 class="vpn-service-layer-card__title">
+                  Mask
+                </h3>
+
+                <p class="vpn-service-layer-card__text">
+                  Your public-facing connection uses the selected VPN location rather than relying only on the local network path.
+                </p>
+              </article>
+
+              <article
+                class="vpn-service-layer-card"
+                data-vpn-layer-card
+              >
+                <span class="vpn-service-layer-card__number">
+                  03 / ROUTE
+                </span>
+
+                <h3 class="vpn-service-layer-card__title">
+                  Route
+                </h3>
+
+                <p class="vpn-service-layer-card__text">
+                  Choose from configured server regions and adapt the route when your location or browsing needs change.
+                </p>
+              </article>
+
+              <article
+                class="vpn-service-layer-card"
+                id="threat-shield"
+                data-vpn-layer-card
+              >
+                <span class="vpn-service-layer-card__number">
+                  04 / PROTECT
+                </span>
+
+                <h3 class="vpn-service-layer-card__title">
+                  Protect
+                </h3>
+
+                <p class="vpn-service-layer-card__text">
+                  Connection controls such as kill switch behaviour and shared-network protection help complete the privacy-focused experience.
+                </p>
+              </article>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+           PROCESS 01-04
+           ================================================= -->
+
+      <section
+        class="vpn-section vpn-service-process"
+        id="how-it-works"
+        aria-labelledby="how-it-works-title"
+      >
+        <div class="vpn-container">
+
+          <div
+            class="vpn-service-head"
+            data-aos="fade-up"
+          >
+            <div class="vpn-service-head__copy">
+              <p class="vpn-eyebrow">
+                START IN FOUR STEPS
+              </p>
+
+              <h2
+                class="vpn-heading-lg"
+                id="how-it-works-title"
+              >
+                How OrbitLock Works
+              </h2>
+            </div>
+
+            <p class="vpn-copy-md vpn-service-head__text">
+              Getting protected should feel straightforward, from choosing a plan to activating your private connection.
+            </p>
+          </div>
+
+          <div
+            class="vpn-service-process__layout"
+            data-vpn-process
+          >
+
+            <div class="vpn-service-process__steps">
+
+              <div
+                class="vpn-service-process-step"
+                tabindex="0"
+                role="tab"
+                data-active="true"
+                data-process-image="assets/images/process-choose-plan.jpg"
+                data-process-alt="Person choosing a VPN subscription plan"
+                data-vpn-process-step
+              >
+                <span class="vpn-service-process-step__number">
+                  01
+                </span>
+
+                <div>
+                  <h3
+                    class="vpn-service-process-step__title"
+                    data-config-text="connectionSteps.0.title"
+                  >
+                    Choose Your Plan
+                  </h3>
+
+                  <p
+                    class="vpn-service-process-step__text"
+                    data-config-text="connectionSteps.0.text"
+                  >
+                    Select the subscription length and protection level that works for you.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="vpn-service-process-step"
+                tabindex="0"
+                role="tab"
+                data-active="false"
+                data-process-image="assets/images/process-download-app.jpg"
+                data-process-alt="Person downloading a VPN application"
+                data-vpn-process-step
+              >
+                <span class="vpn-service-process-step__number">
+                  02
+                </span>
+
+                <div>
+                  <h3
+                    class="vpn-service-process-step__title"
+                    data-config-text="connectionSteps.1.title"
+                  >
+                    Download the App
+                  </h3>
+
+                  <p
+                    class="vpn-service-process-step__text"
+                    data-config-text="connectionSteps.1.text"
+                  >
+                    Install OrbitLock on your preferred compatible device.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="vpn-service-process-step"
+                tabindex="0"
+                role="tab"
+                data-active="false"
+                data-process-image="assets/images/process-connect-securely.jpg"
+                data-process-alt="VPN application connecting securely"
+                data-vpn-process-step
+              >
+                <span class="vpn-service-process-step__number">
+                  03
+                </span>
+
+                <div>
+                  <h3
+                    class="vpn-service-process-step__title"
+                    data-config-text="connectionSteps.2.title"
+                  >
+                    Connect Securely
+                  </h3>
+
+                  <p
+                    class="vpn-service-process-step__text"
+                    data-config-text="connectionSteps.2.text"
+                  >
+                    Choose a suitable region and activate your private connection.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="vpn-service-process-step"
+                tabindex="0"
+                role="tab"
+                data-active="false"
+                data-process-image="assets/images/process-browse-freely.jpg"
+                data-process-alt="Person browsing online with an active private connection"
+                data-vpn-process-step
+              >
+                <span class="vpn-service-process-step__number">
+                  04
+                </span>
+
+                <div>
+                  <h3
+                    class="vpn-service-process-step__title"
+                    data-config-text="connectionSteps.3.title"
+                  >
+                    Browse Freely
+                  </h3>
+
+                  <p
+                    class="vpn-service-process-step__text"
+                    data-config-text="connectionSteps.3.text"
+                  >
+                    Use the internet with an added layer of connection privacy.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="vpn-service-process__visual vpn-service-parallax-frame">
+              <img
+                class="vpn-service-process__image vpn-service-parallax-image"
+                src="assets/images/process-choose-plan.jpg"
+                alt="Person choosing a VPN subscription plan"
+                width="1000"
+                height="800"
+                loading="lazy"
+                decoding="async"
+                data-vpn-process-image
+              >
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =================================================
+           FAQ
+           ================================================= -->
+
+      <section
+        class="vpn-section vpn-service-faq"
+        aria-labelledby="features-faq-title"
+      >
+        <div class="vpn-container">
+
+          <div class="vpn-service-faq__layout">
+
+            <div
+              class="vpn-service-faq__intro"
+              data-aos="fade-right"
+            >
+              <p class="vpn-eyebrow">
+                FEATURE QUESTIONS
+              </p>
+
+              <h2
+                class="vpn-heading-lg"
+                id="features-faq-title"
+              >
+                Understand the Essentials
+              </h2>
+
+              <p class="vpn-copy-md vpn-service-faq__text">
+                Quick answers about encryption, no-logs privacy, kill switch protection and shared networks.
+              </p>
+
+              <div class="vpn-service-intro__actions">
+
+                <a
+                  class="vpn-button vpn-button--outline vpn-button--arrow"
+                  href="contact.html"
+                >
+                  <span>
+                    Ask Our Team
+                  </span>
+
+                  <span
+                    class="vpn-button__icon"
+                    aria-hidden="true"
+                  >
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M5 12H19M14 7L19 12L14 17"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+
+              </div>
+            </div>
+
+            <div
+              class="vpn-service-faq__card"
+              data-aos="fade-left"
+              data-vpn-service-faq-render
+            ></div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =================================================
+           FINAL CTA
+           ================================================= -->
+
+      <section
+        class="vpn-service-final-cta vpn-service-final-cta--surface"
+        aria-labelledby="features-final-cta-title"
+      >
+        <div class="vpn-container">
+
+          <div
+            class="vpn-compact-cta"
+            data-aos="fade-up"
+          >
+            <div class="vpn-compact-cta__inner">
+
+              <div class="vpn-compact-cta__copy">
+
+                <p class="vpn-compact-cta__eyebrow">
+                  READY TO TRY IT?
+                </p>
+
+                <h2
+                  class="vpn-compact-cta__title"
+                  id="features-final-cta-title"
+                >
+                  Put the Protection Into Practice
+                </h2>
+
+                <p class="vpn-compact-cta__text">
+                  Start a free-trial request or compare the available subscription options before choosing your next step.
+                </p>
+
+              </div>
+
+              <div class="vpn-compact-cta__actions">
+
+                <a
+                  class="vpn-button vpn-button--green"
+                  href="free-trial.html"
+                >
+                  Start Free Trial
+                </a>
+
+                <a
+                  class="vpn-button vpn-button--outline"
+                  href="plans-pricing.html"
+                >
+                  Compare Plans
+                </a>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <div data-vpn-footer></div>
+
+    <div data-vpn-legal></div>
+
+  </div>
+
+</body>
+</html>

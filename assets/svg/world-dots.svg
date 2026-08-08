@@ -1,0 +1,671 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1600 760"
+  fill="none"
+  preserveAspectRatio="xMidYMid meet"
+  aria-hidden="true"
+>
+  <defs>
+    <pattern
+      id="vpn-world-dot-pattern"
+      x="0"
+      y="0"
+      width="18"
+      height="18"
+      patternUnits="userSpaceOnUse"
+    >
+      <circle
+        cx="4"
+        cy="4"
+        r="2.4"
+        fill="#A9B0A8"
+      />
+    </pattern>
+
+    <pattern
+      id="vpn-world-dot-pattern-soft"
+      x="0"
+      y="0"
+      width="18"
+      height="18"
+      patternUnits="userSpaceOnUse"
+    >
+      <circle
+        cx="4"
+        cy="4"
+        r="1.6"
+        fill="#C7CDC6"
+      />
+    </pattern>
+  </defs>
+
+  <!--
+    OrbitLock VPN
+    Dotted global network map
+    Transparent background
+    No gradients
+  -->
+
+  <!-- NORTH AMERICA -->
+  <path
+    d="
+      M134 181
+      L158 156
+      L198 143
+      L229 120
+      L274 115
+      L311 129
+      L345 125
+      L379 145
+      L415 154
+      L437 181
+      L464 194
+      L471 217
+      L454 237
+      L430 242
+      L417 263
+      L392 274
+      L384 298
+      L362 310
+      L341 301
+      L325 278
+      L307 273
+      L293 289
+      L270 286
+      L258 268
+      L230 266
+      L214 249
+      L189 243
+      L176 223
+      L150 217
+      L136 200
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern)"
+  />
+
+  <!-- ALASKA -->
+  <path
+    d="
+      M60 168
+      L82 149
+      L111 146
+      L132 158
+      L121 176
+      L94 185
+      L70 183
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern-soft)"
+  />
+
+  <!-- GREENLAND -->
+  <path
+    d="
+      M398 72
+      L425 51
+      L464 55
+      L481 78
+      L472 108
+      L448 125
+      L416 116
+      L399 94
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern-soft)"
+  />
+
+  <!-- CENTRAL AMERICA -->
+  <path
+    d="
+      M339 307
+      L360 312
+      L375 327
+      L389 333
+      L397 349
+      L389 359
+      L372 350
+      L360 338
+      L343 334
+      L333 320
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern)"
+  />
+
+  <!-- SOUTH AMERICA -->
+  <path
+    d="
+      M390 350
+      L419 349
+      L443 365
+      L463 390
+      L472 424
+      L465 452
+      L477 478
+      L462 512
+      L451 546
+      L432 575
+      L419 612
+      L399 640
+      L382 621
+      L379 590
+      L363 560
+      L366 527
+      L351 500
+      L354 467
+      L339 437
+      L345 404
+      L360 382
+      L375 367
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern)"
+  />
+
+  <!-- EUROPE -->
+  <path
+    d="
+      M711 181
+      L731 167
+      L748 173
+      L759 164
+      L778 169
+      L792 182
+      L812 183
+      L822 198
+      L813 211
+      L792 214
+      L782 228
+      L762 226
+      L748 215
+      L731 218
+      L718 205
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern)"
+  />
+
+  <!-- SCANDINAVIA -->
+  <path
+    d="
+      M755 110
+      L773 93
+      L789 102
+      L796 125
+      L790 146
+      L779 164
+      L766 156
+      L768 139
+      L757 128
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern-soft)"
+  />
+
+  <!-- UNITED KINGDOM -->
+  <path
+    d="
+      M696 183
+      L705 172
+      L713 179
+      L710 194
+      L700 201
+      L694 193
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern-soft)"
+  />
+
+  <!-- AFRICA -->
+  <path
+    d="
+      M735 249
+      L765 235
+      L797 240
+      L825 255
+      L848 285
+      L853 320
+      L846 355
+      L829 391
+      L816 430
+      L795 463
+      L771 490
+      L747 479
+      L729 449
+      L718 417
+      L701 385
+      L695 346
+      L703 311
+      L715 279
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern)"
+  />
+
+  <!-- MADAGASCAR -->
+  <path
+    d="
+      M866 419
+      L877 430
+      L877 457
+      L867 481
+      L858 466
+      L858 442
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern-soft)"
+  />
+
+  <!-- MIDDLE EAST -->
+  <path
+    d="
+      M835 241
+      L863 232
+      L893 242
+      L908 262
+      L897 281
+      L871 285
+      L853 271
+      L836 267
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern)"
+  />
+
+  <!-- ASIA -->
+  <path
+    d="
+      M820 171
+      L857 151
+      L898 147
+      L930 128
+      L973 126
+      L1008 138
+      L1040 127
+      L1081 140
+      L1113 155
+      L1149 157
+      L1184 175
+      L1221 184
+      L1250 207
+      L1244 229
+      L1219 242
+      L1197 259
+      L1170 265
+      L1144 286
+      L1118 284
+      L1096 300
+      L1066 294
+      L1044 311
+      L1013 306
+      L992 286
+      L970 277
+      L943 282
+      L923 266
+      L899 273
+      L881 258
+      L862 250
+      L842 236
+      L827 213
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern)"
+  />
+
+  <!-- INDIA -->
+  <path
+    d="
+      M970 286
+      L993 292
+      L1007 315
+      L1003 345
+      L987 374
+      L973 357
+      L966 328
+      L954 308
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern)"
+  />
+
+  <!-- SOUTHEAST ASIA -->
+  <path
+    d="
+      M1080 308
+      L1098 315
+      L1110 332
+      L1128 337
+      L1139 355
+      L1129 368
+      L1109 357
+      L1095 344
+      L1079 334
+      L1069 319
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern-soft)"
+  />
+
+  <!-- JAPAN -->
+  <path
+    d="
+      M1268 232
+      L1277 220
+      L1284 230
+      L1282 244
+      L1274 256
+      L1268 247
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern-soft)"
+  />
+
+  <!-- INDONESIA -->
+  <path
+    d="
+      M1094 383
+      L1119 385
+      L1143 394
+      L1168 393
+      L1191 404
+      L1173 414
+      L1149 408
+      L1126 414
+      L1104 406
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern-soft)"
+  />
+
+  <!-- AUSTRALIA -->
+  <path
+    d="
+      M1197 449
+      L1226 425
+      L1262 418
+      L1297 428
+      L1320 449
+      L1325 478
+      L1313 507
+      L1288 525
+      L1257 530
+      L1228 517
+      L1209 494
+      L1192 474
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern)"
+  />
+
+  <!-- NEW ZEALAND -->
+  <path
+    d="
+      M1384 523
+      L1392 514
+      L1401 523
+      L1398 538
+      L1390 548
+      L1384 540
+      Z
+    "
+    fill="url(#vpn-world-dot-pattern-soft)"
+  />
+
+  <!-- Decorative connection routes -->
+  <g
+    fill="none"
+    stroke="#B8BFB7"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-dasharray="4 10"
+    opacity="0.54"
+  >
+    <path
+      d="
+        M260 231
+        C430 125 605 122 756 193
+      "
+    />
+
+    <path
+      d="
+        M756 193
+        C905 100 1106 122 1232 216
+      "
+    />
+
+    <path
+      d="
+        M756 193
+        C844 247 923 285 985 333
+      "
+    />
+
+    <path
+      d="
+        M985 333
+        C1086 388 1187 426 1261 469
+      "
+    />
+
+    <path
+      d="
+        M758 193
+        C651 288 525 323 399 390
+      "
+    />
+
+    <path
+      d="
+        M399 390
+        C458 458 493 529 411 597
+      "
+    />
+  </g>
+
+  <!-- Main server nodes -->
+  <g>
+    <!-- Sweden -->
+    <circle
+      cx="770"
+      cy="149"
+      r="11"
+      fill="#22C55E"
+    />
+
+    <circle
+      cx="770"
+      cy="149"
+      r="18"
+      stroke="#22C55E"
+      stroke-width="2"
+      opacity="0.34"
+    />
+
+    <!-- United States -->
+    <circle
+      cx="260"
+      cy="231"
+      r="9"
+      fill="#FF5A1F"
+    />
+
+    <circle
+      cx="260"
+      cy="231"
+      r="16"
+      stroke="#FF5A1F"
+      stroke-width="2"
+      opacity="0.3"
+    />
+
+    <!-- Central Europe -->
+    <circle
+      cx="756"
+      cy="193"
+      r="10"
+      fill="#22C55E"
+    />
+
+    <circle
+      cx="756"
+      cy="193"
+      r="18"
+      stroke="#22C55E"
+      stroke-width="2"
+      opacity="0.34"
+    />
+
+    <!-- Japan -->
+    <circle
+      cx="1273"
+      cy="237"
+      r="9"
+      fill="#FF5A1F"
+    />
+
+    <circle
+      cx="1273"
+      cy="237"
+      r="16"
+      stroke="#FF5A1F"
+      stroke-width="2"
+      opacity="0.3"
+    />
+
+    <!-- Singapore -->
+    <circle
+      cx="1115"
+      cy="362"
+      r="9"
+      fill="#22C55E"
+    />
+
+    <circle
+      cx="1115"
+      cy="362"
+      r="16"
+      stroke="#22C55E"
+      stroke-width="2"
+      opacity="0.3"
+    />
+
+    <!-- Australia -->
+    <circle
+      cx="1261"
+      cy="469"
+      r="9"
+      fill="#FF5A1F"
+    />
+
+    <circle
+      cx="1261"
+      cy="469"
+      r="16"
+      stroke="#FF5A1F"
+      stroke-width="2"
+      opacity="0.3"
+    />
+
+    <!-- Brazil -->
+    <circle
+      cx="410"
+      cy="463"
+      r="9"
+      fill="#22C55E"
+    />
+
+    <circle
+      cx="410"
+      cy="463"
+      r="16"
+      stroke="#22C55E"
+      stroke-width="2"
+      opacity="0.3"
+    />
+
+    <!-- South Africa -->
+    <circle
+      cx="778"
+      cy="457"
+      r="9"
+      fill="#FF5A1F"
+    />
+
+    <circle
+      cx="778"
+      cy="457"
+      r="16"
+      stroke="#FF5A1F"
+      stroke-width="2"
+      opacity="0.3"
+    />
+  </g>
+
+  <!-- Secondary connection points -->
+  <g fill="#FFFFFF">
+    <circle
+      cx="399"
+      cy="390"
+      r="4"
+      stroke="#AEB6AD"
+      stroke-width="2"
+    />
+
+    <circle
+      cx="985"
+      cy="333"
+      r="4"
+      stroke="#AEB6AD"
+      stroke-width="2"
+    />
+
+    <circle
+      cx="1232"
+      cy="216"
+      r="4"
+      stroke="#AEB6AD"
+      stroke-width="2"
+    />
+
+    <circle
+      cx="411"
+      cy="597"
+      r="4"
+      stroke="#AEB6AD"
+      stroke-width="2"
+    />
+  </g>
+
+  <!-- Small isolated island dots -->
+  <g fill="#B9C0B8" opacity="0.72">
+    <circle cx="570" cy="238" r="3" />
+    <circle cx="593" cy="247" r="2.4" />
+    <circle cx="624" cy="214" r="2.6" />
+
+    <circle cx="1328" cy="318" r="2.6" />
+    <circle cx="1346" cy="329" r="2.2" />
+    <circle cx="1360" cy="345" r="2.4" />
+
+    <circle cx="1028" cy="406" r="2.5" />
+    <circle cx="1045" cy="415" r="2.2" />
+    <circle cx="1061" cy="408" r="2.4" />
+  </g>
+
+  <!-- Technical coordinate marks -->
+  <g
+    stroke="#B9C0B8"
+    stroke-width="1.5"
+    opacity="0.34"
+  >
+    <path d="M780 54 V92" />
+    <path d="M761 73 H799" />
+
+    <path d="M1465 354 V392" />
+    <path d="M1446 373 H1484" />
+
+    <path d="M115 548 V586" />
+    <path d="M96 567 H134" />
+  </g>
+</svg>

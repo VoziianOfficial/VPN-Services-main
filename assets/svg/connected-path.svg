@@ -1,0 +1,400 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1400 260"
+  fill="none"
+  preserveAspectRatio="none"
+  aria-hidden="true"
+>
+  <!--
+    OrbitLock VPN
+    Connected feature path
+    Transparent background
+    No gradients
+  -->
+
+  <!-- Main organic connector -->
+  <path
+    d="
+      M100 132
+      C185 61 284 64 371 126
+      C455 186 544 190 635 128
+      C724 67 814 69 900 128
+      C989 189 1080 187 1166 125
+      C1222 85 1274 82 1300 106
+    "
+    fill="none"
+    stroke="#202124"
+    stroke-width="2.2"
+    stroke-linecap="round"
+    stroke-dasharray="7 13"
+    opacity="0.28"
+  />
+
+  <!-- Secondary parallel line -->
+  <path
+    d="
+      M104 149
+      C189 78 282 81 366 142
+      C451 204 548 204 640 143
+      C728 84 816 86 897 145
+      C984 207 1080 203 1171 141
+      C1226 103 1274 100 1298 121
+    "
+    fill="none"
+    stroke="#202124"
+    stroke-width="1.2"
+    stroke-linecap="round"
+    stroke-dasharray="3 12"
+    opacity="0.12"
+  />
+
+  <!-- Left circle connection stem -->
+  <path
+    d="
+      M276 97
+      C293 112 306 124 323 134
+    "
+    fill="none"
+    stroke="#22C55E"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.62"
+  />
+
+  <!-- Centre circle connection stem -->
+  <path
+    d="
+      M695 96
+      C707 111 718 121 735 132
+    "
+    fill="none"
+    stroke="#FF5A1F"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.62"
+  />
+
+  <!-- Right circle connection stem -->
+  <path
+    d="
+      M1105 94
+      C1120 107 1133 119 1148 130
+    "
+    fill="none"
+    stroke="#22C55E"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.62"
+  />
+
+  <!-- Main anchor nodes -->
+  <g>
+    <circle
+      cx="100"
+      cy="132"
+      r="5"
+      fill="#22C55E"
+    />
+
+    <circle
+      cx="371"
+      cy="126"
+      r="4"
+      fill="#FFFFFF"
+      stroke="#202124"
+      stroke-width="1.5"
+      opacity="0.82"
+    />
+
+    <circle
+      cx="635"
+      cy="128"
+      r="6"
+      fill="#FF5A1F"
+    />
+
+    <circle
+      cx="900"
+      cy="128"
+      r="4"
+      fill="#FFFFFF"
+      stroke="#202124"
+      stroke-width="1.5"
+      opacity="0.82"
+    />
+
+    <circle
+      cx="1166"
+      cy="125"
+      r="6"
+      fill="#22C55E"
+    />
+
+    <circle
+      cx="1300"
+      cy="106"
+      r="4"
+      fill="#FF5A1F"
+    />
+  </g>
+
+  <!-- Soft node rings -->
+  <g
+    fill="none"
+    stroke-width="1.5"
+  >
+    <circle
+      cx="100"
+      cy="132"
+      r="13"
+      stroke="#22C55E"
+      opacity="0.24"
+    />
+
+    <circle
+      cx="635"
+      cy="128"
+      r="15"
+      stroke="#FF5A1F"
+      opacity="0.22"
+    />
+
+    <circle
+      cx="1166"
+      cy="125"
+      r="15"
+      stroke="#22C55E"
+      opacity="0.22"
+    />
+  </g>
+
+  <!-- Floating green accent -->
+  <g transform="translate(255 58)">
+    <circle
+      cx="0"
+      cy="0"
+      r="10"
+      fill="#22C55E"
+    />
+
+    <circle
+      cx="0"
+      cy="0"
+      r="18"
+      fill="none"
+      stroke="#22C55E"
+      stroke-width="1.5"
+      opacity="0.2"
+    />
+
+    <circle
+      cx="0"
+      cy="0"
+      r="2.5"
+      fill="#FFFFFF"
+    />
+  </g>
+
+  <!-- Floating orange accent -->
+  <g transform="translate(718 62)">
+    <circle
+      cx="0"
+      cy="0"
+      r="9"
+      fill="#FF5A1F"
+    />
+
+    <circle
+      cx="0"
+      cy="0"
+      r="17"
+      fill="none"
+      stroke="#FF5A1F"
+      stroke-width="1.5"
+      opacity="0.2"
+    />
+
+    <circle
+      cx="0"
+      cy="0"
+      r="2.5"
+      fill="#FFFFFF"
+    />
+  </g>
+
+  <!-- Floating mixed accent -->
+  <g transform="translate(1117 55)">
+    <circle
+      cx="0"
+      cy="0"
+      r="9"
+      fill="#22C55E"
+    />
+
+    <circle
+      cx="0"
+      cy="0"
+      r="17"
+      fill="none"
+      stroke="#22C55E"
+      stroke-width="1.5"
+      opacity="0.2"
+    />
+
+    <circle
+      cx="0"
+      cy="0"
+      r="2.5"
+      fill="#FFFFFF"
+    />
+  </g>
+
+  <!-- Small travel particles -->
+  <g>
+    <circle
+      cx="164"
+      cy="91"
+      r="2.5"
+      fill="#202124"
+      opacity="0.22"
+    />
+
+    <circle
+      cx="219"
+      cy="76"
+      r="2"
+      fill="#22C55E"
+      opacity="0.54"
+    />
+
+    <circle
+      cx="321"
+      cy="98"
+      r="2.4"
+      fill="#202124"
+      opacity="0.22"
+    />
+
+    <circle
+      cx="445"
+      cy="165"
+      r="2.3"
+      fill="#FF5A1F"
+      opacity="0.52"
+    />
+
+    <circle
+      cx="516"
+      cy="177"
+      r="2"
+      fill="#202124"
+      opacity="0.2"
+    />
+
+    <circle
+      cx="579"
+      cy="153"
+      r="2.5"
+      fill="#22C55E"
+      opacity="0.48"
+    />
+
+    <circle
+      cx="768"
+      cy="83"
+      r="2.3"
+      fill="#202124"
+      opacity="0.2"
+    />
+
+    <circle
+      cx="836"
+      cy="99"
+      r="2.5"
+      fill="#FF5A1F"
+      opacity="0.5"
+    />
+
+    <circle
+      cx="972"
+      cy="162"
+      r="2.3"
+      fill="#202124"
+      opacity="0.2"
+    />
+
+    <circle
+      cx="1044"
+      cy="172"
+      r="2.2"
+      fill="#22C55E"
+      opacity="0.46"
+    />
+
+    <circle
+      cx="1227"
+      cy="89"
+      r="2.5"
+      fill="#FF5A1F"
+      opacity="0.48"
+    />
+  </g>
+
+  <!-- Minimal technical route fragments -->
+  <g
+    fill="none"
+    stroke="#202124"
+    stroke-width="1.2"
+    stroke-linecap="round"
+    opacity="0.15"
+  >
+    <path d="M176 181 H210 V196 H243" />
+
+    <path d="M545 58 H574 V45 H608" />
+
+    <path d="M848 202 H880 V187 H912" />
+
+    <path d="M1214 177 H1244 V163 H1272" />
+  </g>
+
+  <!-- Tiny cross markers -->
+  <g
+    stroke="#202124"
+    stroke-width="1.2"
+    stroke-linecap="round"
+    opacity="0.17"
+  >
+    <path d="M53 73 H73" />
+    <path d="M63 63 V83" />
+
+    <path d="M478 82 H498" />
+    <path d="M488 72 V92" />
+
+    <path d="M944 52 H964" />
+    <path d="M954 42 V62" />
+
+    <path d="M1331 162 H1351" />
+    <path d="M1341 152 V172" />
+  </g>
+
+  <!-- Minimal endpoint arrows -->
+  <g
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path
+      d="M1288 99 L1300 106 L1290 115"
+      stroke="#FF5A1F"
+      stroke-width="2"
+      opacity="0.72"
+    />
+
+    <path
+      d="M88 124 L100 132 L90 141"
+      stroke="#22C55E"
+      stroke-width="2"
+      opacity="0.72"
+    />
+  </g>
+</svg>

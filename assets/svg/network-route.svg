@@ -1,0 +1,581 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1200 620"
+  fill="none"
+  preserveAspectRatio="xMidYMid slice"
+  aria-hidden="true"
+>
+  <!--
+    OrbitLock VPN
+    Decorative encrypted network route
+    Transparent background
+    No gradients
+  -->
+
+  <!-- Main route -->
+  <g
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path
+      d="
+        M64 474
+        C142 472 174 416 232 405
+        C298 392 319 439 381 416
+        C447 392 442 324 509 306
+        C578 287 616 340 676 304
+        C729 272 708 209 777 183
+        C836 161 882 203 934 176
+        C1000 142 1032 91 1138 111
+      "
+      stroke-width="2"
+      stroke-dasharray="5 11"
+      opacity="0.28"
+    />
+
+    <path
+      d="
+        M93 155
+        C172 104 255 116 311 164
+        C371 215 426 202 478 166
+        C535 126 597 133 646 170
+      "
+      stroke-width="1.6"
+      stroke-dasharray="4 10"
+      opacity="0.18"
+    />
+
+    <path
+      d="
+        M636 496
+        C702 445 771 447 827 480
+        C883 512 939 503 989 459
+        C1031 422 1075 410 1140 432
+      "
+      stroke-width="1.6"
+      stroke-dasharray="4 10"
+      opacity="0.17"
+    />
+  </g>
+
+  <!-- Secondary route arcs -->
+  <g
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-linecap="round"
+    opacity="0.14"
+  >
+    <path
+      d="
+        M195 221
+        C270 259 335 277 424 252
+      "
+      stroke-width="1.4"
+    />
+
+    <path
+      d="
+        M489 430
+        C542 393 606 389 663 422
+      "
+      stroke-width="1.4"
+    />
+
+    <path
+      d="
+        M833 293
+        C887 259 952 267 1002 301
+      "
+      stroke-width="1.4"
+    />
+  </g>
+
+  <!-- Encrypted square route -->
+  <g
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.19"
+  >
+    <path
+      d="
+        M366 99
+        H421
+        V122
+        H455
+        V153
+        H494
+      "
+    />
+
+    <path
+      d="
+        M862 364
+        H901
+        V335
+        H946
+        V313
+        H982
+      "
+    />
+  </g>
+
+  <!-- Location-style markers -->
+  <g
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <g opacity="0.26">
+      <path
+        d="
+          M232 381
+          C220 381 211 390 211 402
+          C211 418 232 437 232 437
+          C232 437 253 418 253 402
+          C253 390 244 381 232 381
+          Z
+        "
+        stroke-width="1.5"
+      />
+
+      <circle
+        cx="232"
+        cy="402"
+        r="5"
+        stroke-width="1.4"
+      />
+    </g>
+
+    <g opacity="0.2">
+      <path
+        d="
+          M934 153
+          C923 153 914 162 914 173
+          C914 188 934 206 934 206
+          C934 206 954 188 954 173
+          C954 162 945 153 934 153
+          Z
+        "
+        stroke-width="1.5"
+      />
+
+      <circle
+        cx="934"
+        cy="173"
+        r="4.5"
+        stroke-width="1.4"
+      />
+    </g>
+  </g>
+
+  <!-- Main route nodes -->
+  <g>
+    <circle
+      cx="64"
+      cy="474"
+      r="5"
+      fill="#FFFFFF"
+      opacity="0.66"
+    />
+
+    <circle
+      cx="232"
+      cy="405"
+      r="6"
+      fill="#22C55E"
+    />
+
+    <circle
+      cx="381"
+      cy="416"
+      r="4.5"
+      fill="#FFFFFF"
+      opacity="0.74"
+    />
+
+    <circle
+      cx="509"
+      cy="306"
+      r="7"
+      fill="#FF5A1F"
+    />
+
+    <circle
+      cx="676"
+      cy="304"
+      r="4.5"
+      fill="#FFFFFF"
+      opacity="0.72"
+    />
+
+    <circle
+      cx="777"
+      cy="183"
+      r="6"
+      fill="#22C55E"
+    />
+
+    <circle
+      cx="934"
+      cy="176"
+      r="4.5"
+      fill="#FFFFFF"
+      opacity="0.72"
+    />
+
+    <circle
+      cx="1138"
+      cy="111"
+      r="7"
+      fill="#FF5A1F"
+    />
+  </g>
+
+  <!-- Soft node rings -->
+  <g
+    fill="none"
+    stroke-width="1.6"
+  >
+    <circle
+      cx="232"
+      cy="405"
+      r="14"
+      stroke="#22C55E"
+      opacity="0.23"
+    />
+
+    <circle
+      cx="509"
+      cy="306"
+      r="16"
+      stroke="#FF5A1F"
+      opacity="0.23"
+    />
+
+    <circle
+      cx="777"
+      cy="183"
+      r="14"
+      stroke="#22C55E"
+      opacity="0.23"
+    />
+
+    <circle
+      cx="1138"
+      cy="111"
+      r="16"
+      stroke="#FF5A1F"
+      opacity="0.23"
+    />
+  </g>
+
+  <!-- Small connection particles -->
+  <g fill="#FFFFFF">
+    <circle
+      cx="139"
+      cy="452"
+      r="2"
+      opacity="0.38"
+    />
+
+    <circle
+      cx="177"
+      cy="422"
+      r="2.5"
+      opacity="0.26"
+    />
+
+    <circle
+      cx="292"
+      cy="407"
+      r="2"
+      opacity="0.34"
+    />
+
+    <circle
+      cx="334"
+      cy="430"
+      r="1.8"
+      opacity="0.26"
+    />
+
+    <circle
+      cx="442"
+      cy="365"
+      r="2.2"
+      opacity="0.38"
+    />
+
+    <circle
+      cx="566"
+      cy="304"
+      r="2"
+      opacity="0.3"
+    />
+
+    <circle
+      cx="625"
+      cy="329"
+      r="2.4"
+      opacity="0.35"
+    />
+
+    <circle
+      cx="721"
+      cy="252"
+      r="2"
+      opacity="0.32"
+    />
+
+    <circle
+      cx="842"
+      cy="177"
+      r="2.4"
+      opacity="0.38"
+    />
+
+    <circle
+      cx="890"
+      cy="194"
+      r="1.8"
+      opacity="0.28"
+    />
+
+    <circle
+      cx="1002"
+      cy="145"
+      r="2.3"
+      opacity="0.34"
+    />
+
+    <circle
+      cx="1071"
+      cy="113"
+      r="1.9"
+      opacity="0.27"
+    />
+  </g>
+
+  <!-- Floating technical dots -->
+  <g>
+    <circle
+      cx="114"
+      cy="103"
+      r="3"
+      fill="#22C55E"
+      opacity="0.56"
+    />
+
+    <circle
+      cx="172"
+      cy="186"
+      r="2.5"
+      fill="#FFFFFF"
+      opacity="0.27"
+    />
+
+    <circle
+      cx="286"
+      cy="91"
+      r="2"
+      fill="#FF5A1F"
+      opacity="0.55"
+    />
+
+    <circle
+      cx="565"
+      cy="94"
+      r="2.5"
+      fill="#FFFFFF"
+      opacity="0.25"
+    />
+
+    <circle
+      cx="701"
+      cy="98"
+      r="3"
+      fill="#22C55E"
+      opacity="0.48"
+    />
+
+    <circle
+      cx="1037"
+      cy="247"
+      r="3"
+      fill="#FF5A1F"
+      opacity="0.55"
+    />
+
+    <circle
+      cx="1096"
+      cy="338"
+      r="2"
+      fill="#FFFFFF"
+      opacity="0.28"
+    />
+
+    <circle
+      cx="1038"
+      cy="523"
+      r="3"
+      fill="#22C55E"
+      opacity="0.45"
+    />
+
+    <circle
+      cx="744"
+      cy="539"
+      r="2.5"
+      fill="#FF5A1F"
+      opacity="0.44"
+    />
+
+    <circle
+      cx="333"
+      cy="535"
+      r="2"
+      fill="#FFFFFF"
+      opacity="0.3"
+    />
+
+    <circle
+      cx="166"
+      cy="548"
+      r="3"
+      fill="#FF5A1F"
+      opacity="0.46"
+    />
+  </g>
+
+  <!-- Technical cross markers -->
+  <g
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="1.2"
+    stroke-linecap="round"
+    opacity="0.18"
+  >
+    <path d="M146 303 H174" />
+    <path d="M160 289 V317" />
+
+    <path d="M582 224 H610" />
+    <path d="M596 210 V238" />
+
+    <path d="M1040 360 H1068" />
+    <path d="M1054 346 V374" />
+
+    <path d="M896 552 H924" />
+    <path d="M910 538 V566" />
+  </g>
+
+  <!-- Encryption fragment -->
+  <g
+    transform="translate(553 434)"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <rect
+      x="0"
+      y="12"
+      width="44"
+      height="34"
+      rx="11"
+      stroke="#FFFFFF"
+      stroke-width="1.5"
+      opacity="0.19"
+    />
+
+    <path
+      d="
+        M11 12
+        V8
+        C11 1.5 16 -3 22 -3
+        C28 -3 33 1.5 33 8
+        V12
+      "
+      stroke="#22C55E"
+      stroke-width="1.7"
+      opacity="0.58"
+    />
+
+    <circle
+      cx="22"
+      cy="28"
+      r="3"
+      fill="#FF5A1F"
+      stroke="none"
+      opacity="0.78"
+    />
+
+    <path
+      d="M22 31 V37"
+      stroke="#FFFFFF"
+      stroke-width="1.6"
+      opacity="0.52"
+    />
+  </g>
+
+  <!-- Orbital micro element -->
+  <g
+    transform="translate(818 424)"
+    fill="none"
+    stroke-linecap="round"
+  >
+    <ellipse
+      cx="44"
+      cy="34"
+      rx="43"
+      ry="16"
+      transform="rotate(-18 44 34)"
+      stroke="#FFFFFF"
+      stroke-width="1.2"
+      opacity="0.18"
+    />
+
+    <circle
+      cx="73"
+      cy="19"
+      r="4"
+      fill="#22C55E"
+      stroke="none"
+      opacity="0.74"
+    />
+  </g>
+
+  <!-- Isolated dashed route -->
+  <path
+    d="
+      M63 280
+      C98 247 119 239 158 243
+    "
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="1.3"
+    stroke-linecap="round"
+    stroke-dasharray="3 8"
+    opacity="0.16"
+  />
+
+  <circle
+    cx="63"
+    cy="280"
+    r="3.5"
+    fill="#FF5A1F"
+    opacity="0.68"
+  />
+
+  <circle
+    cx="158"
+    cy="243"
+    r="3.5"
+    fill="#22C55E"
+    opacity="0.68"
+  />
+</svg>

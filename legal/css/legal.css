@@ -1,0 +1,1597 @@
+/* =========================================================
+   LEGAL PAGES
+   Shared by:
+   - privacy-policy.html
+   - terms-conditions.html
+   - cookie-policy.html
+   ========================================================= */
+
+body.page-legal {
+  background: var(--color-surface);
+}
+
+/* =========================================================
+   LEGAL HERO
+   ========================================================= */
+
+.page-legal .vpn-hero {
+  min-height: 510px;
+}
+
+.page-legal .vpn-hero__copy {
+  max-width: 760px;
+}
+
+.page-legal .vpn-hero__title {
+  max-width: 820px;
+}
+
+.page-legal .vpn-hero__text {
+  max-width: 650px;
+}
+
+.page-legal .vpn-hero__eyebrow::before {
+  background: var(--color-green);
+}
+
+.page-legal .vpn-hero__visual::before {
+  position: absolute;
+  top: 9%;
+  right: 5%;
+  width: 64px;
+  height: 64px;
+  border: 1px dashed rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.page-legal .vpn-hero__visual::after {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 90, 31, 0.3);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+/* =========================================================
+   LEGAL PAGE
+   ========================================================= */
+
+.vpn-legal-page {
+  position: relative;
+  background: var(--color-surface);
+}
+
+.vpn-legal-page__layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  align-items: start;
+  gap: 42px;
+}
+
+/* =========================================================
+   LEGAL SIDEBAR
+   ========================================================= */
+
+.vpn-legal-page__sidebar {
+  position: sticky;
+  top: calc(var(--header-total-height) + 26px);
+  align-self: start;
+}
+
+.vpn-legal-page__sidebar-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 28px;
+  background: var(--color-white);
+  box-shadow:
+    0 7px 0 #dfe2dc,
+    0 21px 40px rgba(32, 33, 36, 0.09);
+}
+
+.vpn-legal-page__sidebar-head {
+  padding: 23px 22px 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.vpn-legal-page__sidebar-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--color-green-dark);
+  font-family: var(--font-tech);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.vpn-legal-page__sidebar-eyebrow::before {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: var(--color-green);
+  content: "";
+}
+
+.vpn-legal-page__sidebar-title {
+  margin-top: 10px;
+  font-family: var(--font-heading);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.vpn-legal-page__sidebar-version {
+  display: block;
+  margin-top: 8px;
+  color: var(--color-muted);
+  font-family: var(--font-tech);
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.vpn-legal-page__nav {
+  display: grid;
+  padding: 10px;
+}
+
+.vpn-legal-page__nav-link {
+  position: relative;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  align-items: center;
+  gap: 9px;
+  min-height: 45px;
+  padding: 8px 10px;
+  border-radius: 13px;
+  color: var(--color-muted);
+  font-size: 11px;
+  font-weight: 650;
+  line-height: 1.35;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.vpn-legal-page__nav-link-index {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--color-surface);
+  color: var(--color-muted);
+  font-family: var(--font-tech);
+  font-size: 7px;
+  font-weight: 700;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.vpn-legal-page__nav-link[aria-current="true"] {
+  background: var(--color-graphite);
+  color: var(--color-white);
+}
+
+.vpn-legal-page__nav-link[aria-current="true"]
+  .vpn-legal-page__nav-link-index {
+  background: var(--color-green);
+  color: var(--color-graphite-deep);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .vpn-legal-page__nav-link:hover {
+    background: var(--color-surface);
+    color: var(--color-graphite);
+    transform: translateX(2px);
+  }
+
+  .vpn-legal-page__nav-link[aria-current="true"]:hover {
+    background: var(--color-graphite);
+    color: var(--color-white);
+  }
+}
+
+/* =========================================================
+   LEGAL READING PROGRESS
+   ========================================================= */
+
+.vpn-legal-page__progress {
+  padding: 16px 20px 20px;
+  border-top: 1px solid var(--color-border);
+}
+
+.vpn-legal-page__progress-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+
+.vpn-legal-page__progress-label,
+.vpn-legal-page__progress-value {
+  color: var(--color-muted);
+  font-family: var(--font-tech);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vpn-legal-page__progress-track {
+  position: relative;
+  height: 6px;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: var(--color-surface-strong);
+}
+
+.vpn-legal-page__progress-bar {
+  width: var(--vpn-legal-progress, 0%);
+  height: 100%;
+  border-radius: inherit;
+  background: var(--color-green);
+  transition: width 120ms linear;
+}
+
+/* =========================================================
+   MOBILE LEGAL NAV
+   ========================================================= */
+
+.vpn-legal-mobile-nav {
+  display: none;
+  margin-bottom: 20px;
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  background: var(--color-white);
+  box-shadow:
+    0 5px 0 #dfe2dc,
+    0 16px 30px rgba(32, 33, 36, 0.07);
+}
+
+.vpn-legal-mobile-nav__label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-muted);
+  font-family: var(--font-tech);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vpn-legal-mobile-nav__select {
+  width: 100%;
+  height: 48px;
+  padding: 0 42px 0 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  outline: none;
+  background: var(--color-surface);
+  color: var(--color-graphite);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition:
+    border-color var(--transition-fast),
+    background-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.vpn-legal-mobile-nav__select:focus {
+  border-color: var(--color-green);
+  background: var(--color-white);
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.11);
+}
+
+/* =========================================================
+   LEGAL DOCUMENT
+   ========================================================= */
+
+.vpn-legal-page__document {
+  min-width: 0;
+}
+
+.vpn-legal-page__document-head {
+  position: relative;
+  overflow: hidden;
+  padding: 38px 40px;
+  border: 1px solid var(--color-border);
+  border-radius: 34px;
+  background: var(--color-white);
+  box-shadow:
+    0 8px 0 #dfe2dc,
+    0 24px 46px rgba(32, 33, 36, 0.09);
+}
+
+.vpn-legal-page__document-head::before {
+  position: absolute;
+  top: -52px;
+  right: -45px;
+  width: 170px;
+  height: 170px;
+  border: 1px dashed var(--color-border);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.vpn-legal-page__document-head::after {
+  position: absolute;
+  right: 46px;
+  bottom: -44px;
+  width: 105px;
+  height: 105px;
+  border: 16px solid var(--color-green-soft);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.vpn-legal-page__document-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+}
+
+.vpn-legal-page__document-title {
+  font-family: var(--font-heading);
+  font-size: clamp(37px, 4.4vw, 60px);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.052em;
+}
+
+.vpn-legal-page__lead {
+  max-width: 800px;
+  margin-top: 17px;
+  color: var(--color-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.vpn-legal-page__document-meta {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.vpn-legal-page__meta-item {
+  min-width: 150px;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 15px;
+  background: var(--color-surface);
+}
+
+.vpn-legal-page__meta-label {
+  display: block;
+  color: var(--color-muted);
+  font-family: var(--font-tech);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vpn-legal-page__meta-value {
+  display: block;
+  margin-top: 4px;
+  color: var(--color-graphite);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   LEGAL CONTENT
+   ========================================================= */
+
+.vpn-legal-page__content {
+  display: grid;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.vpn-legal-section {
+  position: relative;
+  padding: 34px 38px;
+  scroll-margin-top: calc(var(--header-total-height) + 32px);
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  background: var(--color-white);
+  box-shadow:
+    0 6px 0 #dfe2dc,
+    0 19px 38px rgba(32, 33, 36, 0.075);
+}
+
+.vpn-legal-section[data-active="true"] {
+  border-color: #c9cfc7;
+}
+
+.vpn-legal-section__head {
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.vpn-legal-section__index {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 15px;
+  background: var(--color-graphite);
+  color: var(--color-white);
+  font-family: var(--font-tech);
+  font-size: 9px;
+  font-weight: 700;
+  box-shadow:
+    0 4px 0 #111214,
+    0 11px 20px rgba(32, 33, 36, 0.12);
+}
+
+.vpn-legal-section:nth-child(even)
+  .vpn-legal-section__index {
+  background: var(--color-green);
+  color: var(--color-graphite-deep);
+  box-shadow:
+    0 4px 0 var(--color-green-dark),
+    0 11px 20px rgba(34, 197, 94, 0.13);
+}
+
+.vpn-legal-section:nth-child(3n)
+  .vpn-legal-section__index {
+  background: var(--color-orange);
+  color: var(--color-white);
+  box-shadow:
+    0 4px 0 var(--color-orange-dark),
+    0 11px 20px rgba(255, 90, 31, 0.13);
+}
+
+.vpn-legal-section__eyebrow {
+  color: var(--color-muted);
+  font-family: var(--font-tech);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vpn-legal-section__title {
+  margin-top: 4px;
+  font-family: var(--font-heading);
+  font-size: clamp(24px, 2.8vw, 34px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.vpn-legal-section__body {
+  color: var(--color-muted);
+  font-size: 13px;
+  line-height: 1.78;
+}
+
+.vpn-legal-section__body > * + * {
+  margin-top: 16px;
+}
+
+.vpn-legal-section__body h3 {
+  margin-top: 26px;
+  color: var(--color-graphite);
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+.vpn-legal-section__body h4 {
+  margin-top: 22px;
+  color: var(--color-graphite);
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.vpn-legal-section__body strong {
+  color: var(--color-graphite);
+  font-weight: 800;
+}
+
+.vpn-legal-section__body a {
+  color: var(--color-green-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.vpn-legal-section__body ul,
+.vpn-legal-section__body ol {
+  display: grid;
+  gap: 9px;
+  padding-left: 21px;
+}
+
+.vpn-legal-section__body li {
+  padding-left: 4px;
+}
+
+.vpn-legal-section__body ul li::marker {
+  color: var(--color-green);
+}
+
+.vpn-legal-section__body ol li::marker {
+  color: var(--color-orange);
+  font-family: var(--font-tech);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.vpn-legal-section__body code {
+  padding: 2px 6px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-surface);
+  color: var(--color-graphite);
+  font-family: var(--font-tech);
+  font-size: 0.88em;
+}
+
+/* =========================================================
+   LEGAL NOTE
+   ========================================================= */
+
+.vpn-legal-note {
+  position: relative;
+  padding: 20px 22px 20px 58px;
+  border: 1px solid var(--color-border);
+  border-radius: 19px;
+  background: var(--color-surface);
+  color: var(--color-muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.vpn-legal-note::before {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-graphite);
+  color: var(--color-white);
+  content: "i";
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.vpn-legal-note--green {
+  border-color: rgba(34, 197, 94, 0.3);
+  background: var(--color-green-soft);
+  color: #356046;
+}
+
+.vpn-legal-note--green::before {
+  background: var(--color-green);
+  color: var(--color-graphite-deep);
+}
+
+.vpn-legal-note--orange {
+  border-color: rgba(255, 90, 31, 0.28);
+  background: var(--color-orange-soft);
+  color: #7e4832;
+}
+
+.vpn-legal-note--orange::before {
+  background: var(--color-orange);
+  color: var(--color-white);
+}
+
+.vpn-legal-note--dark {
+  border-color: var(--color-graphite);
+  background: var(--color-graphite);
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.vpn-legal-note--dark::before {
+  background: var(--color-green);
+  color: var(--color-graphite-deep);
+}
+
+.vpn-legal-note strong {
+  color: inherit;
+}
+
+/* =========================================================
+   DEFINITION CARDS
+   ========================================================= */
+
+.vpn-legal-definition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.vpn-legal-definition-card {
+  padding: 19px;
+  border: 1px solid var(--color-border);
+  border-radius: 19px;
+  background: var(--color-surface);
+}
+
+.vpn-legal-definition-card:nth-child(3n + 2) {
+  background: var(--color-green-soft);
+  border-color: rgba(34, 197, 94, 0.22);
+}
+
+.vpn-legal-definition-card:nth-child(3n + 3) {
+  background: var(--color-orange-soft);
+  border-color: rgba(255, 90, 31, 0.2);
+}
+
+.vpn-legal-definition-card__term {
+  color: var(--color-graphite);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.vpn-legal-definition-card__description {
+  margin-top: 6px;
+  color: var(--color-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   LEGAL TABLE
+   ========================================================= */
+
+.vpn-legal-table-wrap {
+  overflow-x: auto;
+  margin-top: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: var(--color-white);
+}
+
+.vpn-legal-table {
+  width: 100%;
+  min-width: 660px;
+  border-collapse: collapse;
+}
+
+.vpn-legal-table th,
+.vpn-legal-table td {
+  padding: 15px 17px;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.vpn-legal-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.vpn-legal-table th {
+  background: var(--color-graphite);
+  color: var(--color-white);
+  font-family: var(--font-tech);
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.vpn-legal-table th:first-child {
+  border-radius: 19px 0 0 0;
+}
+
+.vpn-legal-table th:last-child {
+  border-radius: 0 19px 0 0;
+}
+
+.vpn-legal-table td {
+  color: var(--color-muted);
+  font-size: 11px;
+  line-height: 1.58;
+}
+
+.vpn-legal-table td:first-child {
+  color: var(--color-graphite);
+  font-weight: 750;
+}
+
+/* =========================================================
+   LEGAL LINK CARDS
+   ========================================================= */
+
+.vpn-legal-related {
+  margin-top: 22px;
+}
+
+.vpn-legal-related__title {
+  margin-bottom: 12px;
+  color: var(--color-graphite);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.vpn-legal-related__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.vpn-legal-related-card {
+  display: flex;
+  min-height: 110px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 17px;
+  border: 1px solid var(--color-border);
+  border-radius: 17px;
+  background: var(--color-surface);
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.vpn-legal-related-card__label {
+  color: var(--color-muted);
+  font-family: var(--font-tech);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vpn-legal-related-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.vpn-legal-related-card__title {
+  color: var(--color-graphite);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.vpn-legal-related-card__arrow {
+  display: grid;
+  width: 29px;
+  height: 29px;
+  flex: 0 0 29px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-graphite);
+}
+
+.vpn-legal-related-card__arrow svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .vpn-legal-related-card:hover {
+    border-color: #c8cec6;
+    box-shadow: var(--shadow-xs);
+    transform: translateY(-3px);
+  }
+}
+
+/* =========================================================
+   COOKIE CATEGORY CARDS
+   ========================================================= */
+
+.vpn-legal-cookie-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.vpn-legal-cookie-card {
+  min-height: 180px;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: var(--color-surface);
+}
+
+.vpn-legal-cookie-card:nth-child(2) {
+  background: var(--color-green-soft);
+  border-color: rgba(34, 197, 94, 0.22);
+}
+
+.vpn-legal-cookie-card:nth-child(3) {
+  background: var(--color-graphite);
+  border-color: var(--color-graphite);
+  color: var(--color-white);
+}
+
+.vpn-legal-cookie-card:nth-child(4) {
+  background: var(--color-orange-soft);
+  border-color: rgba(255, 90, 31, 0.22);
+}
+
+.vpn-legal-cookie-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.vpn-legal-cookie-card__icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 13px;
+  background: var(--color-white);
+  color: var(--color-graphite);
+}
+
+.vpn-legal-cookie-card:nth-child(2)
+  .vpn-legal-cookie-card__icon {
+  background: var(--color-green);
+  color: var(--color-graphite-deep);
+}
+
+.vpn-legal-cookie-card:nth-child(3)
+  .vpn-legal-cookie-card__icon {
+  background: var(--color-orange);
+  color: var(--color-white);
+}
+
+.vpn-legal-cookie-card:nth-child(4)
+  .vpn-legal-cookie-card__icon {
+  background: var(--color-white);
+  color: var(--color-orange-dark);
+}
+
+.vpn-legal-cookie-card__icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+.vpn-legal-cookie-card__status {
+  padding: 5px 8px;
+  border-radius: var(--radius-pill);
+  background: var(--color-white);
+  color: var(--color-muted);
+  font-family: var(--font-tech);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.vpn-legal-cookie-card:nth-child(3)
+  .vpn-legal-cookie-card__status {
+  background: #35373a;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.vpn-legal-cookie-card__title {
+  margin-top: 28px;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.vpn-legal-cookie-card__text {
+  margin-top: 7px;
+  color: var(--color-muted);
+  font-size: 11px;
+  line-height: 1.58;
+}
+
+.vpn-legal-cookie-card:nth-child(3)
+  .vpn-legal-cookie-card__text {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+/* =========================================================
+   CONTACT / QUESTIONS CARD
+   ========================================================= */
+
+.vpn-legal-contact-card {
+  position: relative;
+  overflow: hidden;
+  padding: 31px;
+  border-radius: 27px;
+  background: var(--color-graphite);
+  color: var(--color-white);
+  box-shadow:
+    0 7px 0 #111214,
+    0 23px 44px rgba(0, 0, 0, 0.18);
+}
+
+.vpn-legal-contact-card::before {
+  position: absolute;
+  top: -72px;
+  right: -54px;
+  width: 190px;
+  height: 190px;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  content: "";
+}
+
+.vpn-legal-contact-card__content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.vpn-legal-contact-card__eyebrow {
+  color: var(--color-green);
+  font-family: var(--font-tech);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.vpn-legal-contact-card__title {
+  margin-top: 9px;
+  font-family: var(--font-heading);
+  font-size: clamp(25px, 3vw, 36px);
+  font-weight: 700;
+  line-height: 1.03;
+  letter-spacing: -0.04em;
+}
+
+.vpn-legal-contact-card__text {
+  max-width: 650px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.vpn-legal-contact-card__actions {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 21px;
+}
+
+/* =========================================================
+   LEGAL CHANGE LOG / UPDATE BLOCK
+   ========================================================= */
+
+.vpn-legal-update {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid rgba(34, 197, 94, 0.26);
+  border-radius: 20px;
+  background: var(--color-green-soft);
+}
+
+.vpn-legal-update__icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--color-green);
+  color: var(--color-graphite-deep);
+}
+
+.vpn-legal-update__icon svg {
+  width: 21px;
+  height: 21px;
+}
+
+.vpn-legal-update__title {
+  color: var(--color-graphite);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.vpn-legal-update__text {
+  margin-top: 4px;
+  color: #43634d;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   DARK LEGAL SUMMARY
+   ========================================================= */
+
+.vpn-legal-summary {
+  margin-top: 22px;
+  overflow: hidden;
+  border-radius: 29px;
+  background: var(--color-graphite);
+  color: var(--color-white);
+  box-shadow:
+    0 7px 0 #111214,
+    0 23px 44px rgba(0, 0, 0, 0.18);
+}
+
+.vpn-legal-summary__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: 30px;
+  padding: 31px;
+}
+
+.vpn-legal-summary__title {
+  font-family: var(--font-heading);
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.vpn-legal-summary__text {
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 11px;
+  line-height: 1.62;
+}
+
+.vpn-legal-summary__points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.vpn-legal-summary__point {
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 17px;
+  background: #292b2e;
+}
+
+.vpn-legal-summary__point-index {
+  color: var(--color-green);
+  font-family: var(--font-tech);
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.vpn-legal-summary__point-title {
+  display: block;
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.vpn-legal-summary__point-text {
+  display: block;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.46);
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.vpn-legal-final-cta {
+  padding-block: 72px;
+  background: var(--color-surface);
+}
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+.vpn-legal-back-top {
+  position: fixed;
+  z-index: 20;
+  right: 24px;
+  bottom: 105px;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-graphite);
+  box-shadow:
+    0 5px 0 #dfe2dc,
+    0 16px 28px rgba(32, 33, 36, 0.12);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition:
+    opacity var(--transition-fast),
+    visibility var(--transition-fast),
+    transform var(--transition-fast),
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.vpn-legal-back-top[data-visible="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.vpn-legal-back-top svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .vpn-legal-back-top:hover {
+    background: var(--color-graphite);
+    color: var(--color-white);
+  }
+}
+
+/* =========================================================
+   LEGAL ANCHORS
+   ========================================================= */
+
+.vpn-legal-anchor {
+  position: absolute;
+  top: calc(var(--header-total-height) * -1);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* =========================================================
+   PRIVACY PAGE MODIFIERS
+   ========================================================= */
+
+body[data-legal="privacy"]
+  .vpn-legal-page__document-head::after {
+  border-color: var(--color-green-soft);
+}
+
+body[data-legal="privacy"]
+  .vpn-legal-page__sidebar-eyebrow {
+  color: var(--color-green-dark);
+}
+
+/* =========================================================
+   TERMS PAGE MODIFIERS
+   ========================================================= */
+
+body[data-legal="terms"]
+  .vpn-hero__eyebrow::before {
+  background: var(--color-orange);
+}
+
+body[data-legal="terms"]
+  .vpn-legal-page__document-head::after {
+  border-color: var(--color-orange-soft);
+}
+
+body[data-legal="terms"]
+  .vpn-legal-page__sidebar-eyebrow {
+  color: var(--color-orange-dark);
+}
+
+body[data-legal="terms"]
+  .vpn-legal-page__sidebar-eyebrow::before {
+  background: var(--color-orange);
+}
+
+/* =========================================================
+   COOKIE PAGE MODIFIERS
+   ========================================================= */
+
+body[data-legal="cookies"]
+  .vpn-hero__eyebrow::before {
+  background: var(--color-green);
+}
+
+body[data-legal="cookies"]
+  .vpn-legal-page__document-head::after {
+  border-color: var(--color-orange-soft);
+}
+
+/* =========================================================
+   1280
+   ========================================================= */
+
+@media (max-width: 1280px) {
+  .vpn-legal-page__layout {
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .vpn-legal-page__document-head {
+    padding: 34px;
+  }
+
+  .vpn-legal-section {
+    padding: 31px 33px;
+  }
+}
+
+/* =========================================================
+   1024
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .vpn-legal-page__layout {
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 25px;
+  }
+
+  .vpn-legal-page__sidebar-title {
+    font-size: 19px;
+  }
+
+  .vpn-legal-page__nav-link {
+    grid-template-columns: 25px minmax(0, 1fr);
+    gap: 7px;
+    padding-inline: 8px;
+    font-size: 10px;
+  }
+
+  .vpn-legal-page__nav-link-index {
+    width: 25px;
+    height: 25px;
+  }
+
+  .vpn-legal-related__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vpn-legal-summary__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .page-legal .vpn-hero__visual::before,
+  .page-legal .vpn-hero__visual::after {
+    display: none;
+  }
+
+  .vpn-legal-page__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .vpn-legal-page__sidebar {
+    display: none;
+  }
+
+  .vpn-legal-mobile-nav {
+    position: sticky;
+    z-index: 20;
+    top: calc(var(--header-total-height) + 10px);
+    display: block;
+  }
+
+  .vpn-legal-page__document {
+    width: 100%;
+  }
+
+  .vpn-legal-page__document-head {
+    padding: 33px;
+  }
+
+  .vpn-legal-definition-grid,
+  .vpn-legal-cookie-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   MOBILE LARGE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .page-legal .vpn-hero {
+    min-height: auto;
+  }
+
+  .vpn-legal-mobile-nav {
+    padding: 15px;
+    border-radius: 19px;
+  }
+
+  .vpn-legal-page__document-head {
+    padding: 27px 23px;
+    border-radius: 28px;
+  }
+
+  .vpn-legal-page__document-head::before {
+    width: 120px;
+    height: 120px;
+  }
+
+  .vpn-legal-page__document-head::after {
+    right: 18px;
+    bottom: -50px;
+    width: 90px;
+    height: 90px;
+    border-width: 13px;
+  }
+
+  .vpn-legal-page__lead {
+    font-size: 13px;
+    line-height: 1.68;
+  }
+
+  .vpn-legal-page__document-meta {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .vpn-legal-page__meta-item {
+    min-width: 0;
+  }
+
+  .vpn-legal-page__content {
+    gap: 14px;
+  }
+
+  .vpn-legal-section {
+    padding: 26px 21px;
+    border-radius: 25px;
+  }
+
+  .vpn-legal-section__head {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 13px;
+    margin-bottom: 18px;
+  }
+
+  .vpn-legal-section__index {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+  }
+
+  .vpn-legal-section__title {
+    font-size: 24px;
+  }
+
+  .vpn-legal-section__body {
+    font-size: 12px;
+    line-height: 1.72;
+  }
+
+  .vpn-legal-note {
+    padding: 18px 18px 18px 52px;
+  }
+
+  .vpn-legal-note::before {
+    top: 17px;
+    left: 16px;
+  }
+
+  .vpn-legal-table-wrap {
+    border-radius: 17px;
+  }
+
+  .vpn-legal-contact-card {
+    padding: 25px 22px;
+  }
+
+  .vpn-legal-contact-card__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .vpn-legal-contact-card__actions .vpn-button {
+    width: 100%;
+  }
+
+  .vpn-legal-summary__inner {
+    padding: 25px 22px;
+  }
+
+  .vpn-legal-summary__points {
+    grid-template-columns: 1fr;
+  }
+
+  .vpn-legal-update {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 12px;
+    padding: 17px;
+  }
+
+  .vpn-legal-update__icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .vpn-legal-final-cta {
+    padding-block: 56px;
+  }
+
+  .vpn-legal-back-top {
+    right: 16px;
+    bottom: 96px;
+    width: 41px;
+    height: 41px;
+  }
+}
+
+/* =========================================================
+   MOBILE SMALL
+   ========================================================= */
+
+@media (max-width: 430px) {
+  .vpn-legal-page__document-head {
+    padding-inline: 20px;
+  }
+
+  .vpn-legal-page__document-title {
+    font-size: 34px;
+  }
+
+  .vpn-legal-section {
+    padding-inline: 18px;
+  }
+
+  .vpn-legal-section__head {
+    grid-template-columns: 38px minmax(0, 1fr);
+  }
+
+  .vpn-legal-section__index {
+    width: 38px;
+    height: 38px;
+  }
+
+  .vpn-legal-section__title {
+    font-size: 22px;
+  }
+
+  .vpn-legal-cookie-card,
+  .vpn-legal-definition-card {
+    padding: 17px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .vpn-legal-page__sidebar {
+    position: static;
+  }
+
+  .vpn-legal-page__progress-bar,
+  .vpn-legal-page__nav-link,
+  .vpn-legal-related-card,
+  .vpn-legal-back-top {
+    transition: none;
+  }
+
+  .vpn-legal-back-top {
+    transform: none;
+  }
+}
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+  body.page-legal {
+    background: #ffffff;
+  }
+
+  .page-legal .vpn-header,
+  .page-legal .vpn-footer,
+  .page-legal .vpn-hero__visual,
+  .vpn-legal-page__sidebar,
+  .vpn-legal-mobile-nav,
+  .vpn-legal-back-top,
+  .vpn-legal-final-cta,
+  .vpn-legal-notice {
+    display: none !important;
+  }
+
+  .page-legal .vpn-hero {
+    min-height: 0;
+    padding: 0 0 28px;
+    background: #ffffff;
+    color: #000000;
+  }
+
+  .page-legal .vpn-hero__inner {
+    display: block;
+  }
+
+  .page-legal .vpn-hero__eyebrow,
+  .page-legal .vpn-hero__title,
+  .page-legal .vpn-hero__text {
+    color: #000000;
+  }
+
+  .vpn-legal-page {
+    background: #ffffff;
+  }
+
+  .vpn-legal-page__layout {
+    display: block;
+  }
+
+  .vpn-legal-page__document-head,
+  .vpn-legal-section,
+  .vpn-legal-contact-card,
+  .vpn-legal-summary {
+    break-inside: avoid;
+    border: 1px solid #d9d9d9;
+    background: #ffffff;
+    color: #000000;
+    box-shadow: none;
+  }
+
+  .vpn-legal-section__body,
+  .vpn-legal-page__lead,
+  .vpn-legal-contact-card__text,
+  .vpn-legal-summary__text,
+  .vpn-legal-summary__point-text {
+    color: #333333;
+  }
+
+  .vpn-legal-section__index {
+    border: 1px solid #cccccc;
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none;
+  }
+
+  .vpn-legal-table th {
+    border: 1px solid #cccccc;
+    background: #eeeeee;
+    color: #000000;
+  }
+
+  .vpn-legal-table td {
+    border: 1px solid #dddddd;
+  }
+}

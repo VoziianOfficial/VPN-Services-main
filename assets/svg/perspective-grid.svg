@@ -1,0 +1,371 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1600 900"
+  fill="none"
+  preserveAspectRatio="xMidYMid slice"
+  aria-hidden="true"
+>
+  <!--
+    OrbitLock VPN
+    Perspective technical grid
+    Transparent background
+    No gradients
+  -->
+
+  <!-- Outer perspective frame -->
+  <g
+    stroke="#DDE2DC"
+    stroke-width="1.4"
+    opacity="0.58"
+  >
+    <path d="M110 80 L800 250 L1490 80" />
+    <path d="M110 820 L800 520 L1490 820" />
+
+    <path d="M110 80 L110 820" />
+    <path d="M1490 80 L1490 820" />
+
+    <path d="M800 250 L800 520" />
+  </g>
+
+  <!-- Ceiling perspective rays -->
+  <g
+    stroke="#E3E7E1"
+    stroke-width="1.15"
+    opacity="0.72"
+  >
+    <path d="M210 0 L800 250" />
+    <path d="M360 0 L800 250" />
+    <path d="M510 0 L800 250" />
+    <path d="M660 0 L800 250" />
+
+    <path d="M940 0 L800 250" />
+    <path d="M1090 0 L800 250" />
+    <path d="M1240 0 L800 250" />
+    <path d="M1390 0 L800 250" />
+  </g>
+
+  <!-- Floor perspective rays -->
+  <g
+    stroke="#E0E5DE"
+    stroke-width="1.25"
+    opacity="0.68"
+  >
+    <path d="M0 900 L800 520" />
+    <path d="M180 900 L800 520" />
+    <path d="M360 900 L800 520" />
+    <path d="M540 900 L800 520" />
+    <path d="M690 900 L800 520" />
+
+    <path d="M910 900 L800 520" />
+    <path d="M1060 900 L800 520" />
+    <path d="M1240 900 L800 520" />
+    <path d="M1420 900 L800 520" />
+    <path d="M1600 900 L800 520" />
+  </g>
+
+  <!-- Left wall depth lines -->
+  <g
+    stroke="#E3E7E1"
+    stroke-width="1.1"
+    opacity="0.62"
+  >
+    <path d="M0 145 L800 250" />
+    <path d="M0 245 L800 300" />
+    <path d="M0 345 L800 350" />
+    <path d="M0 445 L800 400" />
+    <path d="M0 545 L800 450" />
+    <path d="M0 645 L800 500" />
+    <path d="M0 745 L800 520" />
+  </g>
+
+  <!-- Right wall depth lines -->
+  <g
+    stroke="#E3E7E1"
+    stroke-width="1.1"
+    opacity="0.62"
+  >
+    <path d="M1600 145 L800 250" />
+    <path d="M1600 245 L800 300" />
+    <path d="M1600 345 L800 350" />
+    <path d="M1600 445 L800 400" />
+    <path d="M1600 545 L800 450" />
+    <path d="M1600 645 L800 500" />
+    <path d="M1600 745 L800 520" />
+  </g>
+
+  <!-- Back wall -->
+  <g
+    stroke="#D9DFD8"
+    stroke-width="1.35"
+    opacity="0.72"
+  >
+    <rect
+      x="545"
+      y="205"
+      width="510"
+      height="360"
+      rx="8"
+    />
+
+    <rect
+      x="600"
+      y="245"
+      width="400"
+      height="280"
+      rx="6"
+    />
+
+    <rect
+      x="655"
+      y="285"
+      width="290"
+      height="200"
+      rx="5"
+    />
+
+    <rect
+      x="710"
+      y="325"
+      width="180"
+      height="120"
+      rx="4"
+    />
+  </g>
+
+  <!-- Back wall vertical technical lines -->
+  <g
+    stroke="#E4E8E2"
+    stroke-width="1"
+    opacity="0.72"
+  >
+    <path d="M600 245 V525" />
+    <path d="M650 245 V525" />
+    <path d="M700 245 V525" />
+    <path d="M750 245 V525" />
+    <path d="M800 245 V525" />
+    <path d="M850 245 V525" />
+    <path d="M900 245 V525" />
+    <path d="M950 245 V525" />
+    <path d="M1000 245 V525" />
+  </g>
+
+  <!-- Back wall horizontal technical lines -->
+  <g
+    stroke="#E4E8E2"
+    stroke-width="1"
+    opacity="0.72"
+  >
+    <path d="M600 285 H1000" />
+    <path d="M600 325 H1000" />
+    <path d="M600 365 H1000" />
+    <path d="M600 405 H1000" />
+    <path d="M600 445 H1000" />
+    <path d="M600 485 H1000" />
+  </g>
+
+  <!-- Left architectural depth frames -->
+  <g
+    stroke="#E0E5DF"
+    stroke-width="1.15"
+    opacity="0.58"
+  >
+    <path d="M110 80 L545 205 L545 565 L110 820" />
+    <path d="M205 115 L600 245 L600 525 L205 785" />
+    <path d="M300 150 L655 285 L655 485 L300 750" />
+    <path d="M395 178 L710 325 L710 445 L395 720" />
+  </g>
+
+  <!-- Right architectural depth frames -->
+  <g
+    stroke="#E0E5DF"
+    stroke-width="1.15"
+    opacity="0.58"
+  >
+    <path d="M1490 80 L1055 205 L1055 565 L1490 820" />
+    <path d="M1395 115 L1000 245 L1000 525 L1395 785" />
+    <path d="M1300 150 L945 285 L945 485 L1300 750" />
+    <path d="M1205 178 L890 325 L890 445 L1205 720" />
+  </g>
+
+  <!-- Ceiling horizontal guides -->
+  <g
+    stroke="#E6EAE5"
+    stroke-width="1"
+    opacity="0.48"
+  >
+    <path d="M170 40 H1430" />
+    <path d="M265 85 H1335" />
+    <path d="M365 130 H1235" />
+    <path d="M465 175 H1135" />
+    <path d="M565 215 H1035" />
+  </g>
+
+  <!-- Floor horizontal guides -->
+  <g
+    stroke="#E1E6E0"
+    stroke-width="1.1"
+    opacity="0.52"
+  >
+    <path d="M95 845 H1505" />
+    <path d="M205 790 H1395" />
+    <path d="M320 735 H1280" />
+    <path d="M435 680 H1165" />
+    <path d="M545 625 H1055" />
+    <path d="M650 575 H950" />
+  </g>
+
+  <!-- Fine centre targeting marks -->
+  <g
+    stroke="#CDD5CD"
+    stroke-width="1.3"
+    opacity="0.72"
+  >
+    <path d="M770 385 H790" />
+    <path d="M810 385 H830" />
+    <path d="M800 355 V375" />
+    <path d="M800 395 V415" />
+  </g>
+
+  <!-- Central reference circle -->
+  <circle
+    cx="800"
+    cy="385"
+    r="18"
+    stroke="#D3DAD2"
+    stroke-width="1.2"
+    opacity="0.68"
+  />
+
+  <!-- Decorative network route -->
+  <g
+    fill="none"
+    stroke="#C7CEC6"
+    stroke-width="1.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.55"
+  >
+    <path
+      d="
+        M245 625
+        C330 560 390 585 470 535
+        C545 488 590 470 655 452
+      "
+    />
+
+    <path
+      d="
+        M945 452
+        C1010 470 1055 488 1130 535
+        C1210 585 1270 560 1355 625
+      "
+    />
+  </g>
+
+  <!-- Network nodes -->
+  <g>
+    <circle
+      cx="245"
+      cy="625"
+      r="5"
+      fill="#22C55E"
+      opacity="0.82"
+    />
+
+    <circle
+      cx="470"
+      cy="535"
+      r="4"
+      fill="#FFFFFF"
+      stroke="#BFC7BF"
+      stroke-width="1.4"
+    />
+
+    <circle
+      cx="655"
+      cy="452"
+      r="5"
+      fill="#FF5A1F"
+      opacity="0.82"
+    />
+
+    <circle
+      cx="945"
+      cy="452"
+      r="5"
+      fill="#22C55E"
+      opacity="0.82"
+    />
+
+    <circle
+      cx="1130"
+      cy="535"
+      r="4"
+      fill="#FFFFFF"
+      stroke="#BFC7BF"
+      stroke-width="1.4"
+    />
+
+    <circle
+      cx="1355"
+      cy="625"
+      r="5"
+      fill="#FF5A1F"
+      opacity="0.82"
+    />
+  </g>
+
+  <!-- Tiny technical ticks -->
+  <g
+    stroke="#C9D0C8"
+    stroke-width="1.25"
+    opacity="0.5"
+  >
+    <path d="M145 385 H175" />
+    <path d="M160 370 V400" />
+
+    <path d="M1425 385 H1455" />
+    <path d="M1440 370 V400" />
+
+    <path d="M785 90 H815" />
+    <path d="M800 75 V105" />
+
+    <path d="M785 770 H815" />
+    <path d="M800 755 V785" />
+  </g>
+
+  <!-- Small accent coordinates -->
+  <g>
+    <circle
+      cx="395"
+      cy="178"
+      r="3.5"
+      fill="#22C55E"
+      opacity="0.66"
+    />
+
+    <circle
+      cx="1205"
+      cy="178"
+      r="3.5"
+      fill="#FF5A1F"
+      opacity="0.66"
+    />
+
+    <circle
+      cx="545"
+      cy="625"
+      r="3.5"
+      fill="#FF5A1F"
+      opacity="0.5"
+    />
+
+    <circle
+      cx="1055"
+      cy="625"
+      r="3.5"
+      fill="#22C55E"
+      opacity="0.5"
+    />
+  </g>
+</svg>
