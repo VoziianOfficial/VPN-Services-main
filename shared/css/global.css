@@ -180,7 +180,7 @@ address {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  overflow: clip;
+  overflow: visible;
 }
 
 .vpn-main {
@@ -625,10 +625,15 @@ address {
 
 
 
-.vpn-header {
+.vpn-site-shell > [data-vpn-header] {
   position: sticky;
-  z-index: var(--z-header);
   top: 0;
+  z-index: var(--z-header);
+}
+
+.vpn-header {
+  position: relative;
+  z-index: 1;
   width: 100%;
   background: var(--color-graphite);
   color: var(--color-white);

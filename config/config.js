@@ -1263,7 +1263,7 @@ window.SITE_CONFIG = {
   "cta": {
     "primary": {
       "eyebrow": "READY WHEN YOU ARE",
-      "title": "One Tap Between You and a Private Connection",
+      "title": "Start Your Free Trial Today",
       "text": "Explore OrbitLock with a free trial and see how easily privacy can fit into your everyday browsing.",
       "primaryLabel": "Start Free Trial",
       "primaryUrl": "free-trial.html",
