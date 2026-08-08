@@ -71,7 +71,8 @@
     layerSection: "[data-vpn-service-layers]",
     layerCard: "[data-vpn-layer-card]",
 
-    parallax: "[data-vpn-service-parallax]"
+    parallax: "[data-vpn-service-parallax]",
+    showcaseNumber: "[data-vpn-service-showcase-number]"
   };
 
   const STATE = {
@@ -89,7 +90,8 @@
     storySwipers: [],
 
     layerMatchMedia: null,
-    parallaxMatchMedia: null
+    parallaxMatchMedia: null,
+    showcaseMatchMedia: null
   };
 
   const MOBILE_PRICING_QUERY = "(max-width: 600px)";
@@ -2334,6 +2336,69 @@
     );
   }
 
+  function initServiceShowcaseNumbers() {
+    const gsap = getGSAP();
+    const ScrollTrigger = getScrollTrigger();
+
+    if (!gsap || !ScrollTrigger) {
+      return;
+    }
+
+    registerScrollTrigger();
+
+    if (STATE.showcaseMatchMedia) {
+      STATE.showcaseMatchMedia.revert();
+    }
+
+    STATE.showcaseMatchMedia = gsap.matchMedia();
+
+    STATE.showcaseMatchMedia.add(
+      "(min-width: 768px) and (prefers-reduced-motion: no-preference)",
+      () => {
+        const tweens = [];
+
+        document
+          .querySelectorAll(SELECTORS.showcaseNumber)
+          .forEach((number) => {
+            const section =
+              number.closest(".vpn-service-showcase") ||
+              number.parentElement;
+
+            if (!section) {
+              return;
+            }
+
+            const tween = gsap.fromTo(
+              number,
+              {
+                yPercent: -10
+              },
+              {
+                yPercent: 10,
+                ease: "none",
+                scrollTrigger: {
+                  trigger: section,
+                  start: "top bottom",
+                  end: "bottom top",
+                  scrub: 0.7,
+                  invalidateOnRefresh: true
+                }
+              }
+            );
+
+            tweens.push(tween);
+          });
+
+        return () => {
+          tweens.forEach((tween) => {
+            tween.scrollTrigger?.kill();
+            tween.kill();
+          });
+        };
+      }
+    );
+  }
+
   
 
   function initSubtleTilt() {
@@ -2517,6 +2582,7 @@
     initServiceTabAnimations();
     initStickyLayers();
     initServiceParallax();
+    initServiceShowcaseNumbers();
     initSubtleTilt();
     initTrialFormPlanBinding();
 

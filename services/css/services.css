@@ -192,6 +192,214 @@ body.page-service {
 
 
 
+.vpn-service-showcase {
+  overflow: hidden;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.vpn-service-showcase__layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(48px, 6vw, 98px);
+}
+
+.vpn-service-showcase__copy {
+  position: sticky;
+  top: calc(var(--header-total-height) + 24px);
+  align-self: start;
+  max-width: 620px;
+}
+
+.vpn-service-showcase__eyebrow {
+  display: inline-grid;
+  gap: 10px;
+  color: var(--color-green-dark);
+  font-family: var(--font-tech);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vpn-service-showcase__eyebrow::after {
+  width: 92px;
+  height: 8px;
+  background: var(--color-green);
+  content: "";
+}
+
+.vpn-service-showcase__title {
+  margin-top: 42px;
+  font-family: var(--font-heading);
+  font-size: clamp(34px, 3.45vw, 52px);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0;
+}
+
+.vpn-service-showcase__text {
+  margin-top: 24px;
+  color: var(--color-muted);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.vpn-service-showcase__text + .vpn-service-showcase__text {
+  margin-top: 24px;
+}
+
+.vpn-service-showcase__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 62px;
+  margin-top: 42px;
+  padding-inline: 30px;
+  border: 1px solid var(--color-green-dark);
+  border-radius: 7px;
+  background: var(--color-green-dark);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.vpn-service-showcase__action:hover {
+  background: var(--color-green);
+  color: var(--color-graphite-deep);
+  transform: translateY(-2px);
+}
+
+.vpn-service-showcase__mosaic {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 2.4vw, 34px);
+}
+
+.vpn-service-showcase__image-card,
+.vpn-service-showcase__feature-card {
+  min-height: clamp(230px, 20vw, 330px);
+  border-radius: 7px;
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.vpn-service-showcase__image-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+}
+
+.vpn-service-showcase__image {
+  width: 100%;
+  height: 112%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.vpn-service-showcase__feature-card {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 30px;
+  border: 1px solid var(--color-green-dark);
+  background: var(--color-green);
+  color: var(--color-graphite-deep);
+  text-align: center;
+}
+
+.vpn-service-showcase__feature-card--dark {
+  background: var(--color-graphite);
+  color: var(--color-white);
+}
+
+@media (hover: hover) {
+  .vpn-service-showcase__image-card:hover,
+  .vpn-service-showcase__feature-card:hover {
+    border-color: var(--color-green-dark);
+    box-shadow:
+      0 8px 0 #dfe2dc,
+      0 22px 42px rgba(32, 33, 36, 0.11);
+    transform: translateY(-5px);
+  }
+
+  .vpn-service-showcase__feature-card--dark:hover {
+    box-shadow:
+      0 8px 0 #151719,
+      0 22px 42px rgba(32, 33, 36, 0.16);
+  }
+
+  .vpn-service-showcase__image-card:hover
+    .vpn-service-showcase__image {
+    transform: scale(1.045);
+  }
+}
+
+.vpn-service-showcase__feature-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  margin-inline: auto;
+  color: currentColor;
+}
+
+.vpn-service-showcase__feature-icon svg {
+  width: 38px;
+  height: 38px;
+}
+
+.vpn-service-showcase__feature-title {
+  max-width: 260px;
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  font-size: clamp(22px, 2vw, 30px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.vpn-service-showcase__feature-text {
+  max-width: 270px;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.vpn-service-showcase__number {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  color: rgba(32, 33, 36, 0.18);
+  font-family: var(--font-heading);
+  font-size: clamp(58px, 6vw, 92px);
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: 0;
+  will-change: transform;
+}
+
+.vpn-service-showcase__feature-card--dark
+  .vpn-service-showcase__number {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+
+
 .vpn-service-intro {
   background: var(--color-surface);
 }
@@ -3463,6 +3671,17 @@ body.page-service {
   color: var(--color-text);
 }
 
+.vpn-service-trial-dark .vpn-service-head__copy {
+  max-width: 900px;
+}
+
+.vpn-service-trial-dark .vpn-heading-lg {
+  max-width: 880px;
+  font-size: clamp(34px, 3.4vw, 52px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
 .vpn-service-trial-dark__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -4937,6 +5156,16 @@ body[data-service="downloads"]
 
 
 @media (max-width: 1100px) {
+  .vpn-service-showcase__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .vpn-service-showcase__copy {
+    position: relative;
+    top: auto;
+    max-width: 780px;
+  }
+
   .vpn-service-story-slide {
     grid-template-columns: 1fr;
     gap: 34px;
@@ -4962,6 +5191,18 @@ body[data-service="downloads"]
 
 
 @media (max-width: 900px) {
+  .vpn-service-showcase__layout {
+    gap: 38px;
+  }
+
+  .vpn-service-showcase__title {
+    margin-top: 30px;
+  }
+
+  .vpn-service-showcase__text {
+    font-size: 16px;
+  }
+
   .vpn-service-story-slider {
     padding-block: 58px;
   }
@@ -4987,6 +5228,19 @@ body[data-service="downloads"]
 
 
 @media (max-width: 600px) {
+  .vpn-service-showcase__mosaic {
+    grid-template-columns: 1fr;
+  }
+
+  .vpn-service-showcase__image-card,
+  .vpn-service-showcase__feature-card {
+    min-height: 260px;
+  }
+
+  .vpn-service-showcase__action {
+    width: 100%;
+  }
+
   .vpn-service-story-slider {
     padding-block: 48px;
   }
@@ -5024,6 +5278,18 @@ body[data-service="downloads"]
 
 
 @media (max-width: 430px) {
+  .vpn-service-showcase__title {
+    font-size: 34px;
+  }
+
+  .vpn-service-showcase__text {
+    font-size: 15px;
+  }
+
+  .vpn-service-showcase__feature-card {
+    padding: 26px 22px;
+  }
+
   .vpn-service-story-slide__statement {
     font-size: 30px;
   }
