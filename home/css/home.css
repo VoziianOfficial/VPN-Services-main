@@ -532,6 +532,41 @@ body.page-home {
   display: none;
 }
 
+.vpn-home-services--classic {
+  min-height: auto;
+  padding-block: 88px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  isolation: auto;
+}
+
+.vpn-home-services--classic::before,
+.vpn-home-services--classic::after {
+  display: none;
+}
+
+.vpn-home-services--classic .vpn-home-services__inner {
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.vpn-home-services--classic .vpn-home-services__head {
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.vpn-home-services--classic .vpn-home-services__head-text {
+  color: var(--color-muted);
+}
+
+.vpn-home-services.vpn-home-services--classic .vpn-eyebrow {
+  color: var(--color-muted);
+}
+
+.vpn-home-services.vpn-home-services--classic .vpn-eyebrow::before {
+  color: var(--color-muted);
+}
+
 .vpn-home-services::before,
 .vpn-home-services::after {
   position: absolute;
