@@ -5,14 +5,9 @@
   preserveAspectRatio="xMidYMid slice"
   aria-hidden="true"
 >
-  <!--
-    OrbitLock VPN
-    Footer network pattern
-    Transparent background
-    No gradients
-  -->
+  
 
-  <!-- Large abstract globe -->
+  
   <g
     transform="translate(1180 260)"
     fill="none"
@@ -76,7 +71,7 @@
     />
   </g>
 
-  <!-- Orbit around globe -->
+  
   <g
     transform="translate(1180 260)"
     fill="none"
@@ -106,7 +101,7 @@
     />
   </g>
 
-  <!-- Global orbit nodes -->
+  
   <g>
     <circle
       cx="971"
@@ -141,7 +136,7 @@
     />
   </g>
 
-  <!-- Left network route -->
+  
   <path
     d="
       M-20 389
@@ -159,7 +154,7 @@
     opacity="0.12"
   />
 
-  <!-- Lower route -->
+  
   <path
     d="
       M74 468
@@ -177,7 +172,7 @@
     opacity="0.075"
   />
 
-  <!-- Upper route -->
+  
   <path
     d="
       M63 102
@@ -195,7 +190,7 @@
     opacity="0.07"
   />
 
-  <!-- Route nodes -->
+  
   <g>
     <circle
       cx="194"
@@ -262,7 +257,7 @@
     />
   </g>
 
-  <!-- Small node rings -->
+  
   <g
     fill="none"
     stroke-width="1.2"
@@ -292,7 +287,7 @@
     />
   </g>
 
-  <!-- Abstract location marker 1 -->
+  
   <g
     transform="translate(105 219)"
     fill="none"
@@ -321,7 +316,7 @@
     />
   </g>
 
-  <!-- Abstract location marker 2 -->
+  
   <g
     transform="translate(749 317)"
     fill="none"
@@ -350,7 +345,7 @@
     />
   </g>
 
-  <!-- Shield-like route fragment -->
+  
   <g
     transform="translate(560 291)"
     fill="none"
@@ -402,7 +397,7 @@
     />
   </g>
 
-  <!-- Tiny network constellation -->
+  
   <g
     fill="none"
     stroke="#FFFFFF"
@@ -458,7 +453,7 @@
     />
   </g>
 
-  <!-- Floating decorative particles -->
+  
   <g>
     <circle
       cx="40"
@@ -541,7 +536,7 @@
     />
   </g>
 
-  <!-- Technical crosses -->
+  
   <g
     stroke="#FFFFFF"
     stroke-width="1"
@@ -561,7 +556,7 @@
     <path d="M1464 197 V219" />
   </g>
 
-  <!-- Horizontal encrypted fragment -->
+  
   <g
     transform="translate(214 383)"
     fill="none"
@@ -593,7 +588,7 @@
     />
   </g>
 
-  <!-- Bottom decorative baseline -->
+  
   <path
     d="
       M0 497
@@ -607,7 +602,7 @@
     opacity="0.04"
   />
 
-  <!-- Globe accent node -->
+  
   <g>
     <circle
       cx="1010"
@@ -628,7 +623,7 @@
     />
   </g>
 
-  <!-- Globe orange node -->
+  
   <g>
     <circle
       cx="1288"

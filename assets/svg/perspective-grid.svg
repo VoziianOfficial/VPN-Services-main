@@ -5,14 +5,9 @@
   preserveAspectRatio="xMidYMid slice"
   aria-hidden="true"
 >
-  <!--
-    OrbitLock VPN
-    Perspective technical grid
-    Transparent background
-    No gradients
-  -->
+  
 
-  <!-- Outer perspective frame -->
+  
   <g
     stroke="#DDE2DC"
     stroke-width="1.4"
@@ -27,7 +22,7 @@
     <path d="M800 250 L800 520" />
   </g>
 
-  <!-- Ceiling perspective rays -->
+  
   <g
     stroke="#E3E7E1"
     stroke-width="1.15"
@@ -44,7 +39,7 @@
     <path d="M1390 0 L800 250" />
   </g>
 
-  <!-- Floor perspective rays -->
+  
   <g
     stroke="#E0E5DE"
     stroke-width="1.25"
@@ -63,7 +58,7 @@
     <path d="M1600 900 L800 520" />
   </g>
 
-  <!-- Left wall depth lines -->
+  
   <g
     stroke="#E3E7E1"
     stroke-width="1.1"
@@ -78,7 +73,7 @@
     <path d="M0 745 L800 520" />
   </g>
 
-  <!-- Right wall depth lines -->
+  
   <g
     stroke="#E3E7E1"
     stroke-width="1.1"
@@ -93,7 +88,7 @@
     <path d="M1600 745 L800 520" />
   </g>
 
-  <!-- Back wall -->
+  
   <g
     stroke="#D9DFD8"
     stroke-width="1.35"
@@ -132,7 +127,7 @@
     />
   </g>
 
-  <!-- Back wall vertical technical lines -->
+  
   <g
     stroke="#E4E8E2"
     stroke-width="1"
@@ -149,7 +144,7 @@
     <path d="M1000 245 V525" />
   </g>
 
-  <!-- Back wall horizontal technical lines -->
+  
   <g
     stroke="#E4E8E2"
     stroke-width="1"
@@ -163,7 +158,7 @@
     <path d="M600 485 H1000" />
   </g>
 
-  <!-- Left architectural depth frames -->
+  
   <g
     stroke="#E0E5DF"
     stroke-width="1.15"
@@ -175,7 +170,7 @@
     <path d="M395 178 L710 325 L710 445 L395 720" />
   </g>
 
-  <!-- Right architectural depth frames -->
+  
   <g
     stroke="#E0E5DF"
     stroke-width="1.15"
@@ -187,7 +182,7 @@
     <path d="M1205 178 L890 325 L890 445 L1205 720" />
   </g>
 
-  <!-- Ceiling horizontal guides -->
+  
   <g
     stroke="#E6EAE5"
     stroke-width="1"
@@ -200,7 +195,7 @@
     <path d="M565 215 H1035" />
   </g>
 
-  <!-- Floor horizontal guides -->
+  
   <g
     stroke="#E1E6E0"
     stroke-width="1.1"
@@ -214,7 +209,7 @@
     <path d="M650 575 H950" />
   </g>
 
-  <!-- Fine centre targeting marks -->
+  
   <g
     stroke="#CDD5CD"
     stroke-width="1.3"
@@ -226,7 +221,7 @@
     <path d="M800 395 V415" />
   </g>
 
-  <!-- Central reference circle -->
+  
   <circle
     cx="800"
     cy="385"
@@ -236,7 +231,7 @@
     opacity="0.68"
   />
 
-  <!-- Decorative network route -->
+  
   <g
     fill="none"
     stroke="#C7CEC6"
@@ -262,7 +257,7 @@
     />
   </g>
 
-  <!-- Network nodes -->
+  
   <g>
     <circle
       cx="245"
@@ -315,7 +310,7 @@
     />
   </g>
 
-  <!-- Tiny technical ticks -->
+  
   <g
     stroke="#C9D0C8"
     stroke-width="1.25"
@@ -334,7 +329,7 @@
     <path d="M800 755 V785" />
   </g>
 
-  <!-- Small accent coordinates -->
+  
   <g>
     <circle
       cx="395"

@@ -1128,7 +1128,7 @@
             version
           );
         } catch (error) {
-          /* Storage can be unavailable. */
+          
         }
 
         notice.setAttribute(

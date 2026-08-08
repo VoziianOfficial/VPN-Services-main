@@ -241,9 +241,7 @@
     `;
   }
 
-  /* =======================================================
-     HERO
-     ======================================================= */
+  
 
   function splitHeroTitle(title) {
     if (!title) {
@@ -550,9 +548,7 @@
     }
   }
 
-  /* =======================================================
-     PRICING RENDERER
-     ======================================================= */
+  
 
   function getPricingButtonClass(index) {
     if (index === 1) {
@@ -650,9 +646,7 @@
       .join("");
   }
 
-  /* =======================================================
-     MOBILE PRICING SWIPER
-     ======================================================= */
+  
 
   function getPricingCards(grid) {
     return Array.from(grid.children).filter((element) => {
@@ -847,9 +841,7 @@
     }
   }
 
-  /* =======================================================
-     PLAN MATCHER
-     ======================================================= */
+  
 
   function initPlanMatcher() {
     const root = document.querySelector(SELECTORS.planMatcher);
@@ -966,9 +958,7 @@
     );
   }
 
-  /* =======================================================
-     PROCESS
-     ======================================================= */
+  
 
   function initProcess() {
     document
@@ -1094,9 +1084,7 @@
       });
   }
 
-  /* =======================================================
-     STREAMING SELECTOR
-     ======================================================= */
+  
 
   function initStreamingSelector() {
     document
@@ -1255,9 +1243,7 @@
       });
   }
 
-  /* =======================================================
-     REGION EXPLORER
-     ======================================================= */
+  
 
   function renderRegionFilters(root) {
     const filtersRoot = root.querySelector(
@@ -1513,9 +1499,7 @@
     }
   }
 
-  /* =======================================================
-     REGION CATEGORY CARDS
-     ======================================================= */
+  
 
   function initRegionCategories() {
     document
@@ -1547,9 +1531,7 @@
       });
   }
 
-  /* =======================================================
-     REVIEWS RENDER
-     ======================================================= */
+  
 
   function renderServiceReviews() {
     document
@@ -1606,9 +1588,7 @@
       });
   }
 
-  /* =======================================================
-     REGION SWIPER RENDER
-     ======================================================= */
+  
 
   function renderRegionSwiper() {
     document
@@ -1653,9 +1633,7 @@
       });
   }
 
-  /* =======================================================
-     DEVICE SWIPER RENDER
-     ======================================================= */
+  
 
   function renderDeviceSwiper() {
     document
@@ -1713,9 +1691,7 @@
       });
   }
 
-  /* =======================================================
-     FAQ RENDER
-     ======================================================= */
+  
 
   function getFaqConfigKey() {
     const service = document.body.getAttribute("data-service");
@@ -1804,9 +1780,7 @@
     }
   }
 
-  /* =======================================================
-     SWIPER HELPERS
-     ======================================================= */
+  
 
   function findSwiperControl(swiperElement, selector) {
     const shell =
@@ -2108,10 +2082,7 @@
     initScreenshotSwipers();
   }
 
-  /* =======================================================
-     SERVICE TAB ANIMATION
-     Common.js owns tab state and accessibility.
-     ======================================================= */
+  
 
   function initServiceTabAnimations() {
     document
@@ -2163,9 +2134,7 @@
       });
   }
 
-  /* =======================================================
-     STICKY PROTECTION LAYERS
-     ======================================================= */
+  
 
   function initStickyLayers() {
     const section = document.querySelector(SELECTORS.layerSection);
@@ -2228,9 +2197,7 @@
     );
   }
 
-  /* =======================================================
-     PHOTO PARALLAX
-     ======================================================= */
+  
 
   function initServiceParallax() {
     const gsap = getGSAP();
@@ -2299,9 +2266,7 @@
     );
   }
 
-  /* =======================================================
-     SMALL 3D POINTER TILT
-     ======================================================= */
+  
 
   function initSubtleTilt() {
     if (
@@ -2364,9 +2329,7 @@
     });
   }
 
-  /* =======================================================
-     FORM PAGE HELPERS
-     ======================================================= */
+  
 
   function initTrialFormPlanBinding() {
     const params = new URLSearchParams(window.location.search);
@@ -2385,9 +2348,7 @@
       });
   }
 
-  /* =======================================================
-     AOS / SCROLLTRIGGER REFRESH
-     ======================================================= */
+  
 
   function refreshSystems() {
     if (
@@ -2407,9 +2368,7 @@
     }
   }
 
-  /* =======================================================
-     INITIALISATION
-     ======================================================= */
+  
 
   function initialiseServicePage() {
     if (

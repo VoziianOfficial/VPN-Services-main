@@ -5,14 +5,9 @@
   preserveAspectRatio="none"
   aria-hidden="true"
 >
-  <!--
-    OrbitLock VPN
-    Connected feature path
-    Transparent background
-    No gradients
-  -->
+  
 
-  <!-- Main organic connector -->
+  
   <path
     d="
       M100 132
@@ -30,7 +25,7 @@
     opacity="0.28"
   />
 
-  <!-- Secondary parallel line -->
+  
   <path
     d="
       M104 149
@@ -48,7 +43,7 @@
     opacity="0.12"
   />
 
-  <!-- Left circle connection stem -->
+  
   <path
     d="
       M276 97
@@ -61,7 +56,7 @@
     opacity="0.62"
   />
 
-  <!-- Centre circle connection stem -->
+  
   <path
     d="
       M695 96
@@ -74,7 +69,7 @@
     opacity="0.62"
   />
 
-  <!-- Right circle connection stem -->
+  
   <path
     d="
       M1105 94
@@ -87,7 +82,7 @@
     opacity="0.62"
   />
 
-  <!-- Main anchor nodes -->
+  
   <g>
     <circle
       cx="100"
@@ -138,7 +133,7 @@
     />
   </g>
 
-  <!-- Soft node rings -->
+  
   <g
     fill="none"
     stroke-width="1.5"
@@ -168,7 +163,7 @@
     />
   </g>
 
-  <!-- Floating green accent -->
+  
   <g transform="translate(255 58)">
     <circle
       cx="0"
@@ -195,7 +190,7 @@
     />
   </g>
 
-  <!-- Floating orange accent -->
+  
   <g transform="translate(718 62)">
     <circle
       cx="0"
@@ -222,7 +217,7 @@
     />
   </g>
 
-  <!-- Floating mixed accent -->
+  
   <g transform="translate(1117 55)">
     <circle
       cx="0"
@@ -249,7 +244,7 @@
     />
   </g>
 
-  <!-- Small travel particles -->
+  
   <g>
     <circle
       cx="164"
@@ -340,7 +335,7 @@
     />
   </g>
 
-  <!-- Minimal technical route fragments -->
+  
   <g
     fill="none"
     stroke="#202124"
@@ -357,7 +352,7 @@
     <path d="M1214 177 H1244 V163 H1272" />
   </g>
 
-  <!-- Tiny cross markers -->
+  
   <g
     stroke="#202124"
     stroke-width="1.2"
@@ -377,7 +372,7 @@
     <path d="M1341 152 V172" />
   </g>
 
-  <!-- Minimal endpoint arrows -->
+  
   <g
     fill="none"
     stroke-linecap="round"

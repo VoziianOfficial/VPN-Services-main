@@ -1,21 +1,10 @@
-/* =========================================================
-   SERVICE PAGES
-   Shared by:
-   - plans-pricing.html
-   - features-how-it-works.html
-   - server-locations.html
-   - streaming-unblocking.html
-   - free-trial.html
-   - download-apps.html
-   ========================================================= */
+
 
 body.page-service {
   background: var(--color-white);
 }
 
-/* =========================================================
-   SHARED SERVICE INTRO
-   ========================================================= */
+
 
 .vpn-service-intro {
   background: var(--color-white);
@@ -104,9 +93,7 @@ body.page-service {
   text-transform: uppercase;
 }
 
-/* =========================================================
-   SERVICE HERO SMALL DETAILS
-   ========================================================= */
+
 
 .page-service .vpn-hero__copy {
   max-width: 720px;
@@ -140,9 +127,7 @@ body.page-service {
   pointer-events: none;
 }
 
-/* =========================================================
-   SHARED SERVICE SECTION HEADER
-   ========================================================= */
+
 
 .vpn-service-head {
   display: grid;
@@ -161,9 +146,7 @@ body.page-service {
   justify-self: end;
 }
 
-/* =========================================================
-   PLAN MATCHER
-   ========================================================= */
+
 
 .vpn-service-plan-match {
   background: var(--color-surface);
@@ -319,9 +302,7 @@ body.page-service {
   }
 }
 
-/* =========================================================
-   MAIN PRICING
-   ========================================================= */
+
 
 .vpn-service-pricing {
   overflow: hidden;
@@ -627,9 +608,7 @@ body.page-service {
   }
 }
 
-/* =========================================================
-   FEATURE COMPARISON
-   ========================================================= */
+
 
 .vpn-service-comparison {
   background: var(--color-surface);
@@ -711,9 +690,7 @@ body.page-service {
   font-size: 12px;
 }
 
-/* =========================================================
-   DARK PLAN BENEFITS
-   ========================================================= */
+
 
 .vpn-service-dark-benefits {
   position: relative;
@@ -801,9 +778,7 @@ body.page-service {
   line-height: 1.6;
 }
 
-/* =========================================================
-   SERVICE BENTO
-   ========================================================= */
+
 
 .vpn-service-bento {
   background: var(--color-white);
@@ -952,9 +927,7 @@ body.page-service {
   line-height: 1.58;
 }
 
-/* =========================================================
-   BILLING / FLEXIBILITY CARDS
-   ========================================================= */
+
 
 .vpn-service-billing {
   background: var(--color-surface);
@@ -1048,9 +1021,7 @@ body.page-service {
   color: rgba(255, 255, 255, 0.56);
 }
 
-/* =========================================================
-   DARK REVIEWS
-   ========================================================= */
+
 
 .vpn-service-reviews-dark {
   position: relative;
@@ -1153,9 +1124,7 @@ body.page-service {
   background: var(--color-green);
 }
 
-/* =========================================================
-   CONNECTED CIRCLES - FEATURES PAGE
-   ========================================================= */
+
 
 .vpn-service-flow {
   overflow: hidden;
@@ -1280,9 +1249,7 @@ body.page-service {
   line-height: 1.62;
 }
 
-/* =========================================================
-   2x2 FEATURE BLOCKS
-   ========================================================= */
+
 
 .vpn-service-feature-grid {
   background: var(--color-surface);
@@ -1405,9 +1372,7 @@ body.page-service {
   object-fit: cover;
 }
 
-/* =========================================================
-   DARK CENTRAL 6-FEATURE COMPOSITION
-   ========================================================= */
+
 
 .vpn-service-security {
   position: relative;
@@ -1534,9 +1499,7 @@ body.page-service {
   text-transform: uppercase;
 }
 
-/* =========================================================
-   VPN TABS
-   ========================================================= */
+
 
 .vpn-service-tabs {
   background: var(--color-white);
@@ -1614,9 +1577,7 @@ body.page-service {
   object-fit: cover;
 }
 
-/* =========================================================
-   STICKY PROTECTION LAYERS
-   ========================================================= */
+
 
 .vpn-service-layers {
   background: var(--color-graphite);
@@ -1722,9 +1683,7 @@ body.page-service {
   color: rgba(32, 33, 36, 0.68);
 }
 
-/* =========================================================
-   PROCESS 01-04
-   ========================================================= */
+
 
 .vpn-service-process {
   background: var(--color-surface);
@@ -1841,9 +1800,7 @@ body.page-service {
   transition: opacity var(--transition-base);
 }
 
-/* =========================================================
-   WORLD NETWORK
-   ========================================================= */
+
 
 .vpn-service-network-map {
   position: relative;
@@ -1925,9 +1882,7 @@ body.page-service {
   text-transform: uppercase;
 }
 
-/* =========================================================
-   REGION CATEGORY CARDS
-   ========================================================= */
+
 
 .vpn-service-region-categories {
   background: var(--color-white);
@@ -2039,9 +1994,7 @@ body.page-service {
   }
 }
 
-/* =========================================================
-   REGION EXPLORER
-   ========================================================= */
+
 
 .vpn-service-region-explorer {
   background: var(--color-surface);
@@ -2221,9 +2174,7 @@ body.page-service {
   }
 }
 
-/* =========================================================
-   REGION SWIPER
-   ========================================================= */
+
 
 .vpn-service-region-slider {
   background: var(--color-graphite);
@@ -2298,9 +2249,7 @@ body.page-service {
   gap: 8px;
 }
 
-/* =========================================================
-   TRAVEL SECURITY
-   ========================================================= */
+
 
 .vpn-service-travel {
   background: var(--color-white);
@@ -2446,9 +2395,7 @@ body.page-service {
   margin-top: 26px;
 }
 
-/* =========================================================
-   THREE VISUAL USE-CASE CARDS
-   ========================================================= */
+
 
 .vpn-service-use-cases {
   background: var(--color-white);
@@ -2537,9 +2484,7 @@ body.page-service {
   }
 }
 
-/* =========================================================
-   STREAMING SELECTOR
-   ========================================================= */
+
 
 .vpn-service-stream-selector {
   background: var(--color-surface);
@@ -2691,9 +2636,7 @@ body.page-service {
   object-fit: cover;
 }
 
-/* =========================================================
-   DARK COMPATIBILITY
-   ========================================================= */
+
 
 .vpn-service-compatibility {
   background: var(--color-graphite);
@@ -2760,9 +2703,7 @@ body.page-service {
   text-transform: uppercase;
 }
 
-/* =========================================================
-   DEVICE SWIPER
-   ========================================================= */
+
 
 .vpn-service-device-slider {
   background: var(--color-white);
@@ -2852,9 +2793,7 @@ body.page-service {
   gap: 8px;
 }
 
-/* =========================================================
-   DARK COMPARISON
-   ========================================================= */
+
 
 .vpn-service-private-compare {
   background: var(--color-graphite);
@@ -2950,9 +2889,7 @@ body.page-service {
   background: var(--color-graphite);
 }
 
-/* =========================================================
-   FREE TRIAL SIGNUP
-   ========================================================= */
+
 
 .vpn-service-trial-signup {
   background: var(--color-white);
@@ -3043,9 +2980,7 @@ body.page-service {
   content: "";
 }
 
-/* =========================================================
-   TRIAL INCLUDED
-   ========================================================= */
+
 
 .vpn-service-trial-included {
   background: var(--color-surface);
@@ -3104,9 +3039,7 @@ body.page-service {
   line-height: 1.58;
 }
 
-/* =========================================================
-   IMAGE COLLAGE
-   ========================================================= */
+
 
 .vpn-service-collage {
   background: var(--color-white);
@@ -3243,9 +3176,7 @@ body.page-service {
   line-height: 1.55;
 }
 
-/* =========================================================
-   DARK TRIAL BENEFITS
-   ========================================================= */
+
 
 .vpn-service-trial-dark {
   background: var(--color-graphite);
@@ -3291,9 +3222,7 @@ body.page-service {
   line-height: 1.6;
 }
 
-/* =========================================================
-   PLATFORM TALL CARDS
-   ========================================================= */
+
 
 .vpn-service-platforms {
   background: var(--color-white);
@@ -3399,9 +3328,7 @@ body.page-service {
   bottom: 25px;
 }
 
-/* =========================================================
-   PLATFORM CATEGORY CARDS
-   ========================================================= */
+
 
 .vpn-service-device-categories {
   background: var(--color-surface);
@@ -3494,9 +3421,7 @@ body.page-service {
   color: var(--color-white);
 }
 
-/* =========================================================
-   APP SCREENSHOTS
-   ========================================================= */
+
 
 .vpn-service-screenshots {
   overflow: hidden;
@@ -3543,9 +3468,7 @@ body.page-service {
   gap: 8px;
 }
 
-/* =========================================================
-   FOUR APP FEATURE CARDS
-   ========================================================= */
+
 
 .vpn-service-app-features {
   position: relative;
@@ -3650,9 +3573,7 @@ body.page-service {
   color: rgba(255, 255, 255, 0.54);
 }
 
-/* =========================================================
-   DARK INSTALLATION STEPS
-   ========================================================= */
+
 
 .vpn-service-installation {
   background: var(--color-graphite);
@@ -3710,9 +3631,7 @@ body.page-service {
   line-height: 1.58;
 }
 
-/* =========================================================
-   SYSTEM REQUIREMENTS
-   ========================================================= */
+
 
 .vpn-service-requirements {
   background: var(--color-white);
@@ -3778,9 +3697,7 @@ body.page-service {
   line-height: 1.55;
 }
 
-/* =========================================================
-   SHARED SERVICE FAQ
-   ========================================================= */
+
 
 .vpn-service-faq {
   background: var(--color-surface);
@@ -3853,9 +3770,7 @@ body.page-service {
   }
 }
 
-/* =========================================================
-   PAGE CTA
-   ========================================================= */
+
 
 .vpn-service-final-cta {
   padding-block: 74px;
@@ -3866,9 +3781,7 @@ body.page-service {
   background: var(--color-surface);
 }
 
-/* =========================================================
-   PARALLAX
-   ========================================================= */
+
 
 .vpn-service-parallax-frame {
   overflow: hidden;
@@ -3879,9 +3792,7 @@ body.page-service {
   will-change: transform;
 }
 
-/* =========================================================
-   SERVICE-SPECIFIC COLOR MODIFIERS
-   ========================================================= */
+
 
 body[data-service="pricing"]
   .vpn-hero__eyebrow::before {
@@ -3913,9 +3824,7 @@ body[data-service="downloads"]
   background: var(--color-orange);
 }
 
-/* =========================================================
-   1280
-   ========================================================= */
+
 
 @media (max-width: 1280px) {
   .vpn-service-intro__layout {
@@ -3952,9 +3861,7 @@ body[data-service="downloads"]
   }
 }
 
-/* =========================================================
-   1100
-   ========================================================= */
+
 
 @media (max-width: 1100px) {
   .vpn-service-head {
@@ -4028,9 +3935,7 @@ body[data-service="downloads"]
   }
 }
 
-/* =========================================================
-   TABLET
-   ========================================================= */
+
 
 @media (max-width: 900px) {
   .page-service .vpn-hero__visual::before,
@@ -4277,9 +4182,7 @@ body[data-service="downloads"]
   }
 }
 
-/* =========================================================
-   MOBILE LARGE
-   ========================================================= */
+
 
 @media (max-width: 600px) {
   .vpn-service-intro__visual {
@@ -4575,9 +4478,7 @@ body[data-service="downloads"]
   }
 }
 
-/* =========================================================
-   MOBILE SMALL
-   ========================================================= */
+
 
 @media (max-width: 430px) {
   .vpn-service-plan-match__intro {
@@ -4645,9 +4546,7 @@ body[data-service="downloads"]
   }
 }
 
-/* =========================================================
-   TOUCH DEVICES
-   ========================================================= */
+
 
 @media (hover: none) {
   .vpn-service-price-card,
@@ -4662,9 +4561,7 @@ body[data-service="downloads"]
   }
 }
 
-/* =========================================================
-   REDUCED MOTION
-   ========================================================= */
+
 
 @media (prefers-reduced-motion: reduce) {
   .vpn-service-parallax-image,

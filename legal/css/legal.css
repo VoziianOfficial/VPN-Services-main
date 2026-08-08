@@ -1,18 +1,10 @@
-/* =========================================================
-   LEGAL PAGES
-   Shared by:
-   - privacy-policy.html
-   - terms-conditions.html
-   - cookie-policy.html
-   ========================================================= */
+
 
 body.page-legal {
   background: var(--color-surface);
 }
 
-/* =========================================================
-   LEGAL HERO
-   ========================================================= */
+
 
 .page-legal .vpn-hero {
   min-height: 510px;
@@ -58,9 +50,7 @@ body.page-legal {
   pointer-events: none;
 }
 
-/* =========================================================
-   LEGAL PAGE
-   ========================================================= */
+
 
 .vpn-legal-page {
   position: relative;
@@ -74,9 +64,7 @@ body.page-legal {
   gap: 42px;
 }
 
-/* =========================================================
-   LEGAL SIDEBAR
-   ========================================================= */
+
 
 .vpn-legal-page__sidebar {
   position: sticky;
@@ -203,9 +191,7 @@ body.page-legal {
   }
 }
 
-/* =========================================================
-   LEGAL READING PROGRESS
-   ========================================================= */
+
 
 .vpn-legal-page__progress {
   padding: 16px 20px 20px;
@@ -246,9 +232,7 @@ body.page-legal {
   transition: width 120ms linear;
 }
 
-/* =========================================================
-   MOBILE LEGAL NAV
-   ========================================================= */
+
 
 .vpn-legal-mobile-nav {
   display: none;
@@ -297,9 +281,7 @@ body.page-legal {
   box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.11);
 }
 
-/* =========================================================
-   LEGAL DOCUMENT
-   ========================================================= */
+
 
 .vpn-legal-page__document {
   min-width: 0;
@@ -398,9 +380,7 @@ body.page-legal {
   font-weight: 700;
 }
 
-/* =========================================================
-   LEGAL CONTENT
-   ========================================================= */
+
 
 .vpn-legal-page__content {
   display: grid;
@@ -558,9 +538,7 @@ body.page-legal {
   font-size: 0.88em;
 }
 
-/* =========================================================
-   LEGAL NOTE
-   ========================================================= */
+
 
 .vpn-legal-note {
   position: relative;
@@ -627,9 +605,7 @@ body.page-legal {
   color: inherit;
 }
 
-/* =========================================================
-   DEFINITION CARDS
-   ========================================================= */
+
 
 .vpn-legal-definition-grid {
   display: grid;
@@ -669,9 +645,7 @@ body.page-legal {
   line-height: 1.6;
 }
 
-/* =========================================================
-   LEGAL TABLE
-   ========================================================= */
+
 
 .vpn-legal-table-wrap {
   overflow-x: auto;
@@ -729,9 +703,7 @@ body.page-legal {
   font-weight: 750;
 }
 
-/* =========================================================
-   LEGAL LINK CARDS
-   ========================================================= */
+
 
 .vpn-legal-related {
   margin-top: 22px;
@@ -813,9 +785,7 @@ body.page-legal {
   }
 }
 
-/* =========================================================
-   COOKIE CATEGORY CARDS
-   ========================================================= */
+
 
 .vpn-legal-cookie-grid {
   display: grid;
@@ -925,9 +895,7 @@ body.page-legal {
   color: rgba(255, 255, 255, 0.54);
 }
 
-/* =========================================================
-   CONTACT / QUESTIONS CARD
-   ========================================================= */
+
 
 .vpn-legal-contact-card {
   position: relative;
@@ -993,9 +961,7 @@ body.page-legal {
   margin-top: 21px;
 }
 
-/* =========================================================
-   LEGAL CHANGE LOG / UPDATE BLOCK
-   ========================================================= */
+
 
 .vpn-legal-update {
   display: grid;
@@ -1036,9 +1002,7 @@ body.page-legal {
   line-height: 1.6;
 }
 
-/* =========================================================
-   DARK LEGAL SUMMARY
-   ========================================================= */
+
 
 .vpn-legal-summary {
   margin-top: 22px;
@@ -1109,18 +1073,14 @@ body.page-legal {
   line-height: 1.55;
 }
 
-/* =========================================================
-   FINAL CTA
-   ========================================================= */
+
 
 .vpn-legal-final-cta {
   padding-block: 72px;
   background: var(--color-surface);
 }
 
-/* =========================================================
-   BACK TO TOP
-   ========================================================= */
+
 
 .vpn-legal-back-top {
   position: fixed;
@@ -1168,9 +1128,7 @@ body.page-legal {
   }
 }
 
-/* =========================================================
-   LEGAL ANCHORS
-   ========================================================= */
+
 
 .vpn-legal-anchor {
   position: absolute;
@@ -1179,9 +1137,7 @@ body.page-legal {
   pointer-events: none;
 }
 
-/* =========================================================
-   PRIVACY PAGE MODIFIERS
-   ========================================================= */
+
 
 body[data-legal="privacy"]
   .vpn-legal-page__document-head::after {
@@ -1193,9 +1149,7 @@ body[data-legal="privacy"]
   color: var(--color-green-dark);
 }
 
-/* =========================================================
-   TERMS PAGE MODIFIERS
-   ========================================================= */
+
 
 body[data-legal="terms"]
   .vpn-hero__eyebrow::before {
@@ -1217,9 +1171,7 @@ body[data-legal="terms"]
   background: var(--color-orange);
 }
 
-/* =========================================================
-   COOKIE PAGE MODIFIERS
-   ========================================================= */
+
 
 body[data-legal="cookies"]
   .vpn-hero__eyebrow::before {
@@ -1231,9 +1183,7 @@ body[data-legal="cookies"]
   border-color: var(--color-orange-soft);
 }
 
-/* =========================================================
-   1280
-   ========================================================= */
+
 
 @media (max-width: 1280px) {
   .vpn-legal-page__layout {
@@ -1250,9 +1200,7 @@ body[data-legal="cookies"]
   }
 }
 
-/* =========================================================
-   1024
-   ========================================================= */
+
 
 @media (max-width: 1024px) {
   .vpn-legal-page__layout {
@@ -1285,9 +1233,7 @@ body[data-legal="cookies"]
   }
 }
 
-/* =========================================================
-   TABLET
-   ========================================================= */
+
 
 @media (max-width: 900px) {
   .page-legal .vpn-hero__visual::before,
@@ -1324,9 +1270,7 @@ body[data-legal="cookies"]
   }
 }
 
-/* =========================================================
-   MOBILE LARGE
-   ========================================================= */
+
 
 @media (max-width: 600px) {
   .page-legal .vpn-hero {
@@ -1457,9 +1401,7 @@ body[data-legal="cookies"]
   }
 }
 
-/* =========================================================
-   MOBILE SMALL
-   ========================================================= */
+
 
 @media (max-width: 430px) {
   .vpn-legal-page__document-head {
@@ -1493,9 +1435,7 @@ body[data-legal="cookies"]
   }
 }
 
-/* =========================================================
-   REDUCED MOTION
-   ========================================================= */
+
 
 @media (prefers-reduced-motion: reduce) {
   .vpn-legal-page__sidebar {
@@ -1514,9 +1454,7 @@ body[data-legal="cookies"]
   }
 }
 
-/* =========================================================
-   PRINT
-   ========================================================= */
+
 
 @media print {
   body.page-legal {

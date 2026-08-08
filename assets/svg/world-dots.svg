@@ -39,14 +39,9 @@
     </pattern>
   </defs>
 
-  <!--
-    OrbitLock VPN
-    Dotted global network map
-    Transparent background
-    No gradients
-  -->
+  
 
-  <!-- NORTH AMERICA -->
+  
   <path
     d="
       M134 181
@@ -84,7 +79,7 @@
     fill="url(#vpn-world-dot-pattern)"
   />
 
-  <!-- ALASKA -->
+  
   <path
     d="
       M60 168
@@ -99,7 +94,7 @@
     fill="url(#vpn-world-dot-pattern-soft)"
   />
 
-  <!-- GREENLAND -->
+  
   <path
     d="
       M398 72
@@ -115,7 +110,7 @@
     fill="url(#vpn-world-dot-pattern-soft)"
   />
 
-  <!-- CENTRAL AMERICA -->
+  
   <path
     d="
       M339 307
@@ -133,7 +128,7 @@
     fill="url(#vpn-world-dot-pattern)"
   />
 
-  <!-- SOUTH AMERICA -->
+  
   <path
     d="
       M390 350
@@ -163,7 +158,7 @@
     fill="url(#vpn-world-dot-pattern)"
   />
 
-  <!-- EUROPE -->
+  
   <path
     d="
       M711 181
@@ -186,7 +181,7 @@
     fill="url(#vpn-world-dot-pattern)"
   />
 
-  <!-- SCANDINAVIA -->
+  
   <path
     d="
       M755 110
@@ -203,7 +198,7 @@
     fill="url(#vpn-world-dot-pattern-soft)"
   />
 
-  <!-- UNITED KINGDOM -->
+  
   <path
     d="
       M696 183
@@ -217,7 +212,7 @@
     fill="url(#vpn-world-dot-pattern-soft)"
   />
 
-  <!-- AFRICA -->
+  
   <path
     d="
       M735 249
@@ -243,7 +238,7 @@
     fill="url(#vpn-world-dot-pattern)"
   />
 
-  <!-- MADAGASCAR -->
+  
   <path
     d="
       M866 419
@@ -257,7 +252,7 @@
     fill="url(#vpn-world-dot-pattern-soft)"
   />
 
-  <!-- MIDDLE EAST -->
+  
   <path
     d="
       M835 241
@@ -273,7 +268,7 @@
     fill="url(#vpn-world-dot-pattern)"
   />
 
-  <!-- ASIA -->
+  
   <path
     d="
       M820 171
@@ -313,7 +308,7 @@
     fill="url(#vpn-world-dot-pattern)"
   />
 
-  <!-- INDIA -->
+  
   <path
     d="
       M970 286
@@ -329,7 +324,7 @@
     fill="url(#vpn-world-dot-pattern)"
   />
 
-  <!-- SOUTHEAST ASIA -->
+  
   <path
     d="
       M1080 308
@@ -347,7 +342,7 @@
     fill="url(#vpn-world-dot-pattern-soft)"
   />
 
-  <!-- JAPAN -->
+  
   <path
     d="
       M1268 232
@@ -361,7 +356,7 @@
     fill="url(#vpn-world-dot-pattern-soft)"
   />
 
-  <!-- INDONESIA -->
+  
   <path
     d="
       M1094 383
@@ -378,7 +373,7 @@
     fill="url(#vpn-world-dot-pattern-soft)"
   />
 
-  <!-- AUSTRALIA -->
+  
   <path
     d="
       M1197 449
@@ -398,7 +393,7 @@
     fill="url(#vpn-world-dot-pattern)"
   />
 
-  <!-- NEW ZEALAND -->
+  
   <path
     d="
       M1384 523
@@ -412,7 +407,7 @@
     fill="url(#vpn-world-dot-pattern-soft)"
   />
 
-  <!-- Decorative connection routes -->
+  
   <g
     fill="none"
     stroke="#B8BFB7"
@@ -464,9 +459,9 @@
     />
   </g>
 
-  <!-- Main server nodes -->
+  
   <g>
-    <!-- Sweden -->
+    
     <circle
       cx="770"
       cy="149"
@@ -483,7 +478,7 @@
       opacity="0.34"
     />
 
-    <!-- United States -->
+    
     <circle
       cx="260"
       cy="231"
@@ -500,7 +495,7 @@
       opacity="0.3"
     />
 
-    <!-- Central Europe -->
+    
     <circle
       cx="756"
       cy="193"
@@ -517,7 +512,7 @@
       opacity="0.34"
     />
 
-    <!-- Japan -->
+    
     <circle
       cx="1273"
       cy="237"
@@ -534,7 +529,7 @@
       opacity="0.3"
     />
 
-    <!-- Singapore -->
+    
     <circle
       cx="1115"
       cy="362"
@@ -551,7 +546,7 @@
       opacity="0.3"
     />
 
-    <!-- Australia -->
+    
     <circle
       cx="1261"
       cy="469"
@@ -568,7 +563,7 @@
       opacity="0.3"
     />
 
-    <!-- Brazil -->
+    
     <circle
       cx="410"
       cy="463"
@@ -585,7 +580,7 @@
       opacity="0.3"
     />
 
-    <!-- South Africa -->
+    
     <circle
       cx="778"
       cy="457"
@@ -603,7 +598,7 @@
     />
   </g>
 
-  <!-- Secondary connection points -->
+  
   <g fill="#FFFFFF">
     <circle
       cx="399"
@@ -638,7 +633,7 @@
     />
   </g>
 
-  <!-- Small isolated island dots -->
+  
   <g fill="#B9C0B8" opacity="0.72">
     <circle cx="570" cy="238" r="3" />
     <circle cx="593" cy="247" r="2.4" />
@@ -653,7 +648,7 @@
     <circle cx="1061" cy="408" r="2.4" />
   </g>
 
-  <!-- Technical coordinate marks -->
+  
   <g
     stroke="#B9C0B8"
     stroke-width="1.5"

@@ -1,14 +1,10 @@
-/* =========================================================
-   CONTACT PAGE
-   ========================================================= */
+
 
 body.page-contact {
   background: var(--color-white);
 }
 
-/* =========================================================
-   CONTACT HERO
-   ========================================================= */
+
 
 .page-contact .vpn-hero__copy {
   max-width: 730px;
@@ -46,9 +42,7 @@ body.page-contact {
   pointer-events: none;
 }
 
-/* =========================================================
-   PHILOSOPHY / IMAGE + MISSION / VISION
-   ========================================================= */
+
 
 .vpn-contact-philosophy {
   background: var(--color-white);
@@ -205,9 +199,7 @@ body.page-contact {
   line-height: 1.62;
 }
 
-/* =========================================================
-   ADVERTISE & COLLABORATE
-   ========================================================= */
+
 
 .vpn-contact-collaboration {
   position: relative;
@@ -336,9 +328,7 @@ body.page-contact {
   margin-top: 28px;
 }
 
-/* =========================================================
-   DARK COLLABORATION BENTO
-   ========================================================= */
+
 
 .vpn-contact-work {
   position: relative;
@@ -549,9 +539,7 @@ body.page-contact {
   }
 }
 
-/* =========================================================
-   CONTACT FORM SECTION
-   ========================================================= */
+
 
 .vpn-contact-form-section {
   position: relative;
@@ -708,9 +696,7 @@ body.page-contact {
   content: "";
 }
 
-/* =========================================================
-   INQUIRY CHIPS
-   ========================================================= */
+
 
 .vpn-contact-inquiry {
   margin-bottom: 26px;
@@ -764,9 +750,7 @@ body.page-contact {
   }
 }
 
-/* =========================================================
-   CONTACT FORM SMALL REFINEMENTS
-   ========================================================= */
+
 
 .page-contact .vpn-form__input,
 .page-contact .vpn-form__select,
@@ -794,9 +778,7 @@ body.page-contact {
   flex: 0 0 auto;
 }
 
-/* =========================================================
-   FAQ
-   ========================================================= */
+
 
 .vpn-contact-faq {
   background: var(--color-surface);
@@ -831,18 +813,14 @@ body.page-contact {
   border-bottom: 0;
 }
 
-/* =========================================================
-   CONTACT FINAL CTA
-   ========================================================= */
+
 
 .vpn-contact-final-cta {
   padding-block: 76px;
   background: var(--color-white);
 }
 
-/* =========================================================
-   PARALLAX
-   ========================================================= */
+
 
 .vpn-contact-parallax-frame {
   overflow: hidden;
@@ -853,9 +831,7 @@ body.page-contact {
   will-change: transform;
 }
 
-/* =========================================================
-   1280
-   ========================================================= */
+
 
 @media (max-width: 1280px) {
   .vpn-contact-philosophy__layout {
@@ -875,9 +851,7 @@ body.page-contact {
   }
 }
 
-/* =========================================================
-   1100
-   ========================================================= */
+
 
 @media (max-width: 1100px) {
   .vpn-contact-philosophy__layout {
@@ -914,9 +888,7 @@ body.page-contact {
   }
 }
 
-/* =========================================================
-   TABLET
-   ========================================================= */
+
 
 @media (max-width: 900px) {
   .page-contact .vpn-hero__visual::before,
@@ -978,9 +950,7 @@ body.page-contact {
   }
 }
 
-/* =========================================================
-   MOBILE LARGE
-   ========================================================= */
+
 
 @media (max-width: 600px) {
   .vpn-contact-philosophy__visual {
@@ -1119,9 +1089,7 @@ body.page-contact {
   }
 }
 
-/* =========================================================
-   MOBILE SMALL
-   ========================================================= */
+
 
 @media (max-width: 430px) {
   .vpn-contact-philosophy__visual {
@@ -1164,9 +1132,7 @@ body.page-contact {
   }
 }
 
-/* =========================================================
-   TOUCH DEVICES
-   ========================================================= */
+
 
 @media (hover: none) {
   .vpn-contact-work-card,
@@ -1175,9 +1141,7 @@ body.page-contact {
   }
 }
 
-/* =========================================================
-   REDUCED MOTION
-   ========================================================= */
+
 
 @media (prefers-reduced-motion: reduce) {
   .vpn-contact-philosophy__frame,

@@ -5,14 +5,9 @@
   preserveAspectRatio="xMidYMid slice"
   aria-hidden="true"
 >
-  <!--
-    OrbitLock VPN
-    Decorative encrypted network route
-    Transparent background
-    No gradients
-  -->
+  
 
-  <!-- Main route -->
+  
   <g
     fill="none"
     stroke="#FFFFFF"
@@ -60,7 +55,7 @@
     />
   </g>
 
-  <!-- Secondary route arcs -->
+  
   <g
     fill="none"
     stroke="#FFFFFF"
@@ -92,7 +87,7 @@
     />
   </g>
 
-  <!-- Encrypted square route -->
+  
   <g
     fill="none"
     stroke="#FFFFFF"
@@ -124,7 +119,7 @@
     />
   </g>
 
-  <!-- Location-style markers -->
+  
   <g
     fill="none"
     stroke="#FFFFFF"
@@ -174,7 +169,7 @@
     </g>
   </g>
 
-  <!-- Main route nodes -->
+  
   <g>
     <circle
       cx="64"
@@ -237,7 +232,7 @@
     />
   </g>
 
-  <!-- Soft node rings -->
+  
   <g
     fill="none"
     stroke-width="1.6"
@@ -275,7 +270,7 @@
     />
   </g>
 
-  <!-- Small connection particles -->
+  
   <g fill="#FFFFFF">
     <circle
       cx="139"
@@ -362,7 +357,7 @@
     />
   </g>
 
-  <!-- Floating technical dots -->
+  
   <g>
     <circle
       cx="114"
@@ -453,7 +448,7 @@
     />
   </g>
 
-  <!-- Technical cross markers -->
+  
   <g
     fill="none"
     stroke="#FFFFFF"
@@ -474,7 +469,7 @@
     <path d="M910 538 V566" />
   </g>
 
-  <!-- Encryption fragment -->
+  
   <g
     transform="translate(553 434)"
     fill="none"
@@ -522,7 +517,7 @@
     />
   </g>
 
-  <!-- Orbital micro element -->
+  
   <g
     transform="translate(818 424)"
     fill="none"
@@ -549,7 +544,7 @@
     />
   </g>
 
-  <!-- Isolated dashed route -->
+  
   <path
     d="
       M63 280
