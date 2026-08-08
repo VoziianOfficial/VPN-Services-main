@@ -556,8 +556,8 @@ body.page-service {
   display: grid;
   grid-template-areas:
     "intro options"
-    "visual options";
-  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+    "visual visual";
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
   align-items: start;
   gap: 18px 28px;
 }
@@ -596,12 +596,18 @@ body.page-service {
   margin-top: 22px;
 }
 
-.vpn-service-plan-match__visual {
-  position: sticky;
-  z-index: 2;
-  top: calc(var(--header-total-height) + 22px);
+.vpn-service-plan-match__visuals {
+  display: grid;
   grid-area: visual;
-  min-height: 250px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  min-width: 0;
+}
+
+.vpn-service-plan-match__visual {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
   overflow: hidden;
   border: 1px solid var(--color-border);
   border-radius: 24px;
@@ -612,9 +618,10 @@ body.page-service {
 }
 
 .vpn-service-plan-match__image {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 250px;
   object-fit: cover;
   opacity: 0.88;
 }
@@ -1365,7 +1372,6 @@ body.page-service {
 }
 
 .vpn-service-bento-card {
-  min-height: 190px;
   padding: 26px;
   border: 1px solid var(--color-border);
   border-radius: 27px;
@@ -4564,10 +4570,8 @@ body[data-service="downloads"]
     max-width: 700px;
   }
 
-  .vpn-service-plan-match__visual {
-    position: relative;
-    top: auto;
-    width: min(100%, 760px);
+  .vpn-service-plan-match__visuals {
+    width: 100%;
   }
 
   .vpn-service-pricing__layout {
@@ -4910,13 +4914,17 @@ body[data-service="downloads"]
     gap: 12px;
   }
 
+  .vpn-service-plan-match__visuals {
+    grid-template-columns: 1fr;
+  }
+
   .vpn-service-plan-match__visual {
     min-height: 230px;
     border-radius: 21px;
   }
 
   .vpn-service-plan-match__image {
-    min-height: 230px;
+    min-height: 0;
   }
 
   .vpn-service-plan-match__visual-panel {
