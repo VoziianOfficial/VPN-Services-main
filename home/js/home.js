@@ -28,6 +28,14 @@
     pricingGrid: "[data-vpn-home-pricing-grid]",
     pricingPagination: "[data-vpn-home-pricing-pagination]",
 
+    cardScanner: "[data-vpn-card-scanner]",
+    cardParticles: "[data-vpn-card-particles]",
+    cardScannerCanvas: "[data-vpn-card-scanner-canvas]",
+    cardLine: "[data-vpn-card-line]",
+    cardCode: "[data-vpn-card-code]",
+    cardAsciiCode: ".vpn-scan-card__ascii-code",
+    scanCard: ".vpn-scan-card",
+
     parallax: "[data-vpn-parallax]"
   };
 
@@ -41,6 +49,7 @@
     pricingSwiper: null,
     pricingWrapper: null,
     pricingMediaQuery: null,
+    cardScanner: null,
     parallaxTweens: []
   };
 
@@ -1392,6 +1401,436 @@
 
   
 
+  function buildScannerCode(columns, rows) {
+    const snippets = [
+      "// compiled preview • scanner demo",
+      "/* generated for visual effect - not executed */",
+      "const SCAN_WIDTH = 8;",
+      "const FADE_ZONE = 35;",
+      "const MAX_PARTICLES = 2500;",
+      "function clamp(n, a, b) { return Math.max(a, Math.min(b, n)); }",
+      "function lerp(a, b, t) { return a + (b - a) * t; }",
+      "const now = () => performance.now();",
+      "class Particle { constructor(x, y, vx, vy, r, a) { this.x = x; this.y = y; this.vx = vx; this.vy = vy; this.r = r; this.a = a; } }",
+      "function drawParticle(ctx, p) { ctx.globalAlpha = clamp(p.a, 0, 1); }",
+      "const scanner = { x: innerWidth / 2, width: SCAN_WIDTH, glow: 3.5 };",
+      "ctx.globalCompositeOperation = 'lighter';"
+    ];
+
+    let source = snippets.join(" ");
+
+    for (let index = 0; index < 44; index += 1) {
+      source += ` const v${index} = (${index + 7} * ${index + 13}) & 0xff;`;
+      source += " if (state.intensity > 1) { scanner.glow += 0.01; }";
+    }
+
+    source = source.replace(/\s+/g, " ").trim();
+
+    const target = columns * rows;
+
+    while (source.length < target + columns) {
+      source += " " + snippets[source.length % snippets.length];
+    }
+
+    let output = "";
+    let offset = 0;
+
+    for (let row = 0; row < rows; row += 1) {
+      let line = source.slice(offset, offset + columns);
+
+      if (line.length < columns) {
+        line = line + " ".repeat(columns - line.length);
+      }
+
+      output += line + (row < rows - 1 ? "\n" : "");
+      offset += columns;
+    }
+
+    return output;
+  }
+
+  function initCardScanner() {
+    const section = document.querySelector(
+      SELECTORS.cardScanner
+    );
+
+    if (!section || STATE.cardScanner) {
+      return;
+    }
+
+    const track = section.querySelector(
+      SELECTORS.cardLine
+    );
+    const particleCanvas = section.querySelector(
+      SELECTORS.cardParticles
+    );
+    const scannerCanvas = section.querySelector(
+      SELECTORS.cardScannerCanvas
+    );
+
+    if (!track || !particleCanvas || !scannerCanvas) {
+      return;
+    }
+
+    const reducedMotion = prefersReducedMotion();
+    const originalCards = Array.from(track.children);
+
+    originalCards.forEach((card) => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      track.appendChild(clone);
+    });
+
+    Array.from(
+      section.querySelectorAll(
+        SELECTORS.cardCode
+      )
+    ).forEach((block) => {
+      block.textContent = buildScannerCode(46, 17);
+    });
+
+    Array.from(
+      section.querySelectorAll(
+        SELECTORS.cardAsciiCode
+      )
+    ).forEach((block) => {
+      block.textContent = buildScannerCode(52, 18);
+    });
+
+    const particleContext = particleCanvas.getContext("2d");
+    const scannerContext = scannerCanvas.getContext("2d");
+    const particles = [];
+    const particleCount = 360;
+    let width = 0;
+    let particleHeight = 0;
+    let scannerHeight = 0;
+    let position = 0;
+    let velocity = -86;
+    let lastTime = performance.now();
+    let animationFrame = 0;
+    let isDragging = false;
+    let dragX = 0;
+    let dragVelocity = velocity;
+
+    function resizeCanvas(canvas, height) {
+      const rect = section.getBoundingClientRect();
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const context = canvas.getContext("2d");
+
+      canvas.width = Math.max(1, Math.floor(rect.width * dpr));
+      canvas.height = Math.max(1, Math.floor(height * dpr));
+      canvas.style.width = rect.width + "px";
+      canvas.style.height = height + "px";
+      context.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function createParticle() {
+      return {
+        x: width * 0.5 + (Math.random() - 0.5) * 9,
+        y: Math.random() * particleHeight,
+        vx: Math.random() * 1.4 + 0.25,
+        vy: (Math.random() - 0.5) * 0.22,
+        size: Math.random() * 2.2 + 0.7,
+        life: Math.random() * 0.8 + 0.2,
+        decay: Math.random() * 0.012 + 0.004,
+        twinkle: Math.random() * 6.28
+      };
+    }
+
+    function resetParticle(particle) {
+      const nextParticle = createParticle();
+
+      Object.keys(nextParticle).forEach((key) => {
+        particle[key] = nextParticle[key];
+      });
+    }
+
+    function resize() {
+      const rect = section.getBoundingClientRect();
+      width = rect.width;
+      particleHeight = 300;
+      scannerHeight = 360;
+
+      resizeCanvas(particleCanvas, particleHeight);
+      resizeCanvas(scannerCanvas, scannerHeight);
+
+      particles.length = 0;
+
+      for (let index = 0; index < particleCount; index += 1) {
+        particles.push(createParticle());
+      }
+
+      if (!position) {
+        position = width * 0.52;
+      }
+    }
+
+    function drawParticles() {
+      particleContext.clearRect(0, 0, width, particleHeight);
+      particleContext.globalCompositeOperation = "lighter";
+
+      particles.forEach((particle) => {
+        particle.x += particle.vx;
+        particle.y += particle.vy;
+        particle.life -= particle.decay;
+        particle.twinkle += 0.08;
+
+        if (
+          particle.life <= 0 ||
+          particle.x > width + 20 ||
+          particle.y < -20 ||
+          particle.y > particleHeight + 20
+        ) {
+          resetParticle(particle);
+        }
+
+        const alpha =
+          Math.max(0, particle.life) *
+          (0.58 + Math.sin(particle.twinkle) * 0.22);
+        const gradient =
+          particleContext.createRadialGradient(
+            particle.x,
+            particle.y,
+            0,
+            particle.x,
+            particle.y,
+            particle.size * 5
+          );
+
+        gradient.addColorStop(0, `rgba(255, 255, 255, ${alpha})`);
+        gradient.addColorStop(0.28, `rgba(147, 197, 253, ${alpha * 0.8})`);
+        gradient.addColorStop(1, "rgba(59, 130, 246, 0)");
+
+        particleContext.fillStyle = gradient;
+        particleContext.beginPath();
+        particleContext.arc(
+          particle.x,
+          particle.y,
+          particle.size * 5,
+          0,
+          Math.PI * 2
+        );
+        particleContext.fill();
+      });
+
+      particleContext.globalCompositeOperation = "source-over";
+    }
+
+    function drawScannerGlow(isActive) {
+      const x = width * 0.5;
+      const glow = isActive ? 1 : 0.72;
+
+      scannerContext.clearRect(0, 0, width, scannerHeight);
+      scannerContext.globalCompositeOperation = "lighter";
+
+      [
+        [42, 0.18, "139, 92, 246"],
+        [22, 0.34, "168, 85, 247"],
+        [8, 0.62, "221, 214, 254"],
+        [3, 1, "255, 255, 255"]
+      ].forEach(([bandWidth, alpha, color]) => {
+        const gradient =
+          scannerContext.createLinearGradient(
+            x - bandWidth,
+            0,
+            x + bandWidth,
+            0
+          );
+
+        gradient.addColorStop(0, `rgba(${color}, 0)`);
+        gradient.addColorStop(0.5, `rgba(${color}, ${alpha * glow})`);
+        gradient.addColorStop(1, `rgba(${color}, 0)`);
+
+        scannerContext.fillStyle = gradient;
+        scannerContext.fillRect(
+          x - bandWidth,
+          0,
+          bandWidth * 2,
+          scannerHeight
+        );
+      });
+
+      scannerContext.globalCompositeOperation = "destination-in";
+      const mask = scannerContext.createLinearGradient(
+        0,
+        0,
+        0,
+        scannerHeight
+      );
+      mask.addColorStop(0, "rgba(255, 255, 255, 0)");
+      mask.addColorStop(0.18, "rgba(255, 255, 255, 1)");
+      mask.addColorStop(0.82, "rgba(255, 255, 255, 1)");
+      mask.addColorStop(1, "rgba(255, 255, 255, 0)");
+      scannerContext.fillStyle = mask;
+      scannerContext.fillRect(0, 0, width, scannerHeight);
+      scannerContext.globalCompositeOperation = "source-over";
+    }
+
+    function updateClipping() {
+      const scannerX =
+        section.getBoundingClientRect().left +
+        width * 0.5;
+      let active = false;
+
+      Array.from(
+        track.querySelectorAll(
+          SELECTORS.scanCard
+        )
+      ).forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        const normal = card.querySelector(
+          ".vpn-scan-card__face--normal"
+        );
+        const ascii = card.querySelector(
+          ".vpn-scan-card__face--ascii"
+        );
+
+        if (!normal || !ascii) {
+          return;
+        }
+
+        if (rect.right < scannerX) {
+          normal.style.setProperty("--scan-normal-left", "100%");
+          ascii.style.setProperty("--scan-ascii-right", "100%");
+          card.removeAttribute("data-scanning");
+        } else if (rect.left > scannerX) {
+          normal.style.setProperty("--scan-normal-left", "0%");
+          ascii.style.setProperty("--scan-ascii-right", "0%");
+          card.removeAttribute("data-scanning");
+        } else {
+          active = true;
+          const progress = Math.max(
+            0,
+            Math.min(
+              100,
+              ((scannerX - rect.left) / rect.width) * 100
+            )
+          );
+
+          normal.style.setProperty(
+            "--scan-normal-left",
+            `${progress}%`
+          );
+          ascii.style.setProperty(
+            "--scan-ascii-right",
+            `${progress}%`
+          );
+
+          if (!card.hasAttribute("data-scanning")) {
+            const flash =
+              document.createElement("span");
+            flash.className =
+              "vpn-scan-card__scan-flash";
+            card.appendChild(flash);
+            window.setTimeout(
+              () => flash.remove(),
+              650
+            );
+          }
+
+          card.setAttribute("data-scanning", "true");
+        }
+      });
+
+      drawScannerGlow(active);
+    }
+
+    function normalizePosition() {
+      const firstSetWidth =
+        track.scrollWidth / 2;
+
+      if (position <= -firstSetWidth) {
+        position += firstSetWidth;
+      } else if (position > width) {
+        position -= firstSetWidth;
+      }
+    }
+
+    function render(currentTime) {
+      const delta = Math.min(
+        0.05,
+        (currentTime - lastTime) / 1000
+      );
+
+      lastTime = currentTime;
+
+      if (!reducedMotion && !isDragging) {
+        position += velocity * delta;
+      }
+
+      normalizePosition();
+      track.style.transform =
+        `translate3d(${position}px, -50%, 0)`;
+
+      if (!reducedMotion) {
+        drawParticles();
+      }
+
+      updateClipping();
+      animationFrame =
+        window.requestAnimationFrame(render);
+    }
+
+    function beginDrag(event) {
+      isDragging = true;
+      dragX = event.clientX;
+      dragVelocity = 0;
+      track.dataset.dragging = "true";
+      track.setPointerCapture?.(event.pointerId);
+    }
+
+    function continueDrag(event) {
+      if (!isDragging) {
+        return;
+      }
+
+      const delta = event.clientX - dragX;
+      position += delta;
+      dragVelocity = delta * 60;
+      dragX = event.clientX;
+      updateClipping();
+    }
+
+    function endDrag(event) {
+      if (!isDragging) {
+        return;
+      }
+
+      isDragging = false;
+      velocity =
+        Math.abs(dragVelocity) > 28
+          ? dragVelocity
+          : -86;
+      track.dataset.dragging = "false";
+      track.releasePointerCapture?.(event.pointerId);
+    }
+
+    resize();
+
+    track.addEventListener("pointerdown", beginDrag);
+    track.addEventListener("pointermove", continueDrag);
+    track.addEventListener("pointerup", endDrag);
+    track.addEventListener("pointercancel", endDrag);
+    window.addEventListener(
+      "resize",
+      resize,
+      {
+        passive: true
+      }
+    );
+
+    animationFrame =
+      window.requestAnimationFrame(render);
+
+    STATE.cardScanner = {
+      stop() {
+        window.cancelAnimationFrame(animationFrame);
+      }
+    };
+  }
+
+  
+
   function refreshMotionSystems() {
     const ScrollTrigger =
       getScrollTrigger();
@@ -1536,6 +1975,7 @@
     initMarquee();
     initReviewsSwiper();
     initPricingSwiper();
+    initCardScanner();
     initPhotoParallax();
     initArrowInteractions();
     initResponsiveParallax();
