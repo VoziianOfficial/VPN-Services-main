@@ -480,7 +480,7 @@ window.SITE_CONFIG = {
 
   "securityEcosystem": {
     "eyebrow": "COMPLETE CONNECTION CONTROL",
-    "title": "Everything Your Connection Needs",
+    "title": "Core Privacy Tools",
     "text": "Core privacy tools come together in one clear experience.",
 
     "items": [
