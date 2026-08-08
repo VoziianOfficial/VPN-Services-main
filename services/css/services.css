@@ -5071,7 +5071,8 @@ body[data-service="downloads"]
   }
 
   .vpn-service-installation-step {
-    min-height: 210px;
+    min-height: 150px;
+    padding: 16px;
   }
 
   .vpn-service-faq__card {
@@ -5410,5 +5411,21 @@ body[data-service="downloads"]
   .vpn-service-platforms .vpn-service-platform-card {
     min-height: 240px;
     padding: 24px;
+  }
+
+  .vpn-service-installation-step {
+    min-height: 132px;
+    padding: 15px;
+  }
+
+  .vpn-service-installation-step__title {
+    margin-top: 6px;
+    padding-right: 0;
+    font-size: 18px;
+  }
+
+  .vpn-service-installation-step__text {
+    font-size: 11px;
+    line-height: 1.42;
   }
 }

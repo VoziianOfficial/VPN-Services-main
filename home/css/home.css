@@ -1909,10 +1909,11 @@ body.page-home {
 
 .vpn-home-bento__primary {
   position: relative;
+  display: flex;
   grid-area: primary;
-  min-height: 310px;
+  min-height: 260px;
   overflow: hidden;
-  padding: 38px;
+  padding: 30px;
   border: 1px solid var(--color-border);
   border-radius: 34px;
   background: var(--color-white);
@@ -1944,6 +1945,11 @@ body.page-home {
 .vpn-home-bento__primary-copy {
   position: relative;
   z-index: 2;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 590px;
 }
 
@@ -1958,25 +1964,18 @@ body.page-home {
 
 .vpn-home-bento__primary-text {
   max-width: 560px;
-  margin-top: 16px;
+  margin-top: 14px;
   color: var(--color-muted);
   font-size: 14px;
   line-height: 1.66;
 }
 
 .vpn-home-bento__primary-action {
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 .vpn-home-bento__device {
-  position: absolute;
-  z-index: 2;
-  right: 25px;
-  bottom: 0;
-  width: min(34%, 250px);
-  max-height: 270px;
-  object-fit: contain;
-  object-position: bottom;
+  display: none;
 }
 
 .vpn-home-bento__assurance {
