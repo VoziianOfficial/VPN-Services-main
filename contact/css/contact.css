@@ -392,11 +392,11 @@ body.page-contact {
 
 .vpn-contact-work-card {
   position: relative;
-  min-height: 225px;
-  padding: 26px;
+  min-height: auto;
+  padding: 20px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 28px;
+  border-radius: 23px;
   background: #292b2e;
   box-shadow:
     0 7px 0 #131416,
@@ -448,10 +448,10 @@ body.page-contact {
 
 .vpn-contact-work-card__icon {
   display: grid;
-  width: 49px;
-  height: 49px;
+  width: 42px;
+  height: 42px;
   place-items: center;
-  border-radius: 15px;
+  border-radius: 13px;
   background: var(--color-green);
   color: var(--color-graphite-deep);
 }
@@ -475,8 +475,8 @@ body.page-contact {
 }
 
 .vpn-contact-work-card__icon svg {
-  width: 22px;
-  height: 22px;
+  width: 19px;
+  height: 19px;
 }
 
 .vpn-contact-work-card__index {
@@ -498,9 +498,9 @@ body.page-contact {
 }
 
 .vpn-contact-work-card__title {
-  margin-top: 48px;
+  margin-top: 24px;
   font-family: var(--font-heading);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.04em;
@@ -508,10 +508,10 @@ body.page-contact {
 
 .vpn-contact-work-card__text {
   max-width: 430px;
-  margin-top: 9px;
+  margin-top: 7px;
   color: rgba(255, 255, 255, 0.52);
   font-size: 11px;
-  line-height: 1.6;
+  line-height: 1.48;
 }
 
 .vpn-contact-work-card--business
@@ -1037,11 +1037,11 @@ body.page-contact {
   }
 
   .vpn-contact-work-card {
-    min-height: 195px;
+    min-height: auto;
   }
 
   .vpn-contact-work-card__title {
-    margin-top: 37px;
+    margin-top: 22px;
   }
 
   .vpn-contact-form-section__details {
@@ -1111,7 +1111,8 @@ body.page-contact {
   }
 
   .vpn-contact-work-card {
-    padding: 22px;
+    min-height: auto;
+    padding: 18px;
   }
 
   .vpn-contact-form-card__title {
