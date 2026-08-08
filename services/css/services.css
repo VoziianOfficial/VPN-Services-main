@@ -2324,6 +2324,12 @@ body.page-service {
   object-fit: cover;
 }
 
+.vpn-service-travel__small-image {
+  object-position: center;
+  transform: scale(1.36);
+  transform-origin: center;
+}
+
 .vpn-service-travel__badge {
   position: absolute;
   z-index: 4;
