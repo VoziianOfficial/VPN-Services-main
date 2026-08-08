@@ -42,7 +42,9 @@
     cardAsciiCode: ".vpn-scan-card__ascii-code",
     scanCard: ".vpn-scan-card",
 
-    parallax: "[data-vpn-parallax]"
+    parallax: "[data-vpn-parallax]",
+    securityBackground:
+      "[data-vpn-security-background]"
   };
 
   const STATE = {
@@ -1366,6 +1368,53 @@
 
     registerScrollTrigger();
 
+    const securityBackgrounds =
+      Array.from(
+        document.querySelectorAll(
+          SELECTORS.securityBackground
+        )
+      );
+
+    securityBackgrounds.forEach(
+      (image) => {
+        const trigger =
+          image.closest(
+            ".vpn-home-security"
+          ) ||
+          image.parentElement;
+
+        if (!trigger) {
+          return;
+        }
+
+        const tween =
+          gsap.fromTo(
+            image,
+            {
+              scale: 1.12
+            },
+            {
+              scale: 1,
+              ease: "none",
+              scrollTrigger: {
+                trigger,
+                start:
+                  "top bottom",
+                end:
+                  "bottom top",
+                scrub: 0.8,
+                invalidateOnRefresh:
+                  true
+              }
+            }
+          );
+
+        STATE.parallaxTweens.push(
+          tween
+        );
+      }
+    );
+
     const images =
       Array.from(
         document.querySelectorAll(
@@ -1397,10 +1446,20 @@
           gsap.fromTo(
             image,
             {
-              yPercent: -4
+              yPercent: -4,
+              scale: image.hasAttribute(
+                "data-vpn-parallax-zoom"
+              )
+                ? 1.04
+                : 1
             },
             {
               yPercent: 4,
+              scale: image.hasAttribute(
+                "data-vpn-parallax-zoom"
+              )
+                ? 1.12
+                : 1,
               ease: "none",
               scrollTrigger: {
                 trigger,
