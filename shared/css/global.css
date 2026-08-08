@@ -192,6 +192,13 @@ address {
 .vpn-main {
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
+}
+
+@supports (overflow: clip) {
+  .vpn-main {
+    overflow-x: clip;
+  }
 }
 
 .vpn-container {
