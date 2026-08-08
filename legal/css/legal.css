@@ -394,7 +394,7 @@ body.page-legal {
   scroll-margin-top: calc(var(--header-total-height) + 32px);
   border: 1px solid var(--color-border);
   border-radius: 30px;
-  background: var(--color-white);
+  background: var(--color-surface);
   box-shadow:
     0 6px 0 #dfe2dc,
     0 19px 38px rgba(32, 33, 36, 0.075);
@@ -1458,7 +1458,7 @@ body[data-legal="cookies"]
 
 @media print {
   body.page-legal {
-    background: #ffffff;
+    background: var(--color-surface);
   }
 
   .page-legal .vpn-header,
@@ -1475,7 +1475,7 @@ body[data-legal="cookies"]
   .page-legal .vpn-hero {
     min-height: 0;
     padding: 0 0 28px;
-    background: #ffffff;
+    background: var(--color-surface);
     color: #000000;
   }
 
@@ -1490,7 +1490,7 @@ body[data-legal="cookies"]
   }
 
   .vpn-legal-page {
-    background: #ffffff;
+    background: var(--color-surface);
   }
 
   .vpn-legal-page__layout {

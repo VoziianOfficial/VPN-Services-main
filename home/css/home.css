@@ -1,7 +1,7 @@
 
 
 body.page-home {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 
@@ -112,7 +112,7 @@ body.page-home {
 
 
 .vpn-home-about {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-home-about__grid {
@@ -517,7 +517,7 @@ body.page-home {
 .vpn-home-services {
   position: relative;
   overflow: hidden;
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-home-services__technical-grid {
@@ -1002,7 +1002,7 @@ body.page-home {
 
 
 .vpn-home-tall {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-home-tall__head {
@@ -1516,7 +1516,7 @@ body.page-home {
 
 .vpn-home-pricing {
   overflow: hidden;
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-home-pricing__layout {
@@ -2066,7 +2066,7 @@ body.page-home {
 .vpn-home-faq {
   position: relative;
   overflow: hidden;
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-home-faq__heading {

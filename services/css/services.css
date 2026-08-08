@@ -1,13 +1,13 @@
 
 
 body.page-service {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 
 
 .vpn-service-intro {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-intro__layout {
@@ -306,7 +306,7 @@ body.page-service {
 
 .vpn-service-pricing {
   overflow: hidden;
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-pricing__layout {
@@ -781,7 +781,7 @@ body.page-service {
 
 
 .vpn-service-bento {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-bento__grid {
@@ -1128,7 +1128,7 @@ body.page-service {
 
 .vpn-service-flow {
   overflow: hidden;
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-flow__stage {
@@ -1268,7 +1268,7 @@ body.page-service {
   overflow: hidden;
   border: 1px solid var(--color-border);
   border-radius: 31px;
-  background: var(--color-white);
+  background: var(--color-surface);
   box-shadow:
     0 7px 0 #dfe2dc,
     0 22px 42px rgba(32, 33, 36, 0.09);
@@ -1502,7 +1502,7 @@ body.page-service {
 
 
 .vpn-service-tabs {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-tabs__top {
@@ -1885,7 +1885,7 @@ body.page-service {
 
 
 .vpn-service-region-categories {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-region-categories__grid {
@@ -2252,7 +2252,7 @@ body.page-service {
 
 
 .vpn-service-travel {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-travel__layout {
@@ -2398,7 +2398,7 @@ body.page-service {
 
 
 .vpn-service-use-cases {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-use-cases__grid {
@@ -2706,7 +2706,7 @@ body.page-service {
 
 
 .vpn-service-device-slider {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-device-slider__top {
@@ -2892,7 +2892,7 @@ body.page-service {
 
 
 .vpn-service-trial-signup {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-trial-signup__layout {
@@ -3042,7 +3042,7 @@ body.page-service {
 
 
 .vpn-service-collage {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-collage__layout {
@@ -3225,7 +3225,7 @@ body.page-service {
 
 
 .vpn-service-platforms {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-platforms__grid {
@@ -3425,7 +3425,7 @@ body.page-service {
 
 .vpn-service-screenshots {
   overflow: hidden;
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-screenshots__top {
@@ -3634,7 +3634,7 @@ body.page-service {
 
 
 .vpn-service-requirements {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-requirements__grid {
@@ -3774,7 +3774,7 @@ body.page-service {
 
 .vpn-service-final-cta {
   padding-block: 74px;
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-service-final-cta--surface {

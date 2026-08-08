@@ -1,7 +1,7 @@
 
 
 body.page-contact {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 
@@ -45,7 +45,7 @@ body.page-contact {
 
 
 .vpn-contact-philosophy {
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-contact-philosophy__layout {
@@ -543,7 +543,7 @@ body.page-contact {
 
 .vpn-contact-form-section {
   position: relative;
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .vpn-contact-form-section__layout {
@@ -817,7 +817,7 @@ body.page-contact {
 
 .vpn-contact-final-cta {
   padding-block: 76px;
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 
